@@ -11,8 +11,15 @@ class LaravelCreateRestApi {
       {this.path, this.tableName, this.table, this.model, this.controller});
 
   String create() {
-    createFile(path + '/database/migrations', table,
-        DateTime.now().toIso8601String().replaceAll(':', '').replaceAll('-', '_') + tableName.toLowerCase() + '.php');
+    createFile(
+        path + '/database/migrations',
+        table,
+        DateTime.now()
+                .toIso8601String()
+                .replaceAll(':', '')
+                .replaceAll('-', '_') +
+            tableName.toLowerCase() +
+            '.php');
     createFile(path + '/app', model,
         '${tableName[0].toUpperCase()}${tableName.substring(1)}' '.php');
     createFile(
