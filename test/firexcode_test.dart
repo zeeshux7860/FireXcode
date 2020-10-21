@@ -19,8 +19,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return xListView.list([
-
-    ]).xScaffold();
+    return xListView.list([]).xScaffold();
   }
 }

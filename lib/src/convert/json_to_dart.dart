@@ -91,7 +91,8 @@ WithWarning<Map> mergeObj(Map obj, Map other, String path) {
         if (t == 'int' && otherType == 'double') {
           // if double was found instead of int, assign the double
           clone[k] = v;
-        } else if (clone[k].runtimeType.toString() != 'double' && v.runtimeType.toString() != 'int') {
+        } else if (clone[k].runtimeType.toString() != 'double' &&
+            v.runtimeType.toString() != 'int') {
           // if types are not equal, then
           warnings.add(newAmbiguousType('$path/$k'));
         }
