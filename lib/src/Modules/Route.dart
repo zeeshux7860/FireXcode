@@ -12,50 +12,48 @@ class XRoutePage {
   final Widget child;
 
   XRoutePage(this.context, this.child);
-
-  sizeTransitionPush() {
+  void sizeTransitionPush() {
     Navigator.push(context, XSizeRoute(page: child));
   }
 
-  cupertinoPagePush() {
+  void cupertinoPagePush() {
     Navigator.push(context, CupertinoPageRoute(builder: (context) => child));
   }
 
-  materialPagePush() {
+  void materialPagePush() {
     Navigator.push(context, MaterialPageRoute(builder: (context) => child));
   }
 
-  slideRightPush() {
+  void slideRightPush() {
     Navigator.push(context, XRightRoute(page: child));
   }
 
-  slideLeftPush() {
+  void slideLeftPush() {
     Navigator.push(context, XLeftRoute(page: child));
   }
 
-  slideTopPush() {
+  void slideTopPush() {
     Navigator.push(context, XTopRoute(page: child));
   }
 
-  slideLBottomPush() {
+  void slideLBottomPush() {
     Navigator.push(context, XBottomRoute(page: child));
   }
 
-  scalePush() {
+  void scalePush() {
     Navigator.push(context, XScaleRoute(page: child));
   }
 
-  rotationPush() {
+  void rotationPush() {
     Navigator.push(context, XRotationRoute(page: child));
   }
 
-  fadePush() {
+  void fadePush() {
     Navigator.push(context, XFadeRoute(page: child));
   }
 
-  exitPush(exitPageChild) {
+  void exitPush(exitPageChild) {
     Navigator.push(
         context, XEnterExitRoute(enterPage: child, exitPage: exitPageChild));
-    print("20");
   }
 }

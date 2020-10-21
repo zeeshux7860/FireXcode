@@ -24,22 +24,22 @@ class TextFiledMaterial extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        new Padding(
+        Padding(
           padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 5.0),
-          child: new Text(
+          child: Text(
             'Enter Your ' + name,
             style: TextStyle(
-              fontSize: lableSize == null ? 15.0 : lableSize,
+              fontSize: lableSize ?? 15.0,
             ),
           ),
         ),
-        new Container(
+        Container(
           margin: EdgeInsets.all(10.0),
-          color: color == null ? Colors.grey[100] : color,
-          child: new TextFormField(
+          color: color ?? Colors.grey[100],
+          child: TextFormField(
             style: TextStyle(
               fontSize: fontSize,
-              color: textColor == null ? Colors.black : textColor,
+              color: textColor ?? Colors.black,
             ),
             validator: (value) {
               if (value.isEmpty) {
@@ -48,11 +48,10 @@ class TextFiledMaterial extends StatelessWidget {
               return null;
             },
             controller: controller,
-            obscureText: obscureText == null ? false : obscureText,
+            obscureText: obscureText ?? false,
             decoration: InputDecoration(
                 hintStyle: TextStyle(
-                    fontSize: fontSize,
-                    color: textColor == null ? Colors.black : textColor),
+                    fontSize: fontSize, color: textColor ?? Colors.black),
                 contentPadding:
                     EdgeInsets.only(left: 10.0, right: 5.0, bottom: 5.0),
                 hintText: ' ' + name,
@@ -90,22 +89,22 @@ class TextFiledMaterialRounded extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        new Padding(
+        Padding(
           padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 5.0),
-          child: new Text(
+          child: Text(
             'Enter Your ' + name,
             style: TextStyle(
-              fontSize: lableSize == null ? 15.0 : lableSize,
+              fontSize: lableSize ?? 15.0,
             ),
           ),
         ),
-        new Container(
+        Container(
           margin: EdgeInsets.all(10.0),
-          color: color == null ? Colors.grey[100] : color,
-          child: new TextFormField(
+          color: color ?? Colors.grey[100],
+          child: TextFormField(
             style: TextStyle(
               fontSize: fontSize,
-              color: textColor == null ? Colors.black : textColor,
+              color: textColor ?? Colors.black,
             ),
             validator: (value) {
               if (value.isEmpty) {
@@ -116,20 +115,16 @@ class TextFiledMaterialRounded extends StatelessWidget {
             controller: controller,
             decoration: InputDecoration(
                 hintStyle: TextStyle(
-                    fontSize: fontSize,
-                    color: textColor == null ? Colors.black : textColor),
+                    fontSize: fontSize, color: textColor ?? Colors.black),
                 contentPadding:
                     EdgeInsets.only(left: 10.0, right: 5.0, bottom: 5.0),
                 hintText: ' ' + name,
                 enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(
-                        color:
-                            enableColor == null ? Colors.black : enableColor)),
+                    borderSide: BorderSide(color: enableColor ?? Colors.black)),
                 focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(
-                        color: focusColor == null ? Colors.white : focusColor)),
+                    borderSide: BorderSide(color: focusColor ?? Colors.white)),
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                     borderSide: BorderSide(color: Colors.white))),

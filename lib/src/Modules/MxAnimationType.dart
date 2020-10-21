@@ -1,3 +1,4 @@
+import 'package:animated_interpolation/animated_config.dart';
 import 'package:animated_interpolation/fading.dart';
 
 enum XAnimationType {
@@ -21,7 +22,7 @@ enum XAnimationType {
   fadeOutRightBig
 }
 
-animationValue(value) {
+Map<double, AnimatedConfig> animationValue(value) {
   switch (value) {
     case XAnimationType.fadeIn:
       return fadeIn;
@@ -64,9 +65,6 @@ animationValue(value) {
       break;
     case XAnimationType.fadeOutDownBig:
       return fadeOutDownBig;
-      break;
-    case XAnimationType.fadeOutRight:
-      return fadeOutRight;
       break;
     case XAnimationType.fadeOutUpBig:
       return fadeOutUpBig;

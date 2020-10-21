@@ -11,7 +11,7 @@ class XTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: leftPadding == null ? 10 : leftPadding),
+      padding: EdgeInsets.only(left: leftPadding ?? 10),
       child: H1(
         color: color,
         text: title,
@@ -28,7 +28,7 @@ class XTitleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: leftPadding == null ? 10 : leftPadding),
+      padding: EdgeInsets.only(left: leftPadding ?? 10),
       child: child,
     );
   }

@@ -1,8 +1,8 @@
 import 'package:firexcode/MxServices.dart';
 
 void xStless(String name, String path) {
-  String widgetname = name[0].toUpperCase() + name.substring(1);
-  String contents = """
+  var widgetname = name[0].toUpperCase() + name.substring(1);
+  var contents = """
 import 'package:firexcode/firexcode.dart';
 
 class $widgetname extends StatelessWidget {
@@ -18,8 +18,8 @@ class $widgetname extends StatelessWidget {
 }
 
 void xStfull(String name, String path) {
-  String widgetname = name[0].toUpperCase() + name.substring(1);
-  String contents = """
+  var widgetname = name[0].toUpperCase() + name.substring(1);
+  var contents = """
 import 'package:firexcode/firexcode.dart';
 
 class $widgetname extends StatefulWidget {

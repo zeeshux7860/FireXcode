@@ -9,8 +9,8 @@ class _ExampleContainerState extends State<ExampleContainer> {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      "image Container".h1TextBold(color: Colors.black).xltp(l: 20.0, t: 20.0),
-      "text".textMaterialColorWhite().toCenter().xContainer(
+      'image Container'.h1TextBold(color: Colors.black).xltp(l: 20.0, t: 20.0),
+      'text'.textMaterialColorWhite().toCenter().xContainer(
           onTap: () {},
           margin: EdgeInsets.all(20.0),
           color: Colors.orange,
@@ -18,22 +18,22 @@ class _ExampleContainerState extends State<ExampleContainer> {
           blurRadius: 12,
           rounded: 10,
           image:
-              "https://image.freepik.com/free-psd/tropical-foliage-background_53876-91352.jpg"
+              'https://image.freepik.com/free-psd/tropical-foliage-background_53876-91352.jpg'
                   .decorationINToCover(),
           width: xwidth(context) // auto detect full width
           ),
-      "Normal Container".h1TextBold(color: Colors.black).xltp(l: 20.0, t: 20.0),
-      "text".textMaterialColorWhite().toCenter().xContainer(
+      'Normal Container'.h1TextBold(color: Colors.black).xltp(l: 20.0, t: 20.0),
+      'text'.textMaterialColorWhite().toCenter().xContainer(
           onTap: () {},
           margin: EdgeInsets.all(20.0),
           color: Colors.pink,
           height: 200,
           width: xwidth(context) // auto detect full width
           ),
-      "Feature Container"
+      'Feature Container'
           .h1TextBold(color: Colors.black)
           .xltp(l: 20.0, t: 20.0),
-      "text".textMaterialColorWhite().toCenter().xContainer(
+      'text'.textMaterialColorWhite().toCenter().xContainer(
           onTap: () {},
           rounded: 20.0,
           shadowColor: Colors.black,
@@ -43,10 +43,10 @@ class _ExampleContainerState extends State<ExampleContainer> {
           blurRadius: 5,
           width: xwidth(context) // auto detect full width
           ),
-      "Elliptical Container"
+      'Elliptical Container'
           .h1TextBold(color: Colors.black)
           .xltp(l: 20.0, t: 20.0),
-      "text".textMaterialColorWhite().toCenter().xContainer(
+      'text'.textMaterialColorWhite().toCenter().xContainer(
           onTap: () {},
           margin: EdgeInsets.all(20.0),
           color: Colors.orange,
@@ -60,11 +60,11 @@ class _ExampleContainerState extends State<ExampleContainer> {
           ),
     ].xListView().xScaffold(
           backgroundColor: Colors.white,
-          appBar: new AppBar(
+          appBar: AppBar(
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,
-            title: "Material X Container ".textMaterialColorBlack(),
+            title: 'Material X Container '.textMaterialColorBlack(),
           ),
         );
   }

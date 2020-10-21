@@ -3,28 +3,28 @@ class LaravelGetData {
 
   LaravelGetData({this.tableName});
   String getData() {
-    return "${tableName.firstCapitalize()}" + '::get()';
+    return '${tableName.firstCapitalize()}' '::get()';
   }
 
   String where(String filed, String operators, String value) {
-    var op = operators == '' ? '' : "'$operators'" + ',';
-    return "${tableName.firstCapitalize()}" + '::where($filed,$op$value)';
+    var op = operators == '' ? '' : "'$operators'" ',';
+    return '${tableName.firstCapitalize()}' '::where($filed,$op$value)';
   }
 
   String getDataPaginate({final int value = 5}) {
-    return "${tableName.firstCapitalize()}" + '::paginate($value)';
+    return '${tableName.firstCapitalize()}' '::paginate($value)';
   }
 
   String whereExists(String filed, String operators, dynamic value) {
-    var op = operators == '' ? '' : "'$operators'" + ',';
-    return "${tableName.firstCapitalize()}" +
+    var op = operators == '' ? '' : "'$operators'" ',';
+    return '${tableName.firstCapitalize()}'
         '::where($filed,$op$value)->exists()';
   }
 }
 
 extension StringExtensionsa on String {
   String firstCapitalize() {
-    return "${this[0].toUpperCase()}${this.substring(1)}";
+    return '${this[0].toUpperCase()}${substring(1)}';
   }
 
   String close() {
@@ -32,7 +32,7 @@ extension StringExtensionsa on String {
   }
 
   String where(String filed, String operators, String value) {
-    var op = operators == '' ? '' : "'$operators'" + ',';
+    var op = operators == '' ? '' : "'$operators'" ',';
     return '$this->where($filed,$op$value)';
   }
 
@@ -45,27 +45,27 @@ extension StringExtensionsa on String {
   }
 
   String paginate({final int value = 5}) {
-    return "$this->paginate($value)";
+    return '$this->paginate($value)';
   }
 
   String limit({final int value = 5}) {
-    return "$this->limit($value)";
+    return '$this->limit($value)';
   }
 
   String first({final int value = 5}) {
-    return "$this->first()";
+    return '$this->first()';
   }
 
   String find({final int value = 1}) {
-    return "$this->find($value)";
+    return '$this->find($value)';
   }
 
   String orderBy() {
-    return "$this->orderBy()";
+    return '$this->orderBy()';
   }
 
   String save() {
-    return "$this->save()";
+    return '$this->save()';
   }
 }
 
@@ -73,11 +73,11 @@ String laravelArray(List list) {
   //print(list.toString().substring(0, list.toString().length - list.toString().length + 1));
 
   var array = list.toString().replaceAll('[', '').replaceAll(']', '');
-  return "$array";
+  return '$array';
 }
 
 String laravelGetRequestKeyValue(requestKey) {
-  return "\$request->$requestKey";
+  return '\$request->$requestKey';
 }
 
 String laravelSaveValue(keyName, value) {
@@ -90,11 +90,11 @@ class LaravelSaveData {
   LaravelSaveData({this.tablename});
 
   String save() {
-    return tablename + '::' + "save()";
+    return tablename + '::' + 'save()';
   }
 
   String create(String array) {
-    return tablename + '::' + "create($array)";
+    return tablename + '::' + 'create($array)';
   }
 }
 

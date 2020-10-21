@@ -20,18 +20,17 @@ class XExpansionTiles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return expansionTileTitle == null
-        ? new Container()
+        ? Container()
         : ExpansionTile(
-            title: new H2(
+            title: H2(
               text: expansionTileTitle,
               color: expansionTileTitleColor,
             ),
-            subtitle: new H5(
+            subtitle: H5(
               text: expansionTileSubTitle,
               color: expansionTileSubTitleColor,
             ),
-            children:
-                expansionchildren == null ? <Widget>[] : expansionchildren);
+            children: expansionchildren ?? <Widget>[]);
   }
 }
 

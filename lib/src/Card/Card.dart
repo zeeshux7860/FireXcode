@@ -47,19 +47,19 @@ class XCardBanner extends StatelessWidget {
             : MainAxisAlignment.spaceAround,
         children: <Widget>[
           Flexible(
-            child: new Column(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                title == null ? Container() : title,
+                title ?? Container(),
                 5.0.sizedHeight(),
-                subTitle == null ? new Container() : subTitle,
+                subTitle ?? Container(),
                 10.0.sizedHeight(),
-                button == null ? new Container() : button
+                button ?? Container()
               ],
             ),
           ),
-          rightSideChild == null ? Container() : rightSideChild
+          rightSideChild ?? Container()
         ],
       ),
     );

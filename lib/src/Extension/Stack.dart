@@ -63,6 +63,4 @@ extension Lists on List<Widget> {
   }
 }
 
-back(context) {
-  Navigator.pop(context);
-}
+void back(context) => Navigator.pop(context);

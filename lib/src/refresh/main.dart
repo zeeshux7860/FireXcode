@@ -236,7 +236,7 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
 
   @override
   void didChangeDependencies() {
-    final ThemeData theme = Theme.of(context);
+    final theme = Theme.of(context);
     _valueColor = _positionController.drive(
       ColorTween(
               begin: (widget.color ?? theme.accentColor).withOpacity(0.0),
@@ -286,8 +286,9 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
     }
     if (indicatorAtTopNow != _isIndicatorAtTop) {
       if (_mode == _XLiquidPullToRefreshMode.drag ||
-          _mode == _XLiquidPullToRefreshMode.armed)
+          _mode == _XLiquidPullToRefreshMode.armed) {
         _dismiss(_XLiquidPullToRefreshMode.canceled);
+      }
     } else if (notification is ScrollUpdateNotification) {
       if (_mode == _XLiquidPullToRefreshMode.drag ||
           _mode == _XLiquidPullToRefreshMode.armed) {
@@ -442,21 +443,23 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
   void _checkDragOffset(double containerExtent) {
     assert(_mode == _XLiquidPullToRefreshMode.drag ||
         _mode == _XLiquidPullToRefreshMode.armed);
-    double newValue =
+    var newValue =
         _dragOffset / (containerExtent * _kDragContainerExtentPercentage);
-    if (_mode == _XLiquidPullToRefreshMode.armed)
+    if (_mode == _XLiquidPullToRefreshMode.armed) {
       newValue = math.max(newValue, 1.0 / _kDragSizeFactorLimit);
+    }
     _positionController.value =
         newValue.clamp(0.0, 1.0); // this triggers various rebuilds
     if (_mode == _XLiquidPullToRefreshMode.drag &&
-        _valueColor.value.alpha == 0xFF)
+        _valueColor.value.alpha == 0xFF) {
       _mode = _XLiquidPullToRefreshMode.armed;
+    }
   }
 
   void _show() {
     assert(_mode != _XLiquidPullToRefreshMode.refresh);
     assert(_mode != _XLiquidPullToRefreshMode.snap);
-    final Completer<void> completer = Completer<void>();
+    final completer = Completer<void>();
     _pendingRefreshFuture = completer.future;
     _mode = _XLiquidPullToRefreshMode.snap;
 
@@ -504,13 +507,12 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
         //run progress animation
         _progressingController..repeat();
 
-        final Future<void> refreshResult = widget.onRefresh();
+        final refreshResult = widget.onRefresh();
         assert(() {
           if (refreshResult == null) {
             // See https://github.com/flutter/flutter/issues/31962#issuecomment-488882515
             // Delete this code when the new context update reaches stable versions of Flutter.
-            final bool _useDiagnosticsNode =
-                FlutterError('text') is Diagnosticable;
+            final _useDiagnosticsNode = FlutterError('text') is Diagnosticable;
 
             dynamic safeContext(String context) {
               return _useDiagnosticsNode
@@ -573,18 +575,18 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
     assert(debugCheckHasMaterialLocalizations(context));
 
     // assigning default color and background color
-    Color _defaultColor = Theme.of(context).accentColor;
-    Color _defaultBackgroundColor = Theme.of(context).canvasColor;
+    var _defaultColor = Theme.of(context).accentColor;
+    var _defaultBackgroundColor = Theme.of(context).canvasColor;
 
     // assigning default height
-    double _defaultHeight = 100.0;
+    var _defaultHeight = 100.0;
 
     // checking whether to take default values or not
-    Color color = (widget.color != null) ? widget.color : _defaultColor;
-    Color backgroundColor = (widget.backgroundColor != null)
+    var color = (widget.color != null) ? widget.color : _defaultColor;
+    var backgroundColor = (widget.backgroundColor != null)
         ? widget.backgroundColor
         : _defaultBackgroundColor;
-    double height = (widget.height != null) ? widget.height : _defaultHeight;
+    var height = (widget.height != null) ? widget.height : _defaultHeight;
 
     //Code Added for testing
 //    slivers.insert(

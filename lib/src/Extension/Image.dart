@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firexcode/firexcode.dart';
 
-extension imageString on String {
+extension ImageString on String {
   Widget xImageAsset({
     Map<String, String> headers,
 

@@ -8,7 +8,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return "$value".text().toCenter().xScaffold(
+    return '$value'.text().toCenter().xScaffold(
         floatingActionButton:
             Icons.add.xIcons().xFloationActiobButton(onTap: () {}));
   }

@@ -30,13 +30,13 @@ class XDrawerUserProfileBlur extends StatelessWidget {
           filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
           child: Container(
             margin: margin,
-            child: new ListTile(
-              title: new Textmaterial(
+            child: ListTile(
+              title: Textmaterial(
                 text: userName,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
-              subtitle: new Textmaterial(
+              subtitle: Textmaterial(
                 text: emailUpperCase == null
                     ? userEmail
                     : emailUpperCase
@@ -47,7 +47,7 @@ class XDrawerUserProfileBlur extends StatelessWidget {
               ),
               leading: CircleAvatar(
                 radius: 30,
-                backgroundImage: new NetworkImage(photoUrl),
+                backgroundImage: NetworkImage(photoUrl),
               ),
             ),
             color: Colors.black.withOpacity(0),
@@ -56,7 +56,7 @@ class XDrawerUserProfileBlur extends StatelessWidget {
       width: width,
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: new NetworkImage(photoUrl), fit: BoxFit.cover)),
+              image: NetworkImage(photoUrl), fit: BoxFit.cover)),
     );
   }
 }

@@ -11,8 +11,8 @@ class _ExampleXCardTileState extends State<ExampleXCardTile> {
     return <Widget>[
       XCardTile(
         rounded: 10,
-        title: "Zeeshan".xCardTileTitle(),
-        subtitle1: "Software Engineer".textMaterialColorWhite(),
+        title: 'Zeeshan'.xCardTileTitle(),
+        subtitle1: 'Software Engineer'.textMaterialColorWhite(),
         boxRounded: 10,
         boxChild: Icons.android.xIconTile(),
         subtitle2: Icons.data_usage.xIconTile().slideInUp(),
@@ -22,8 +22,8 @@ class _ExampleXCardTileState extends State<ExampleXCardTile> {
       10.0.sizedHeight(),
       XCardTile(
         rounded: 2,
-        title: "Zeeshan".xCardTileTitle(),
-        subtitle1: "Software Engineer".textMaterialColorWhite(),
+        title: 'Zeeshan'.xCardTileTitle(),
+        subtitle1: 'Software Engineer'.textMaterialColorWhite(),
         boxRounded: 5,
         boxChild: Icons.android.xIconTile(),
         subtitle2: Icons.arrow_drop_down.xIconTile().fadeIn(),
@@ -33,8 +33,8 @@ class _ExampleXCardTileState extends State<ExampleXCardTile> {
       10.0.sizedHeight(),
       XCardTile(
         rounded: 10,
-        title: "Zeeshan".xCardTileTitle(),
-        subtitle1: "Software Engineer".textMaterialColorWhite(),
+        title: 'Zeeshan'.xCardTileTitle(),
+        subtitle1: 'Software Engineer'.textMaterialColorWhite(),
         backgroundColor: Colors.deepPurple,
         boxColor: Colors.deepPurple.shade100,
         boxRounded: 100,
@@ -47,7 +47,7 @@ class _ExampleXCardTileState extends State<ExampleXCardTile> {
             centerTitle: true,
             brightness: Brightness.light,
             backgroundColor: Colors.white,
-            title: "XCardTile".textMaterialColorBlack(),
+            title: 'XCardTile'.textMaterialColorBlack(),
           ),
         );
   }

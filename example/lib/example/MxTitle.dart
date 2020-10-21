@@ -14,7 +14,7 @@ class _ExampleXTitleState extends State<ExampleXTitle> {
         centerTitle: true,
         brightness: Brightness.light,
         backgroundColor: Colors.white,
-        title: "Title".textMaterialColorBlack(),
+        title: 'Title'.textMaterialColorBlack(),
       ),
       body: <Widget>[
         XTitle(
@@ -22,16 +22,16 @@ class _ExampleXTitleState extends State<ExampleXTitle> {
           title: 'XTitle',
         ),
         HeaderTitle(
-          title: "HeaderWidget title".xCardTileTitle(color: Colors.black),
-          subtitle: "HeaderTitle suvtitle".textMaterialColorblueGrey(),
+          title: 'HeaderWidget title'.xCardTileTitle(color: Colors.black),
+          subtitle: 'HeaderTitle suvtitle'.textMaterialColorblueGrey(),
         ),
         HeaderTitle(
           title: <Widget>[
             Icons.add.xIconTile(color: Colors.red, size: 30),
             10.0.sizedWidth(),
-            "Row use ".h1TextBold(color: Colors.black)
+            'Row use '.h1TextBold(color: Colors.black)
           ].xRow(),
-          subtitle: "HeaderTitle suvtitle".textMaterialColorblueGrey(),
+          subtitle: 'HeaderTitle suvtitle'.textMaterialColorblueGrey(),
         ),
       ].xcolumnCC(),
     );

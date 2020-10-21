@@ -37,13 +37,12 @@ class XStaticCard extends StatelessWidget {
       child: Material(
           color: bgColor != null ? Colors.transparent : bgColor,
           shape: RoundedRectangleBorder(
-              borderRadius:
-                  BorderRadius.circular(rounded == null ? 0 : rounded)),
+              borderRadius: BorderRadius.circular(rounded ?? 0)),
           child: InkWell(
               onTap: onTap,
               child: Padding(
-                padding: padding == null ? EdgeInsets.all(10.0) : padding,
-                child: new Column(
+                padding: padding ?? EdgeInsets.all(10.0),
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
@@ -56,7 +55,7 @@ class XStaticCard extends StatelessWidget {
                         color: cicleColor,
                       ),
                     ),
-                    new SizedBox(
+                    SizedBox(
                       height: 10.0,
                     ),
                     title,
@@ -72,12 +71,12 @@ class XStaticCard extends StatelessWidget {
                 color: shadowColor == null
                     ? Colors.white
                     : shadowColor.withOpacity(0.4),
-                blurRadius: blurRadius == null ? 0 : blurRadius,
-                spreadRadius: spreadRadius == null ? 0.0 : spreadRadius,
+                blurRadius: blurRadius ?? 0,
+                spreadRadius: spreadRadius ?? 0.0,
                 offset: Offset(0, 9)),
           ],
           // color: shadowColor,
-          borderRadius: BorderRadius.circular(rounded == null ? 0 : rounded)),
+          borderRadius: BorderRadius.circular(rounded ?? 0)),
     );
   }
 }
@@ -115,23 +114,21 @@ class XCustomStatic extends StatelessWidget {
       child: Material(
           color: bgColor != null ? Colors.transparent : bgColor,
           shape: RoundedRectangleBorder(
-              borderRadius:
-                  BorderRadius.circular(rounded == null ? 0 : rounded)),
+              borderRadius: BorderRadius.circular(rounded ?? 0)),
           child: InkWell(
               onTap: onTap,
               child: Padding(
-                padding: padding == null ? EdgeInsets.all(10.0) : padding,
-                child: new Column(
+                padding: padding ?? EdgeInsets.all(10.0),
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     child,
                     spaceHeight.sizedHeight(),
-                    title == null
-                        ? Container(
-                            width: 1,
-                          )
-                        : title,
+                    title ??
+                        Container(
+                          width: 1,
+                        ),
                     value
                   ],
                 ),
@@ -141,7 +138,7 @@ class XCustomStatic extends StatelessWidget {
           color: bgColor,
           boxShadow: boxShadow,
           // color: shadowColor,
-          borderRadius: BorderRadius.circular(rounded == null ? 0 : rounded)),
+          borderRadius: BorderRadius.circular(rounded ?? 0)),
     );
   }
 }

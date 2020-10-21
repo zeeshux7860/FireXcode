@@ -1,18 +1,18 @@
 extension LaravelFunction on List {
   String toFuntions(String functionName, {final bool request = false}) {
-    String val = "";
-    this.forEach((element) {
+    var val = '';
+    forEach((element) {
       val = val + element;
     });
-    String requests = request ? "Request \$request" : "";
-    String text = """ public function $functionName($requests){\n $val}""";
+    var requests = request ? 'Request \$request' : '';
+    var text = ''' public function $functionName($requests){\n $val}''';
     return text;
   }
 }
 
 extension LaravelValidation on List {
   String toValidator({String request}) {
-    String text = """Validator::make($request, $this)""";
+    var text = '''Validator::make($request, $this)''';
     return text;
   }
 }
@@ -36,7 +36,7 @@ extension LaravelString on String {
   }
 
   String toVariable() {
-    return "\$$this";
+    return '\$$this';
   }
 
   String toStringReturn() {
@@ -48,22 +48,22 @@ extension LaravelString on String {
   }
 
   String toIntegerReturn() {
-    return "echo $this;";
+    return 'echo $this;';
   }
 
   String toBoolReturn() {
-    return "echo " + this + ';';
+    return 'echo ' + this + ';';
   }
 
   String toStoreVariable({variablename}) {
-    String text = "\$$variablename = $this";
+    var text = '\$$variablename = $this';
     return text;
   }
 
   /// Default error code is 401
   /// Default variable name is $validator
   String toValidate({String customMessage}) {
-    String text = """\$validator = $this;
+    var text = """\$validator = $this;
     
      if (\$validator->fails()) {
             return response()->json(['response_code' => 401, 'error' => \$validator->errors(), $customMessage], 401);
@@ -73,7 +73,7 @@ extension LaravelString on String {
 }
 
 String requestall() {
-  return "\$request->all()";
+  return '\$request->all()';
 }
 
 // class Laravel {
@@ -90,20 +90,20 @@ class Condition {
   Condition({this.trueValue, this.falseValue});
 
   String check(condition1, operators, condition2) {
-    String text = """if($condition1 $operators $condition2){
+    var text = '''if($condition1 $operators $condition2){
       $trueValue
     }else{
       $falseValue
-    }""";
+    }''';
     return text;
   }
 
   String oneCheck(condition1) {
-    String text = """if($condition1){
+    var text = '''if($condition1){
       $trueValue
     }else{
       $falseValue
-    }""";
+    }''';
     return text;
   }
 }

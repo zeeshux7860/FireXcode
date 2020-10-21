@@ -24,7 +24,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               selectedColor: Colors.black,
               unSelectedColor: Colors.red,
               selected: isActive,
-              text: "Home")
+              text: 'Home')
           .bounce(),
       XListTile(
               onTap: () {
@@ -40,7 +40,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               selectedColor: Colors.black,
               unSelectedColor: Colors.red,
               selected: isActive,
-              text: "Home")
+              text: 'Home')
           .xContainer(
               margin: EdgeInsets.all(10),
               color: Colors.white,
@@ -61,7 +61,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               selectedColor: Colors.white,
               unSelectedColor: Colors.red,
               selected: isActive,
-              text: "Home")
+              text: 'Home')
           .xContainer(
               margin: EdgeInsets.all(10),
               color: Color(0xFF3d6dfe),
@@ -83,7 +83,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               unSelectedColor: Colors.red,
               selected: isActive,
               trailing: Icons.add.xIconTile(size: 30),
-              text: "Home")
+              text: 'Home')
           .xContainer(
               margin: EdgeInsets.all(10),
               color: Colors.black,
@@ -91,7 +91,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               shadowColor: Colors.black,
               blurRadius: 12),
       XListTile(
-              subtitle: "Text".textMaterialColorWhite(),
+              subtitle: 'Text'.textMaterialColorWhite(),
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -106,7 +106,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               selectedColor: Colors.white,
               unSelectedColor: Colors.red,
               selected: isActive,
-              text: "Home")
+              text: 'Home')
           .xContainerGradient(
               margin: EdgeInsets.all(10),
               gradient: [Colors.red, Colors.pink].xLGClamp(
@@ -117,7 +117,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               shadowColor: Colors.grey,
               blurRadius: 12),
       XListTile(
-              subtitle: "Text".textMaterialColorWhite(),
+              subtitle: 'Text'.textMaterialColorWhite(),
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -135,7 +135,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               trailing: MaterialXButton(
                   color: Colors.white,
                   rounded: 5,
-                  child: "Add".textMaterialColorBlack(),
+                  child: 'Add'.textMaterialColorBlack(),
                   onTap: () {
                     setState(() {
                       if (isActive) {
@@ -147,7 +147,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
                   },
                   width: 100,
                   height: 30),
-              text: "Home")
+              text: 'Home')
           .xContainerGradient(
               margin: EdgeInsets.all(10),
               gradient: [Colors.orange, Colors.red].xLGrepeated(
@@ -159,8 +159,8 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               blurRadius: 12),
     ].xcolumnCC().xap(value: 10).xScaffold(
           backgroundColor: Colors.white,
-          appBar: new AppBar(
-            title: "XListTile".textMaterialColorBlack(),
+          appBar: AppBar(
+            title: 'XListTile'.textMaterialColorBlack(),
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,

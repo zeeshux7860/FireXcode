@@ -39,16 +39,13 @@ class XContainerGradient extends StatelessWidget {
       child: Material(
           color: Colors.transparent,
           shape: RoundedRectangleBorder(
-              borderRadius: borderRadius == null
-                  ? BorderRadius.circular(rounded == null ? 0 : rounded)
-                  : borderRadius),
+              borderRadius:
+                  borderRadius ?? BorderRadius.circular(rounded ?? 0)),
           child: InkWell(
-              borderRadius: borderRadius == null
-                  ? BorderRadius.circular(rounded == null ? 0 : rounded)
-                  : borderRadius,
+              borderRadius: borderRadius ?? BorderRadius.circular(rounded ?? 0),
               onTap: onTap,
               child: Padding(
-                padding: padding == null ? EdgeInsets.all(10.0) : padding,
+                padding: padding ?? EdgeInsets.all(10.0),
                 child: child,
               ))),
       height: height,
@@ -61,14 +58,12 @@ class XContainerGradient extends StatelessWidget {
                 color: shadowColor == null
                     ? Colors.white
                     : shadowColor.withOpacity(0.4),
-                blurRadius: blurRadius == null ? 0 : blurRadius,
-                spreadRadius: spreadRadius == null ? 0.0 : spreadRadius,
-                offset: offset == null ? Offset(0, 0) : offset),
+                blurRadius: blurRadius ?? 0,
+                spreadRadius: spreadRadius ?? 0.0,
+                offset: offset ?? Offset(0, 0)),
           ],
           // color: shadowColor,
-          borderRadius: borderRadius == null
-              ? BorderRadius.circular(rounded == null ? 0 : rounded)
-              : borderRadius),
+          borderRadius: borderRadius ?? BorderRadius.circular(rounded ?? 0)),
     );
   }
 }

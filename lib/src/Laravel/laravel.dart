@@ -4,7 +4,7 @@ import 'package:console_cmd/console_cmd.dart';
 
 extension Laravels on String {
   String toEncrpt() {
-    return "bcrypt($this)";
+    return 'bcrypt($this)';
   }
 
   /// Alias of $table->unsignedBigInteger('user_id')
@@ -147,16 +147,16 @@ String string(value) {
   return "\$table->morphs('$value');";
 }
 
-createFile(String path, String content, String fileNameWithExtension) {
-  new Directory(path).createSync(recursive: true);
+void createFile(String path, String content, String fileNameWithExtension) {
+  Directory(path).createSync(recursive: true);
   File(path + '/' + fileNameWithExtension).writeAsStringSync(content);
   ANSIPrinter()
-      .printRGB("Created $path/$fileNameWithExtension", fColor: 0xff4BB543);
+      .printRGB('Created $path/$fileNameWithExtension', fColor: 0xff4BB543);
 }
 
 extension StringExtension on String {
   String firstCapitalize() {
-    return "${this[0].toUpperCase()}${this.substring(1)}";
+    return '${this[0].toUpperCase()}${substring(1)}';
   }
 }
 
@@ -170,7 +170,7 @@ String xBetweenText(String text, String start, String end) {
 }
 
 List<String> laraveRequiredValidation({List<String> list}) {
-  List<String> model = List();
+  var model = <String>[];
   list.forEach((element) {
     var data = xBetweenText(element, "'", "'");
     model.add("'$data' => 'required'");

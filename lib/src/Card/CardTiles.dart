@@ -58,9 +58,9 @@ class CardTile extends StatelessWidget {
             child: XContainer(
                 padding: EdgeInsets.all(15),
                 child: <Widget>[
-                  title == null ? new Container() : title,
-                  title == null ? new Container() : 7.0.sizedHeight(),
-                  subtitle == null ? new Container() : subtitle
+                  title ?? Container(),
+                  title == null ? Container() : 7.0.sizedHeight(),
+                  subtitle ?? Container()
                 ].xcolumnSS()),
           )
         ]),

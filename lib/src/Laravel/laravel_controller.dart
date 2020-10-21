@@ -4,11 +4,11 @@ class LaravelTableController {
   LaravelTableController({this.tableName, this.functionCreate});
 
   String create({List<String> importModel}) {
-    String model = "";
+    var model = '';
     importModel.forEach((element) {
       model = model + 'use App\\' + element + ';\n';
     });
-    String text = """<?php
+    var text = '''<?php
 
 namespace App\\Http\\Controllers\\Api;
 $model
@@ -21,7 +21,7 @@ class ${tableName[0].toUpperCase()}${tableName.substring(1)}Controller extends C
 {
    $functionCreate
 }
-""";
+''';
     return text;
   }
 }

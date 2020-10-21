@@ -35,10 +35,10 @@ class XStoriesBuilder extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return new XContainer(
+    return XContainer(
         height: backGroundHeight,
         color: backGroundColor,
-        child: new ListView(
+        child: ListView(
           scrollDirection: Axis.horizontal,
           children: <Widget>[
             XStorieBar(
@@ -51,7 +51,7 @@ class XStoriesBuilder extends StatelessWidget {
                 textColor: addtextColor,
                 fontWeight: addtextFontWeight,
                 child: addChild),
-            new ListView.builder(
+            ListView.builder(
                 scrollDirection: Axis.horizontal,
                 shrinkWrap: true,
                 physics: ClampingScrollPhysics(),

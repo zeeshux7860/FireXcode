@@ -16,8 +16,8 @@ class ExampleCardBanner extends StatelessWidget {
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
                 .textMaterialColorWhite()
                 .xExpandableText(
-                    expand: "More details".textMaterialColorWhite(),
-                    unexpand: "Less details".textMaterialColorWhite(),
+                    expand: 'More details'.textMaterialColorWhite(),
+                    unexpand: 'Less details'.textMaterialColorWhite(),
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start),
       ).fadeIn().toCenter(),
@@ -36,14 +36,14 @@ class ExampleCardBanner extends StatelessWidget {
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
                 .textMaterialColorWhite()
                 .xExpandableText(
-                    expand: "More details".textMaterialColorWhite(),
-                    unexpand: "Less details".textMaterialColorWhite(),
+                    expand: 'More details'.textMaterialColorWhite(),
+                    unexpand: 'Less details'.textMaterialColorWhite(),
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start),
       ).fadeIn().toCenter(),
       XCardBanner(
         rightSideChild:
-            "https://raw.githubusercontent.com/zeeshux7860/firexcode/master/example/logo.png"
+            'https://raw.githubusercontent.com/zeeshux7860/firexcode/master/example/logo.png'
                 .xImageNetwork()
                 .xap(value: 10.0)
                 .xCircleAvatar(radius: 35, backgroundColor: Colors.white),
@@ -57,7 +57,7 @@ class ExampleCardBanner extends StatelessWidget {
         subTitle:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
                 .textMaterialColorWhite(),
-        button: "Know More".textMaterialColorBlack().cardBannerButton(
+        button: 'Know More'.textMaterialColorBlack().cardBannerButton(
             buttonColor: Colors.white, onTap: () {}, rounded: 5),
       ).fadeIn().toCenter(),
     ].xListView().xScaffold(
