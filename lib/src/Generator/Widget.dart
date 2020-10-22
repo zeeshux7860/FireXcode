@@ -1,4 +1,4 @@
-import 'package:firexcode/MxServices.dart';
+import 'package:firexcode/xServices.dart';
 
 void xStless(String name, String path) {
   var widgetname = name[0].toUpperCase() + name.substring(1);

@@ -169,11 +169,22 @@ String xBetweenText(String text, String start, String end) {
   return str.substring(startIndex + start.length, endIndex);
 }
 
-List<String> laraveRequiredValidation({List<String> list}) {
-  var model = <String>[];
-  list.forEach((element) {
-    var data = xBetweenText(element, "'", "'");
-    model.add("'$data' => 'required'");
-  });
-  return model;
+class LaraveRequiredValidation extends ValidatorList<List<String>> {
+  LaraveRequiredValidation({List<String> tableStructure})
+      : super(tableStructure);
+
+  List<String> get code {
+    var model = <String>[];
+    list.forEach((element) {
+      var data = xBetweenText(element, "'", "'");
+      model.add("'$data' => 'required'");
+    });
+    return model;
+  }
+}
+
+class ValidatorList<T> {
+  final T list;
+
+  ValidatorList(this.list);
 }

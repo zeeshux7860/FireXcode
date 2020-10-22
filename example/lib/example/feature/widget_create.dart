@@ -1,4 +1,4 @@
-import 'package:firexcode/MxServices.dart';
+import 'package:firexcode/xServices.dart';
 
 List stlessName = ['profile', 'homePage', 'setting']; // create array page name
 List stfullName = ['profile', 'homePage', 'setting'];

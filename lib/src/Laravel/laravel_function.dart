@@ -10,12 +10,12 @@ extension LaravelFunction on List {
   }
 }
 
-extension LaravelValidation on List {
-  String toValidator({String request}) {
-    var text = '''Validator::make($request, $this)''';
-    return text;
-  }
-}
+// extension LaravelValidation on List {
+//   String toValidator({String request}) {
+//     var text = '''Validator::make($request, $this)''';
+//     return text;
+//   }
+// }
 
 extension LaravelString on String {
   String validateAuth({List<String> messageerror}) {

@@ -1,8 +1,26 @@
 import '../../laravel.dart';
 
-String laravelModel(
-    String tableName, List<String> fillable, List<String> hidden) {
-  var text = """<?php
+
+List<String> makeModel({List<String> list}) {
+  var model = <String>[];
+  list.forEach((element) {
+    var data = xBetweenText(element, "'", "'");
+    model.add("'$data'");
+  });
+  return model;
+}
+
+class ModelParam<T> {
+  final T tableName;
+  final List<String> fillable;
+  final List<String> hidden;
+  ModelParam(this.tableName, this.fillable, this.hidden);
+}
+
+class LaravelModel extends ModelParam<String> {
+  LaravelModel(String tableName, List<String> fillable, List<String> hidden)
+      : super(tableName, fillable, hidden);
+  String get code => """<?php
 
 namespace App;
 
@@ -16,14 +34,4 @@ class ${tableName[0].toUpperCase()}${tableName.substring(1)} extends Model
     protected \$hidden = $hidden;
 }
 """;
-  return text;
-}
-
-List<String> makeModel({List<String> list}) {
-  var model = <String>[];
-  list.forEach((element) {
-    var data = xBetweenText(element, "'", "'");
-    model.add("'$data'");
-  });
-  return model;
 }

@@ -10,3 +10,4 @@ export 'src/Laravel/tableCreate.dart';
 export 'src/Laravel/git_laravel.dart';
 export 'src/Laravel/laravelCreateApi.dart';
 export 'src/Laravel/laravel_controller.dart';
+export 'src/Laravel/extension.dart';
