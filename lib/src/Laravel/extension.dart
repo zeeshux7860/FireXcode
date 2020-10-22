@@ -1,9 +1,10 @@
 import 'package:firexcode/laravel.dart';
+import 'package:meta/meta.dart';
 
 // -------------------------------------------------------------------------
 extension LaravelValidation on LaraveRequiredValidation {
-  ToValidator toValidator({String request}) {
-    var text = '''Validator::make($request, ${code})''';
+  ToValidator toValidator({@required Request request}) {
+    var text = '''Validator::make(${request.code}, ${code})''';
 
     return ToValidator(text);
   }
@@ -36,9 +37,21 @@ class ToValidateParam<T> {
 class ToValidate extends ToValidateParam<String> {
   ToValidate(String text, String customMessage) : super(text, customMessage);
 
-  String get code => """\$validator = ${text};
+  String get validate => """\$validator = ${text.toString()};
     
      if (\$validator->fails()) {
             return response()->json(['response_code' => 401, 'error' => \$validator->errors(), $customMessage], 401);
         } """;
+}
+// ------------------------------------------------------------------------------------
+
+class Request extends RequestParams<String> {
+  Request(String request) : super(request);
+  String get code => request;
+}
+
+class RequestParams<T> {
+  final T request;
+
+  RequestParams(this.request);
 }

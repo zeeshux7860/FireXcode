@@ -20,8 +20,9 @@ dynamic createPostData() {
         .toValidator(
           request: requestall(),
         )
-        .toValidate(customMessage: "'message' => 'something went to wrong'"),
-    requestall().toStoreVariable(variablename: 'input').close(),
+        .toValidate(customMessage: "'message' => 'something went to wrong'")
+        .validate,
+    requestall().code.toStoreVariable(variablename: 'input').close(),
     save
         .create('input'.toVariable())
         .save()

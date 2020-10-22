@@ -27,7 +27,8 @@
 // }
 
 class LaravelTableController extends ControllerFunction<String> {
-  LaravelTableController({String tableName, String functionCreate, List<String> importModel})
+  LaravelTableController(
+      {String tableName, String functionCreate, List<String> importModel})
       : super(tableName, functionCreate, importModel);
   var model = '';
 

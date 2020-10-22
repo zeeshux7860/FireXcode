@@ -1,3 +1,5 @@
+import 'package:firexcode/src/Laravel/extension.dart';
+
 extension LaravelFunction on List {
   String toFuntions(String functionName, {final bool request = false}) {
     var val = '';
@@ -6,6 +8,23 @@ extension LaravelFunction on List {
     });
     var requests = request ? 'Request \$request' : '';
     var text = ''' public function $functionName($requests){\n $val}''';
+    return text;
+  }
+
+  String toFuntionsAuth(String functionName, {final bool request = false}) {
+    var val = '';
+    forEach((element) {
+      val = val + element;
+    });
+    var requests = request ? 'Request \$request' : '';
+    var text =
+        ''' public function $functionName($requests){\n if(Auth::check()){
+       \$user = Auth::user();
+      $val
+    }else{
+            return response()->json(['response_code' => 401, 'error' => 'Unauthorised'], 401);
+
+    }}''';
     return text;
   }
 }
@@ -72,8 +91,8 @@ extension LaravelString on String {
   }
 }
 
-String requestall() {
-  return '\$request->all()';
+Request requestall() {
+  return Request('\$request->all()');
 }
 
 // class Laravel {

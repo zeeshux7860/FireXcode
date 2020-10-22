@@ -23,4 +23,3 @@ class LaravelCreateRestApi {
     return 'LaravelCreateRestApi done';
   }
 }
-

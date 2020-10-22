@@ -1,6 +1,5 @@
 import '../../laravel.dart';
 
-
 List<String> makeModel({List<String> list}) {
   var model = <String>[];
   list.forEach((element) {
@@ -19,7 +18,7 @@ class ModelParam<T> {
 
 class LaravelModel extends ModelParam<String> {
   LaravelModel(String tableName, List<String> fillable, List<String> hidden)
-      : super(tableName, fillable, hidden);
+      : super(tableName, makeModel(list: fillable), makeModel(list: hidden));
   String get code => """<?php
 
 namespace App;
