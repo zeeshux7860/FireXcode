@@ -1,8 +1,8 @@
 import 'dart:async';
 
+import 'package:firexcode/src/Modules/visibility_detector/visibility_detector.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_widgets/flutter_widgets.dart';
 
 import 'animator/stack.dart';
 

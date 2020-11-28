@@ -4,7 +4,7 @@ import 'package:meta/meta.dart';
 // -------------------------------------------------------------------------
 extension LaravelValidation on LaraveRequiredValidation {
   ToValidator toValidator({@required Request request}) {
-    var text = '''Validator::make(${request.code}, ${code})''';
+    var text = '''Validator::make(${request.code}, $code)''';
 
     return ToValidator(text);
   }

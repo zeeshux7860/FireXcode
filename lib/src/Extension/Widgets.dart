@@ -284,12 +284,19 @@ extension AppBarXs on Widget {
   Future xDialog(context,
       {final bool barrierDismissible = true,
       final bool useRootNavigator = true,
+      final Color barrierColor,
+      final RouteSettings routeSettings,
+      final bool useSafeArea,
       final Widget Function(BuildContext) builder}) {
     return showDialog(
         context: context,
+        barrierColor: barrierColor,
+        routeSettings: routeSettings,
+        useSafeArea: useSafeArea,
         barrierDismissible: barrierDismissible,
         useRootNavigator: useRootNavigator,
         builder: builder,
+        // ignore: deprecated_member_use
         child: this);
   }
 }
@@ -304,6 +311,7 @@ extension FunctionWidget on Widget Function(BuildContext) {
         barrierDismissible: barrierDismissible,
         useRootNavigator: useRootNavigator,
         builder: this,
+        // ignore: deprecated_member_use
         child: child);
   }
 }

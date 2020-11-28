@@ -354,17 +354,17 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
         _progressingController.stop();
 
         // progress ring disappear animation
-        _ringDisappearController.animateTo(1.0,
+        await _ringDisappearController.animateTo(1.0,
             duration: Duration(
                 milliseconds: widget.springAnimationDurationInMilliseconds),
             curve: Curves.linear);
 
         // indicator translate out
-        _indicatorMoveWithPeakController.animateTo(0.0,
+        await _indicatorMoveWithPeakController.animateTo(0.0,
             duration: Duration(
                 milliseconds: widget.springAnimationDurationInMilliseconds),
             curve: Curves.linear);
-        _indicatorTranslateInOutController.animateTo(0.0,
+        await _indicatorTranslateInOutController.animateTo(0.0,
             duration: Duration(
                 milliseconds: widget.springAnimationDurationInMilliseconds),
             curve: Curves.linear);
@@ -376,7 +376,7 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
                     (widget.springAnimationDurationInMilliseconds).round()),
             curve: Curves.linear);
 
-        _radiusController.animateTo(0.0,
+        await _radiusController.animateTo(0.0,
             duration: Duration(
                 milliseconds:
                     (widget.springAnimationDurationInMilliseconds / 5).round()),

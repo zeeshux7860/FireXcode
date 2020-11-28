@@ -11,7 +11,7 @@ use Illuminate\\Database\\Migrations\\Migration;
 use Illuminate\\Database\\Schema\\Blueprint;
 use Illuminate\\Support\\Facades\\Schema;
 
-class ${dbname.firstCapitalize()} extends Migration
+class ${dbname.firstCapitalize().replaceAll('_', '')} extends Migration
 {
     /**
      * Run the migrations.
