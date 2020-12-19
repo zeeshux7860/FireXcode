@@ -34,7 +34,7 @@ class LaravelTableController extends ControllerFunction<String> {
 
   String get code {
     importModel.forEach((element) {
-      model = model + 'use App\\' + element + ';\n';
+      model = model + 'use App\\' + element.replaceAll('_', '')[0].toUpperCase()+element.substring(1).replaceAll('_', '') + ';\n';
     });
     return '''<?php
 
@@ -42,10 +42,11 @@ namespace App\\Http\\Controllers\\Api;
 $model
 use App\\Http\\Controllers\\Controller;
 use App\\User;
+use Illuminate\\Support\\Facades\\Auth;
 use Illuminate\\Support\\Facades\\Validator;
 use Illuminate\\Http\\Request;
 
-class ${tableName[0].replaceAll('_', '').toUpperCase()}${tableName.substring(1)}Controller extends Controller
+class ${tableName.replaceAll('_', '')[0].toUpperCase()}${tableName.substring(1).replaceAll('_', '')}Controller extends Controller
 {
    $functionCreate
 }

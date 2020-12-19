@@ -13,13 +13,17 @@ class LaravelCreateRestApi {
   String create() {
     createFile(path + '/database/migrations', table.code,
         '2019_08_19_000000_' + tableName.toLowerCase() + '.php');
-    createFile(path + '/app', model.code,
-        '${tableName[0].toUpperCase()}${tableName.substring(1)}' '.php');
+    createFile(
+        path + '/app',
+        model.code,
+        '${tableName[0].toUpperCase()}${tableName.substring(1)}' '.php'
+            .replaceAll('_', ''));
     createFile(
         path + '/app/Http/Controllers/API',
         controller.code,
         '${tableName[0].toUpperCase()}${tableName.substring(1)}'
-        'Controller.php');
+                'Controller.php'
+            .replaceAll('_', ''));
     return 'LaravelCreateRestApi done';
   }
 }

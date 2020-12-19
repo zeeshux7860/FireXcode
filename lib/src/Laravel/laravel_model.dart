@@ -25,10 +25,10 @@ namespace App;
 
 use Illuminate\\Database\\Eloquent\\Model;
 
-class ${tableName[0].replaceAll('_', '').toUpperCase()}${tableName.substring(1)} extends Model
+class ${tableName[0].replaceAll('_', '').toUpperCase()}${tableName.substring(1).replaceAll('_', '')} extends Model
 {
     //
-    protected \$table = '$tableName';
+    protected \$table = '${tableName.toLowerCase()}';
     protected \$fillable = $fillable;
     protected \$hidden = $hidden;
 }
