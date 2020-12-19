@@ -45,7 +45,7 @@ use App\\User;
 use Illuminate\\Support\\Facades\\Validator;
 use Illuminate\\Http\\Request;
 
-class ${tableName[0].toUpperCase()}${tableName.substring(1).replaceAll('_', '')}Controller extends Controller
+class ${tableName[0].replaceAll('_', '').toUpperCase()}${tableName.substring(1)}Controller extends Controller
 {
    $functionCreate
 }
