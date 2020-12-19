@@ -34,7 +34,11 @@ class LaravelTableController extends ControllerFunction<String> {
 
   String get code {
     importModel.forEach((element) {
-      model = model + 'use App\\' + element.replaceAll('_', '')[0].toUpperCase()+element.substring(1).replaceAll('_', '') + ';\n';
+      model = model +
+          'use App\\' +
+          element.replaceAll('_', '')[0].toUpperCase() +
+          element.substring(1).replaceAll('_', '') +
+          ';\n';
     });
     return '''<?php
 
