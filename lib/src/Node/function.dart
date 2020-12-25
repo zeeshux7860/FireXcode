@@ -1,5 +1,3 @@
-import 'package:firexcode/node_js.dart';
-
 class NodeJsList {
   final List<String> list;
   NodeJsList({this.list});

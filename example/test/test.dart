@@ -1,7 +1,7 @@
 import 'package:firexcode/node_js.dart';
 
 void main() {
-  var data = NodeModel('store_details', 'C:\\Users\\Zeeshan\\Desktop\\api')
+  NodeModel('store_details', 'C:\\Users\\Zeeshan\\Desktop\\api')
       .create(lis)
       .toRoutes(
           routeName: 'add/store',
