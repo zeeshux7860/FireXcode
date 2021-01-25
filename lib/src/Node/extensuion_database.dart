@@ -4,7 +4,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: String, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''} \n }';
+    return '$this: { type: String ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''} \n }';
   }
 
   String toInteger(
@@ -12,7 +12,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Number, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Number ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toBoolean(
@@ -20,7 +20,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Boolean, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Boolean ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toDouble(
@@ -28,7 +28,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Double, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Doubl, ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toArrays(
@@ -36,7 +36,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Arrays, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Arrays ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toTimestamp(
@@ -44,11 +44,11 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Timestamp, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Timestamp ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toObject({List<dynamic> list}) {
-    return '$this: { type: Object, properties : ${list.toList().toString().replaceFirst('[', "}").replaceFirst('[', "}")}  }' + '}';
+    return '$this: { type: Object, properties : ${list.toList().toString().replaceFirst('[', "{").replaceFirst('[', "}")}  }}';
   }
 
   String toNull(
@@ -56,7 +56,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Null, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Null ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toSymbol(
@@ -64,7 +64,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Symbol, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Symbol ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toDate(
@@ -72,7 +72,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Date, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Date ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toObjectID(
@@ -80,7 +80,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Object ID, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Object ID ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toBinaryData(
@@ -88,7 +88,7 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Binary data, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Binary data ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 
   String toCode(
@@ -96,6 +96,6 @@ extension NodeGenerate on String {
       bool isUnique = false,
       bool isIndex = false,
       String defaults}) {
-    return '$this: { type: Code, ${isRequired ? 'required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
+    return '$this: { type: Code ${isRequired ? ',required: true' : ''}${isUnique ? ',unique: true' : ''}${isIndex ? ',index: true' : ''}${defaults != null ? ',defaults: $defaults' : ''}  \n }';
   }
 }
