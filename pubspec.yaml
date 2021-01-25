@@ -1,6 +1,6 @@
 name: firexcode
 description: A new Flutter package you can develop attractive and/or create UI are you interested to learn documentation....
-version: 0.8.2
+version: 0.8.4
 homepage: https://github.com/zeeshux7860/FireXcode
 
 environment:
@@ -16,7 +16,7 @@ dependencies:
   process_run: ^0.11.0+2
   console_cmd: ^1.0.5
   meta: ^1.2.3
-  _fe_analyzer_shared: 	14.0.0
+  _fe_analyzer_shared: ^14.0.0
 
   flutter_web_plugins:
     sdk: flutter

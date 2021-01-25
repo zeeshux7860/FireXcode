@@ -148,7 +148,7 @@ const ${name.replaceAll('_', '')[0].toUpperCase()}${name.substring(1).replaceAll
 module.exports = routes;
     """;
     fileCreate(path + '/routes', content,
-        '${routeName.toLowerCase().replaceAll('/', '').toLowerCase()}_routes.js');
+        '${routeName.toLowerCase().replaceAll('/', '_').toLowerCase()}_routes.js');
 
     ANSIPrinter().printRGB('''
 

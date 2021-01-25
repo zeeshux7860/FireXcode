@@ -16,7 +16,7 @@ var $name = new mongoose.Schema({
 });
 
 //Export the model
-module.exports = mongoose.model('${name.replaceAll('_', '')[0].toUpperCase()}${name.substring(1).replaceAll('_', '')}', $name);
+module.exports = mongoose.model('${name}', $name);
     """;
     fileCreate(path + '\\model', content, name + '.js');
 
