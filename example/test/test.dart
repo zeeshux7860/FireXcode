@@ -1,7 +1,7 @@
 import 'package:firexcode/node_js.dart';
 
 void main() {
-  NodeModel('stories_template_filter', 'C:\\Users\\Zeeshan\\Documents\\sync')
+  NodeModel('stories_template_filter', 'C:\\Users\\Zeeshan\\Documents\\Apowersoft')
       .create(lis)
       .toRoutes(
           routeName: 'stories/template/filter',
@@ -13,5 +13,12 @@ void main() {
 }
 
 List<String> lis = [
-  'title'.toLongText(isRequired: true),
+  'title'.toObject(
+    list: [
+      'a'.toLongText(
+        defaults: '5',
+        isIndex: true
+      )
+    ]
+  ),
 ];
