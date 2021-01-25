@@ -3,7 +3,7 @@ import 'package:firexcode/src/Generator/file.dart';
 class NodeModel {
   final String name;
   final String path;
-  NodeModel(this.name, this.path);
+  NodeModel({this.name, this.path});
 
   NodeRoutes create(List<String> list) {
     var content = """
@@ -16,7 +16,7 @@ var $name = new mongoose.Schema({
 });
 
 //Export the model
-module.exports = mongoose.model('${name}', $name);
+module.exports = mongoose.model('$name', $name);
     """;
     fileCreate(path + '\\model', content, name + '.js');
 
