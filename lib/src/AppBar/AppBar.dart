@@ -63,11 +63,7 @@ class AppbarGadient extends StatefulWidget implements PreferredSizeWidget {
     switch (theme.platform) {
       case TargetPlatform.android:
       case TargetPlatform.fuchsia:
-
-      case TargetPlatform.windows:
-      case TargetPlatform.linux:
         return false;
-      case TargetPlatform.macOS:
       case TargetPlatform.iOS:
         return actions == null || actions.length < 2;
     }

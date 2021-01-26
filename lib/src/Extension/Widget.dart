@@ -127,7 +127,6 @@ extension XNew on Widget {
       Color splashColor,
       double hoverElevation,
       double highlightElevation,
-      VisualDensity visualDensity,
       Color textColor,
       ButtonTextTheme textTheme,
       Duration animationDuration,
@@ -135,7 +134,6 @@ extension XNew on Widget {
     return RaisedButton(
       highlightElevation: highlightElevation,
       hoverElevation: hoverElevation,
-      visualDensity: visualDensity,
       focusElevation: focusElevation,
       elevation: elevation,
       disabledElevation: disabledElevation,
@@ -292,7 +290,6 @@ extension XNew on Widget {
     Color backgroundColor,
     bool Function(ScrollNotification) notificationPredicate =
         defaultScrollNotificationPredicate,
-    double strokeWidth = 2.0,
     double displacement = 40.0,
     bool showChildOpacityTransition = true,
     String semanticsLabel,
@@ -309,7 +306,6 @@ extension XNew on Widget {
       notificationPredicate: notificationPredicate,
       semanticsLabel: semanticsLabel,
       semanticsValue: semanticsValue,
-      strokeWidth: strokeWidth,
     );
   }
 
@@ -426,7 +422,6 @@ extension XNew on Widget {
     final bool autofocus,
     final Color backgroundColor,
     final EdgeInsetsGeometry padding,
-    final VisualDensity visualDensity,
     final Widget deleteIcon,
     final VoidCallback onDeleted,
     final Color deleteIconColor,
@@ -452,7 +447,6 @@ extension XNew on Widget {
       autofocus: autofocus ?? true,
       backgroundColor: backgroundColor,
       padding: padding,
-      visualDensity: visualDensity,
       materialTapTargetSize: materialTapTargetSize,
       elevation: elevation ?? 0.0,
       shadowColor: shadowColor,
@@ -486,7 +480,6 @@ extension XNew on Widget {
       icon: icon,
       key: key,
       text: text,
-      iconMargin: iconMargin,
     );
   }
 }

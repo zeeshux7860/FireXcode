@@ -741,18 +741,12 @@ extension Components on String {
     /// An icon to display as the tab's label.
     final Widget icon,
 
-    /// The margin added around the tab's icon.
-    ///
-    /// Only useful when used in combination with [icon], and either one of
-    /// [text] or [child] is non-null.
-    final EdgeInsetsGeometry iconMargin,
   }) {
     return Tab(
       child: child,
       icon: icon,
       key: key,
       text: this,
-      iconMargin: iconMargin,
     );
   }
 }

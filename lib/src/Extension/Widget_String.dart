@@ -12,7 +12,7 @@ extension StringWidget on Widget {
       onTap: () {
         print(toString());
         Clipboard.setData(ClipboardData(text: toString()));
-        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        Scaffold.of(context).showSnackBar(snackBar);
       },
     );
   }
