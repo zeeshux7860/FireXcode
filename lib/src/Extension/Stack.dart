@@ -9,6 +9,7 @@ extension Lists on List<Widget> {
           TextDirection textDirection}) =>
       Stack(
         key: key,
+        clipBehavior: clipBehavior ?? Clip.hardEdge,
         textDirection: textDirection,
         fit: fit ?? StackFit.loose,
         alignment: alignment ?? AlignmentDirectional.topStart,

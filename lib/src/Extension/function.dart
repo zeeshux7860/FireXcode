@@ -23,13 +23,11 @@ extension XFunction on Function {
       Color textColor,
       ButtonTextTheme textTheme,
       Widget child}) {
-    return  FlatButton(
-     
+    return FlatButton(
       onPressed: this,
       child: child,
       autofocus: autofocus,
       clipBehavior: clipBehavior,
-            key: key,
       color: color,
       colorBrightness: colorBrightness,
       disabledColor: disabledColor,
@@ -38,6 +36,7 @@ extension XFunction on Function {
       focusNode: focusNode,
       highlightColor: highlightColor,
       hoverColor: hoverColor,
+      key: key,
       materialTapTargetSize: materialTapTargetSize,
       onHighlightChanged: onHighlightChanged,
       onLongPress: onLongPress,
