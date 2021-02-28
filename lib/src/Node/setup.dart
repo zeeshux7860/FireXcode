@@ -15,7 +15,7 @@ class NodeSetup {
     print('Express creating.....');
     await File('$path\\node_start.sh')
         .writeAsStringSync('#!/bin/bash\ncd $path\nnpm init');
- 
+
     await Process.run('$path\\node_start.sh', [], runInShell: true);
     ANSIPrinter().printRGB('Created package.json',
         breakLine: true, bGray: 1.0, fColor: 0xff4BB543);

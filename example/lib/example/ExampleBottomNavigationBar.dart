@@ -24,7 +24,6 @@ class _ExampleBottomNavigationBarState
             bottomNavigationBar: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icons.home.xIcons(),
-            
             label: 'Home',
           ),
           BottomNavigationBarItem(
