@@ -30,6 +30,7 @@ XColumnSSE xColumnSSE = XColumnSSE();
 XColumnESE xColumnESE = XColumnESE();
 XColumnCSE xColumnCSE = XColumnCSE();
 XColumnBSE xColumnBSE = XColumnBSE();
+XColumnCS xColumnCS = XColumnCS();
 
 class XColumn {
   final Key key;
@@ -76,9 +77,7 @@ class XColumnCC {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnCC(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -102,9 +101,7 @@ class XColumnSS {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSS(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -128,9 +125,7 @@ class XColumnSSB {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSSB(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -154,9 +149,7 @@ class XColumnBS {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnBS(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -180,9 +173,7 @@ class XColumnES {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnES(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -206,9 +197,7 @@ class XColumnSTS {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSTS(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -232,9 +221,7 @@ class XColumnSTC {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSTC(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -258,9 +245,7 @@ class XColumnSC {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSC(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -284,9 +269,7 @@ class XColumnEC {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnEC(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -310,9 +293,7 @@ class XColumnBC {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnBC(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -336,9 +317,7 @@ class XColumnSTE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSTE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -362,9 +341,7 @@ class XColumnSE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -388,9 +365,7 @@ class XColumnEE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnEE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -414,9 +389,7 @@ class XColumnCE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnCE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -440,9 +413,7 @@ class XColumnBE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnBE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -466,9 +437,7 @@ class XColumnSTSA {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSTSA(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -492,9 +461,7 @@ class XColumnSSA {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSSA(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -518,9 +485,7 @@ class XColumnESA {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnESA(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -544,9 +509,7 @@ class XColumnCSA {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnCSA(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -570,9 +533,7 @@ class XColumnBSA {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnBSA(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -596,9 +557,7 @@ class XColumnSTSB {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSTSB(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -622,9 +581,7 @@ class XColumnESB {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnESB(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -648,9 +605,7 @@ class XColumnCSB {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnCSB(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -674,9 +629,7 @@ class XColumnBSB {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnBSB(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -700,9 +653,7 @@ class XColumnSTSE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSTSE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -726,9 +677,7 @@ class XColumnSSE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnSSE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -752,9 +701,7 @@ class XColumnESE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnESE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -778,9 +725,7 @@ class XColumnCSE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnCSE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
@@ -804,9 +749,34 @@ class XColumnBSE {
   });
   Widget list(List<Widget> list) {
     return list.xcolumnBSE(
-        // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
-        //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
+        mainAxisSize: mainAxisSize ?? MainAxisSize.max,
+        textBaseline: textBaseline,
+        textDirection: textDirection,
+        verticalDirection: verticalDirection ?? VerticalDirection.down);
+  }
+}
+
+class XColumnCS {
+  final Key key;
+  final MainAxisSize mainAxisSize;
+  final TextBaseline textBaseline;
+  final TextDirection textDirection;
+  final VerticalDirection verticalDirection;
+
+  XColumnCS({
+    this.key,
+    this.textBaseline,
+    this.textDirection,
+    this.mainAxisSize,
+    this.verticalDirection,
+  });
+  Widget list(List<Widget> list) {
+    return Column(
+        children: list,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
+        key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,

@@ -11,6 +11,7 @@ extension NodeRoutesFunction on NodeRoutes {
     bool read = false,
     bool update = false,
     bool delete = false,
+    bool perIdDetail = false,
   }) {
 //print(NodeJsList(list: data).code.toList().toString().replaceAll('[', '').replaceAll(']', ''));
 
@@ -26,7 +27,10 @@ routes.$method('/', async (req, res) => {
       if (!matched) {
         res.status = 422;
         res.body = v.errors;
-       res.json(res.body);
+       res.json({
+         status: 422,
+         error: res.body
+       });
         return;
       }else{
              const ${name.toLowerCase()} = new ${name.replaceAll('_', '')[0].toUpperCase()}${name.substring(1).replaceAll('_', '')}({
@@ -35,12 +39,15 @@ ${NodeJsList(list: data).code.toList().toString().replaceAll('[', '').replaceAll
    try{
      const dataSave = await  ${name.toLowerCase()}.save();
        res.status = 200;
-            res.json(dataSave);
+            res.json({
+              status: 200,
+              message: "Data Save"
+            });
 
    }catch (err){
        res.status = 401;
 
-       res.json(err);
+       res.json(err.message);
 
    }
       }
@@ -54,11 +61,14 @@ ${NodeJsList(list: data).code.toList().toString().replaceAll('[', '').replaceAll
     var shoedata = '''
     routes.$method('/show', async (req, res) => {
 try{
-  const dataSave = await  ${name.replaceAll('_', '')[0].toUpperCase()}${name.substring(1).replaceAll('_', '')} .find();
+  const show = await  ${name.replaceAll('_', '')[0].toUpperCase()}${name.substring(1).replaceAll('_', '')} .find();
        res.status = 200;
-            res.json(dataSave);
+            res.json({
+              status: 200,
+              result_$method: show
+            });
 }catch(err){
-  res.json(message.err);
+  res.json(err.message);
 }
 });
 ''';
@@ -66,9 +76,13 @@ try{
     var speciceid = '''
     routes.$method('/:id', async (req, res) => {
 try{
-  const dataperShow = await  ${name.replaceAll('_', '')[0].toUpperCase()}${name.substring(1).replaceAll('_', '')} .findById(req.params.id);
+  const show = await  ${name.replaceAll('_', '')[0].toUpperCase()}${name.substring(1).replaceAll('_', '')} .findById(req.params.id);
        res.status = 200;
-            res.json(dataperShow);
+            res.status = 200;
+            res.json({
+              status: 200,
+              result_$method: show
+            });
 }catch(err){
   res.json(message.err);
 }
@@ -80,7 +94,10 @@ try{
 try{
   const dataDelete = await  ${name.replaceAll('_', '')[0].toUpperCase()}${name.substring(1).replaceAll('_', '')} .remove({_id: req.params.id});
        res.status = 200;
-            res.json(dataDelete);
+            res.json({
+              status: 200,
+              message: "Deleted"
+            });
 }catch(err){
   res.json(message.err);
 }
@@ -99,7 +116,10 @@ routes.patch('/:id', async (req, res) => {
       if (!matched) {
         res.status = 422;
         res.body = v.errors;
-       res.json(res.body);
+      res.json({
+         status: 422,
+         error: res.body
+       });
         return;
       }else{
         
@@ -114,7 +134,10 @@ ${NodeJsList(list: data).code.toList().toString().replaceAll('[', '').replaceAll
     }}
     );
        res.status = 200;
-            res.json(dataUpdate);
+            res.json({
+              status: 200,
+              message: "Updated"
+            });
 
    }catch (err){
        res.status = 401;
@@ -142,7 +165,7 @@ const ${name.replaceAll('_', '')[0].toUpperCase()}${name.substring(1).replaceAll
 
     ${create ? adddatas : ''}
     ${read ? shoedata : ''}
-    $speciceid
+    ${perIdDetail ? speciceid : ''}
     ${delete ? deleteData : ''}
     ${update ? updateData : ''}
 module.exports = routes;
@@ -153,8 +176,8 @@ module.exports = routes;
     ANSIPrinter().printRGB('''
 
 --------------------------------------------------------------------------------------
-const ${routeName.toLowerCase().replaceAll('/', '').toLowerCase()} = require('./routes/${routeName.toLowerCase().replaceAll('/', '')}_routes');
-app.use('/$routeName', ${routeName.toLowerCase().replaceAll('/', '').toLowerCase()}); 
+const ${routeName.toLowerCase().replaceAll('/', '_').toLowerCase()} = require('./routes/${routeName.toLowerCase().replaceAll('/', '_')}_routes');
+app.use('/$routeName', ${routeName.toLowerCase().replaceAll('/', '_').toLowerCase()}); 
 --------------------------------------------------------------------------------------
 
 ### copy and pase your app.js if you are already paste then ignore

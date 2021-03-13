@@ -30,6 +30,7 @@ XRowSSE xRowSSE = XRowSSE();
 XRowESE xRowESE = XRowESE();
 XRowCSE xRowCSE = XRowCSE();
 XRowBSE xRowBSE = XRowBSE();
+XRowCS xRowCS = XRowCS();
 
 class XRow {
   final Key key;
@@ -807,6 +808,33 @@ class XRowBSE {
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
+        mainAxisSize: mainAxisSize ?? MainAxisSize.max,
+        textBaseline: textBaseline,
+        textDirection: textDirection,
+        verticalDirection: verticalDirection ?? VerticalDirection.down);
+  }
+}
+
+class XRowCS {
+  final Key key;
+  final MainAxisSize mainAxisSize;
+  final TextBaseline textBaseline;
+  final TextDirection textDirection;
+  final VerticalDirection verticalDirection;
+
+  XRowCS({
+    this.key,
+    this.textBaseline,
+    this.textDirection,
+    this.mainAxisSize,
+    this.verticalDirection,
+  });
+  Widget list(List<Widget> list) {
+    return Row(
+        children: list,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        key: key,
+        mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
