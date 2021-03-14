@@ -23,9 +23,7 @@ class XTransactiontTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onTap: () {
-        //  XRoutePage(context, Drawer()).materialPagePush();
-      },
+      onTap: onTap,
       leading: leading,
       title: title,
       subtitle: subtitle,
