@@ -14,3 +14,7 @@
 ## 0.8.7
 
 * TODO: fix Node js Feature update.
+
+## 0.9.3
+
+* TODO: stable 2.0.2 fix
