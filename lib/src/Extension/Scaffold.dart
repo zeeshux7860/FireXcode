@@ -2,27 +2,31 @@ import 'package:flutter/gestures.dart';
 import 'package:firexcode/firexcode.dart';
 
 extension XScaffold on Widget {
-  Widget xScaffold({
-    final bool extendBody = false,
-    final bool extendBodyBehindAppBar = false,
-    final PreferredSizeWidget appBar,
-    final Widget floatingActionButton,
-    final FloatingActionButtonLocation floatingActionButtonLocation,
-    final FloatingActionButtonAnimator floatingActionButtonAnimator,
-    final List<Widget> persistentFooterButtons,
-    final Widget drawer,
-    final Widget endDrawer,
-    final Color drawerScrimColor,
-    final Color backgroundColor,
-    final Widget bottomNavigationBar,
-    final Widget bottomSheet,
-    final bool resizeToAvoidBottomPadding,
-    final bool resizeToAvoidBottomInset,
-    final bool primary = true,
-    final DragStartBehavior drawerDragStartBehavior = DragStartBehavior.start,
-    final double drawerEdgeDragWidth,
-    final Key key,
-  }) {
+  Widget xScaffold(
+      {final bool extendBody = false,
+      final bool extendBodyBehindAppBar = false,
+      final PreferredSizeWidget appBar,
+      final Widget floatingActionButton,
+      final FloatingActionButtonLocation floatingActionButtonLocation,
+      final FloatingActionButtonAnimator floatingActionButtonAnimator,
+      final List<Widget> persistentFooterButtons,
+      final Widget drawer,
+      final Widget endDrawer,
+      final Color drawerScrimColor,
+      final Color backgroundColor,
+      final Widget bottomNavigationBar,
+      final Widget bottomSheet,
+      final bool resizeToAvoidBottomPadding,
+      final bool resizeToAvoidBottomInset,
+      final bool primary = true,
+      final DragStartBehavior drawerDragStartBehavior = DragStartBehavior.start,
+      final double drawerEdgeDragWidth,
+      final Key key,
+      final bool drawerEnableOpenDragGesture = true,
+      final bool endDrawerEnableOpenDragGesture = true,
+      final void Function(bool) onDrawerChanged,
+      final void Function(bool) onEndDrawerChanged,
+      String restorationId}) {
     return Scaffold(
       appBar: appBar,
       body: this,
@@ -43,7 +47,11 @@ extension XScaffold on Widget {
       persistentFooterButtons: persistentFooterButtons,
       primary: primary,
       resizeToAvoidBottomInset: resizeToAvoidBottomInset,
-      resizeToAvoidBottomPadding: resizeToAvoidBottomPadding,
+      drawerEnableOpenDragGesture: drawerEnableOpenDragGesture,
+      endDrawerEnableOpenDragGesture: endDrawerEnableOpenDragGesture,
+      onDrawerChanged: onDrawerChanged,
+      onEndDrawerChanged: onEndDrawerChanged,
+      restorationId: restorationId,
     );
   }
 }

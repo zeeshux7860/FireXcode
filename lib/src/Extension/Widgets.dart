@@ -287,7 +287,7 @@ extension AppBarXs on Widget {
       final Color barrierColor,
       final RouteSettings routeSettings,
       final bool useSafeArea,
-      final Widget Function(BuildContext) builder}) {
+      final String barrierLabel}) {
     return showDialog(
         context: context,
         barrierColor: barrierColor,
@@ -295,24 +295,26 @@ extension AppBarXs on Widget {
         useSafeArea: useSafeArea,
         barrierDismissible: barrierDismissible,
         useRootNavigator: useRootNavigator,
-        builder: builder,
-        // ignore: deprecated_member_use
-        child: this);
+        builder: (context) {
+          return this;
+        },
+        barrierLabel: barrierLabel);
   }
 }
 
 extension FunctionWidget on Widget Function(BuildContext) {
-  Future xDialogBuilder(context,
-      {final bool barrierDismissible = true,
-      final bool useRootNavigator = true,
-      final Widget child}) {
+  Future xDialogBuilder(
+    context, {
+    final bool barrierDismissible = true,
+    final bool useRootNavigator = true,
+  }) {
     return showDialog(
-        context: context,
-        barrierDismissible: barrierDismissible,
-        useRootNavigator: useRootNavigator,
-        builder: this,
-        // ignore: deprecated_member_use
-        child: child);
+      context: context,
+      barrierDismissible: barrierDismissible,
+      useRootNavigator: useRootNavigator,
+      builder: this,
+      // ignore: deprecated_member_use
+    );
   }
 }
 

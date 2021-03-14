@@ -104,7 +104,7 @@ class XResponsiveGridRow extends StatelessWidget {
 }
 
 class ResponsiveGridCol extends StatelessWidget {
-  final List<int> _config = List(5);
+  final List<int> _config = [5];
   final Widget child;
 
   ResponsiveGridCol(
