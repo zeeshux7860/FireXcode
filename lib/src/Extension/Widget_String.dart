@@ -9,7 +9,6 @@ extension StringWidget on Widget {
     // );
     return InkWell(
       onTap: () {
-       
         Clipboard.setData(ClipboardData(text: toString()));
       },
       child: this,
