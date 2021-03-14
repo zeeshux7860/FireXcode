@@ -8,13 +8,14 @@ import 'dart:html' as html show window;
 import 'package:flutter/services.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
-/// A web implementation of the Firexcode plugin.
+
+/// A web implementation of the Hello plugin.
 class FirexcodeWeb {
   static void registerWith(Registrar registrar) {
     final channel = MethodChannel(
       'firexcode',
       const StandardMethodCodec(),
-      registrar.messenger,
+      registrar,
     );
 
     final pluginInstance = FirexcodeWeb();
@@ -32,7 +33,7 @@ class FirexcodeWeb {
       default:
         throw PlatformException(
           code: 'Unimplemented',
-          details: 'firexcode for web doesn\'t implement \'${call.method}\'',
+          details: 'hello for web doesn\'t implement \'${call.method}\'',
         );
     }
   }
