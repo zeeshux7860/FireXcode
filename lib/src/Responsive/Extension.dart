@@ -8,11 +8,11 @@ extension RowGridResponsive on List<ResponsiveGridList> {
       bool scroll = true,
       bool squareCells = false}) {
     return ResponsiveGridList(
-      children: this,
       desiredItemWidth: desiredItemWidth,
       minSpacing: minSpacing,
       scroll: scroll,
       squareCells: squareCells,
+      children: this,
     );
   }
 }
@@ -29,12 +29,12 @@ extension XResponsiveGridCol on Widget {
   ResponsiveGridCol xResponsiveGridCol(
       {int xs = 12, int sm, int md, int lg, int xl}) {
     return ResponsiveGridCol(
-      child: this,
       lg: lg,
       md: md,
       sm: sm,
       xl: xl,
       xs: xs,
+      child: this,
     );
   }
 }

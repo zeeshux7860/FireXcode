@@ -341,7 +341,6 @@ extension Gesture on Widget {
   }) {
     return GestureDetector(
       behavior: behavior,
-      child: this,
       dragStartBehavior: dragStartBehavior,
       excludeFromSemantics: excludeFromSemantics,
       key: key,
@@ -380,6 +379,7 @@ extension Gesture on Widget {
       onVerticalDragEnd: onVerticalDragEnd,
       onVerticalDragStart: onVerticalDragStart,
       onVerticalDragUpdate: onVerticalDragUpdate,
+      child: this,
     );
   }
 }

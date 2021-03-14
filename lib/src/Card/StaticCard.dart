@@ -34,6 +34,20 @@ class XStaticCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: margin,
+      width: width,
+      decoration: BoxDecoration(
+          color: bgColor,
+          boxShadow: [
+            BoxShadow(
+                color: shadowColor == null
+                    ? Colors.white
+                    : shadowColor.withOpacity(0.4),
+                blurRadius: blurRadius ?? 0,
+                spreadRadius: spreadRadius ?? 0.0,
+                offset: Offset(0, 9)),
+          ],
+          // color: shadowColor,
+          borderRadius: BorderRadius.circular(rounded ?? 0)),
       child: Material(
           color: bgColor != null ? Colors.transparent : bgColor,
           shape: RoundedRectangleBorder(
@@ -63,20 +77,6 @@ class XStaticCard extends StatelessWidget {
                   ],
                 ),
               ))),
-      width: width,
-      decoration: BoxDecoration(
-          color: bgColor,
-          boxShadow: [
-            BoxShadow(
-                color: shadowColor == null
-                    ? Colors.white
-                    : shadowColor.withOpacity(0.4),
-                blurRadius: blurRadius ?? 0,
-                spreadRadius: spreadRadius ?? 0.0,
-                offset: Offset(0, 9)),
-          ],
-          // color: shadowColor,
-          borderRadius: BorderRadius.circular(rounded ?? 0)),
     );
   }
 }
@@ -111,6 +111,12 @@ class XCustomStatic extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: margin,
+      width: width,
+      decoration: BoxDecoration(
+          color: bgColor,
+          boxShadow: boxShadow,
+          // color: shadowColor,
+          borderRadius: BorderRadius.circular(rounded ?? 0)),
       child: Material(
           color: bgColor != null ? Colors.transparent : bgColor,
           shape: RoundedRectangleBorder(
@@ -133,12 +139,6 @@ class XCustomStatic extends StatelessWidget {
                   ],
                 ),
               ))),
-      width: width,
-      decoration: BoxDecoration(
-          color: bgColor,
-          boxShadow: boxShadow,
-          // color: shadowColor,
-          borderRadius: BorderRadius.circular(rounded ?? 0)),
     );
   }
 }

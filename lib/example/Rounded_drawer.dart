@@ -104,11 +104,11 @@ class RoundedDrawer extends StatelessWidget {
             iconSize: 40,
             trailing: MaterialXButton(
               color: Colors.green,
-              child: 'Active'.textMaterialColorWhite(),
               onTap: () {},
               width: 80,
               height: 30,
               rounded: 10,
+              child: 'Active'.textMaterialColorWhite(),
             ),
             selected: false,
             text: 'Account Status',

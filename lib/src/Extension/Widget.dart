@@ -80,12 +80,12 @@ extension XNew on Widget {
     return CircleAvatar(
       backgroundColor: backgroundColor,
       backgroundImage: backgroundImage,
-      child: this,
       foregroundColor: foregroundColor,
       key: key,
       maxRadius: maxRadius,
       minRadius: minRadius,
       radius: radius,
+      child: this,
     );
   }
 
@@ -99,9 +99,9 @@ extension XNew on Widget {
       color: buttonColor,
       width: buttonWidth,
       height: buttonHeight,
-      child: this,
       onTap: onTap,
       rounded: rounded,
+      child: this,
     );
   }
 
@@ -133,7 +133,6 @@ extension XNew on Widget {
       void Function() onPressed}) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: this,
       autofocus: autofocus,
       clipBehavior: clipBehavior,
       style: ElevatedButton.styleFrom(
@@ -158,6 +157,7 @@ extension XNew on Widget {
       key: key,
       focusNode: focusNode,
       onLongPress: onLongPress,
+      child: this,
     );
   }
 
@@ -189,7 +189,6 @@ extension XNew on Widget {
       void Function() onPressed}) {
     return TextButton(
       onPressed: onPressed,
-      child: this,
       autofocus: autofocus,
       clipBehavior: clipBehavior,
       style: TextButton.styleFrom(
@@ -214,6 +213,7 @@ extension XNew on Widget {
       key: key,
       focusNode: focusNode,
       onLongPress: onLongPress,
+      child: this,
     );
   }
 
@@ -245,7 +245,6 @@ extension XNew on Widget {
       void Function() onPressed}) {
     return OutlinedButton(
       onPressed: onPressed,
-      child: this,
       autofocus: autofocus,
       clipBehavior: clipBehavior,
       style: OutlinedButton.styleFrom(
@@ -270,6 +269,7 @@ extension XNew on Widget {
       focusNode: focusNode,
       key: key,
       onLongPress: onLongPress,
+      child: this,
     );
   }
 
@@ -287,7 +287,6 @@ extension XNew on Widget {
     Key key,
   }) {
     return XLiquidPullToRefresh(
-      child: this,
       onRefresh: onRefresh,
       backgroundColor: backgroundColor,
       borderWidth: borderWidth,
@@ -299,6 +298,7 @@ extension XNew on Widget {
       showChildOpacityTransition: showChildOpacityTransition,
       springAnimationDurationInMilliseconds:
           springAnimationDurationInMilliseconds,
+      child: this,
     );
   }
 
@@ -316,7 +316,6 @@ extension XNew on Widget {
     Key key,
   }) {
     return RefreshIndicator(
-      child: this,
       onRefresh: onRefresh,
       color: color,
       backgroundColor: backgroundColor,
@@ -326,6 +325,7 @@ extension XNew on Widget {
       semanticsLabel: semanticsLabel,
       semanticsValue: semanticsValue,
       strokeWidth: strokeWidth,
+      child: this,
     );
   }
 
@@ -420,7 +420,6 @@ extension XNew on Widget {
     final Key key,
   }) {
     return Positioned(
-      child: this,
       bottom: bottom,
       height: height,
       key: key,
@@ -428,6 +427,7 @@ extension XNew on Widget {
       right: right,
       top: top,
       width: width,
+      child: this,
     );
   }
 
@@ -498,11 +498,11 @@ extension XNew on Widget {
     final EdgeInsetsGeometry iconMargin,
   }) {
     return Tab(
-      child: this,
       icon: icon,
       key: key,
       text: text,
       iconMargin: iconMargin,
+      child: this,
     );
   }
 }

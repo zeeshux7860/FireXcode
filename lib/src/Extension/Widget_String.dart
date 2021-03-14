@@ -8,11 +8,11 @@ extension StringWidget on Widget {
     //   action: SnackBarAction(label: 'Undo', onPressed: () {}),
     // );
     return InkWell(
-      child: this,
       onTap: () {
-        print(toString());
+       
         Clipboard.setData(ClipboardData(text: toString()));
       },
+      child: this,
     );
   }
 }

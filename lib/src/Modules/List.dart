@@ -138,7 +138,6 @@ extension XListViews on List<Widget> {
       final VerticalDirection verticalDirection,
       final Key key}) {
     return Wrap(
-      children: this,
       alignment: alignment ?? WrapAlignment.start,
       crossAxisAlignment: crossAxisAlignment ?? WrapCrossAlignment.start,
       direction: direction ?? Axis.horizontal,
@@ -148,6 +147,7 @@ extension XListViews on List<Widget> {
       verticalDirection: verticalDirection ?? VerticalDirection.down,
       runAlignment: runAlignment ?? WrapAlignment.start,
       textDirection: textDirection,
+      children: this,
     );
   }
 

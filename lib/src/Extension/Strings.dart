@@ -134,13 +134,13 @@ extension Components on String {
   }) {
     return CircleAvatar(
       backgroundColor: backgroundColor,
-      child: child,
       foregroundColor: foregroundColor,
       key: key,
       maxRadius: maxRadius,
       minRadius: minRadius,
       radius: radius,
       backgroundImage: NetworkImage(this),
+      child: child,
     );
   }
 
@@ -155,13 +155,13 @@ extension Components on String {
   }) {
     return CircleAvatar(
       backgroundColor: backgroundColor,
-      child: child,
       foregroundColor: foregroundColor,
       key: key,
       maxRadius: maxRadius,
       minRadius: minRadius,
       radius: radius,
       backgroundImage: AssetImage(this),
+      child: child,
     );
   }
 
@@ -176,13 +176,13 @@ extension Components on String {
   }) {
     return CircleAvatar(
       backgroundColor: backgroundColor,
-      child: child,
       foregroundColor: foregroundColor,
       key: key,
       maxRadius: maxRadius,
       minRadius: minRadius,
       radius: radius,
       backgroundImage: FileImage(File(this)),
+      child: child,
     );
   }
 
@@ -710,7 +710,6 @@ extension Components on String {
   }) {
     return Tooltip(
       message: this,
-      child: child,
       decoration: decoration,
       excludeFromSemantics: excludeFromSemantics,
       height: height,
@@ -722,6 +721,7 @@ extension Components on String {
       textStyle: textStyle,
       verticalOffset: verticalOffset,
       waitDuration: waitDuration,
+      child: child,
     );
   }
 
@@ -748,11 +748,11 @@ extension Components on String {
     final EdgeInsetsGeometry iconMargin,
   }) {
     return Tab(
-      child: child,
       icon: icon,
       key: key,
       text: this,
       iconMargin: iconMargin,
+      child: child,
     );
   }
 }

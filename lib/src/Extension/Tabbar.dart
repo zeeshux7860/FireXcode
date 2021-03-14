@@ -156,11 +156,11 @@ extension XTabBarss on List<Widget> {
       Key key,
       ScrollPhysics physics}) {
     return TabBarView(
-      children: this,
       controller: controller,
       dragStartBehavior: dragStartBehavior,
       key: key,
       physics: physics,
+      children: this,
     );
   }
 }

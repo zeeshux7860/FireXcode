@@ -24,7 +24,6 @@ extension BlogTileX on DecorationImage {
       backSideBackgroundColor: backSideBackgroundColor,
       backrounded: backrounded,
       cardElevation: cardElevation,
-      child: child,
       image: this,
       imageHeight: imageHeight,
       key: key,
@@ -36,6 +35,7 @@ extension BlogTileX on DecorationImage {
       tileOnTap: tileOnTap,
       title: title,
       trailing: trailing,
+      child: child,
     );
   }
 }

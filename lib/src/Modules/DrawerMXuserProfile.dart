@@ -26,10 +26,16 @@ class XDrawerUserProfileBlur extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(bottom: 10),
+      height: height,
+      width: width,
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: NetworkImage(photoUrl), fit: BoxFit.cover)),
       child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
           child: Container(
             margin: margin,
+            color: Colors.black.withOpacity(0),
             child: ListTile(
               title: Textmaterial(
                 text: userName,
@@ -50,13 +56,7 @@ class XDrawerUserProfileBlur extends StatelessWidget {
                 backgroundImage: NetworkImage(photoUrl),
               ),
             ),
-            color: Colors.black.withOpacity(0),
           )),
-      height: height,
-      width: width,
-      decoration: BoxDecoration(
-          image: DecorationImage(
-              image: NetworkImage(photoUrl), fit: BoxFit.cover)),
     );
   }
 }

@@ -28,7 +28,6 @@ extension InkWelltap on Widget {
       borderRadius: borderRadius,
       autofocus: autofocus,
       canRequestFocus: canRequestFocus,
-      child: this,
       customBorder: customBorder,
       enableFeedback: enableFeedback,
       excludeFromSemantics: excludeFromSemantics,
@@ -48,6 +47,7 @@ extension InkWelltap on Widget {
       radius: radius,
       splashColor: splashColor,
       splashFactory: splashFactory,
+      child: this,
     );
   }
 }

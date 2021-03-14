@@ -773,13 +773,13 @@ class XColumnCS {
   });
   Widget list(List<Widget> list) {
     return Column(
-        children: list,
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
-        verticalDirection: verticalDirection ?? VerticalDirection.down);
+        verticalDirection: verticalDirection ?? VerticalDirection.down,
+        children: list);
   }
 }

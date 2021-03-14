@@ -22,7 +22,6 @@ extension ContainerExtension on Widget {
     return XContainer(
       blurRadius: blurRadius,
       borderRadius: borderRadius,
-      child: this,
       color: color,
       height: height,
       image: image,
@@ -35,6 +34,7 @@ extension ContainerExtension on Widget {
       shadowColor: shadowColor,
       spreadRadius: spreadRadius,
       width: width,
+      child: this,
     );
   }
 
@@ -57,7 +57,6 @@ extension ContainerExtension on Widget {
     return XContainerGradient(
       blurRadius: blurRadius,
       borderRadius: borderRadius,
-      child: this,
       gradient: gradient,
       height: height,
       key: key,
@@ -69,6 +68,7 @@ extension ContainerExtension on Widget {
       shadowColor: shadowColor,
       spreadRadius: spreadRadius,
       width: width,
+      child: this,
     );
   }
 

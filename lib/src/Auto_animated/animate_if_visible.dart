@@ -74,11 +74,11 @@ class _AnimateIfVisibleState extends State<AnimateIfVisible>
   @override
   Widget build(BuildContext context) => VisibilityDetector(
         key: widget.key,
+        onVisibilityChanged: _visibilityChanged,
         child: widget.builder(
           context,
           _controller.view,
         ),
-        onVisibilityChanged: _visibilityChanged,
       );
 
   void _visibilityChanged(VisibilityInfo info) {
@@ -161,8 +161,8 @@ class _AnimateIfVisibleWrapperState extends State<AnimateIfVisibleWrapper> {
   Widget build(BuildContext context) => _VisibilityStackProvider(
         stack: _stack,
         child: NotificationListener<ScrollNotification>(
-          child: widget.child,
           onNotification: _handleScrollNotifications,
+          child: widget.child,
         ),
       );
 

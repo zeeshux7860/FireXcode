@@ -56,10 +56,10 @@ class XBlogTile extends StatelessWidget {
             XContainer(
               rounded: rounded,
               onTap: onTap,
-              child: child,
               height: imageHeight,
               width: MediaQuery.of(context).size.width,
               image: image,
+              child: child,
             ),
             ListTile(
               onTap: tileOnTap,

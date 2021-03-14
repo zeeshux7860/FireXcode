@@ -51,7 +51,6 @@ extension Lists on List<Widget> {
   }) {
     return ExpansionTile(
       title: title,
-      children: this,
       backgroundColor: backgroundColor,
       key: key,
       leading: leading,
@@ -59,6 +58,7 @@ extension Lists on List<Widget> {
       subtitle: subtitle,
       trailing: trailing,
       initiallyExpanded: initiallyExpanded ?? false,
+      children: this,
     );
   }
 }

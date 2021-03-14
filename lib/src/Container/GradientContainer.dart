@@ -36,18 +36,6 @@ class XContainerGradient extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: margin,
-      child: Material(
-          color: Colors.transparent,
-          shape: RoundedRectangleBorder(
-              borderRadius:
-                  borderRadius ?? BorderRadius.circular(rounded ?? 0)),
-          child: InkWell(
-              borderRadius: borderRadius ?? BorderRadius.circular(rounded ?? 0),
-              onTap: onTap,
-              child: Padding(
-                padding: padding ?? EdgeInsets.all(10.0),
-                child: child,
-              ))),
       height: height,
       width: width,
       decoration: BoxDecoration(
@@ -64,6 +52,18 @@ class XContainerGradient extends StatelessWidget {
           ],
           // color: shadowColor,
           borderRadius: borderRadius ?? BorderRadius.circular(rounded ?? 0)),
+      child: Material(
+          color: Colors.transparent,
+          shape: RoundedRectangleBorder(
+              borderRadius:
+                  borderRadius ?? BorderRadius.circular(rounded ?? 0)),
+          child: InkWell(
+              borderRadius: borderRadius ?? BorderRadius.circular(rounded ?? 0),
+              onTap: onTap,
+              child: Padding(
+                padding: padding ?? EdgeInsets.all(10.0),
+                child: child,
+              ))),
     );
   }
 }

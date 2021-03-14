@@ -505,7 +505,7 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
         });
 
         //run progress animation
-        _progressingController..repeat();
+        _progressingController.repeat();
 
         final refreshResult = widget.onRefresh();
         assert(() {

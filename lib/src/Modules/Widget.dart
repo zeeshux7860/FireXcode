@@ -126,11 +126,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeIn(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -142,11 +142,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeInDown(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -158,11 +158,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeInDownBig(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -174,11 +174,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeInUp(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -190,11 +190,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeInUpBig(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -206,11 +206,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeInLeft(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -222,11 +222,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeInLeftBig(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -238,11 +238,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeInRight(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -254,11 +254,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeInRightBig(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -272,11 +272,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeOut(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -288,11 +288,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeOutDown(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -304,11 +304,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeOutDownBig(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -320,11 +320,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeOutUp(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -336,11 +336,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeOutUpBig(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -352,11 +352,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeOutLeft(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -368,11 +368,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeOutLeftBig(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -384,11 +384,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeOutRight(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -400,11 +400,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FadeOutRightBig(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -417,11 +417,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return BounceInDown(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -433,11 +433,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return BounceInUp(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -449,11 +449,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return BounceInLeft(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -465,11 +465,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return BounceInRight(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -481,11 +481,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return ElasticIn(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -497,11 +497,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return ElasticInDown(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -513,11 +513,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return ElasticInUp(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -529,11 +529,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return ElasticInLeft(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -545,11 +545,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return ElasticInRight(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -561,11 +561,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return SlideInDown(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -577,11 +577,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return SlideInUp(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -593,11 +593,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return SlideInLeft(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -609,11 +609,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return SlideInRight(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -625,11 +625,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FlipInX(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -641,11 +641,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return FlipInY(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -659,11 +659,11 @@ extension XWidget on Widget {
     return ZoomIn(
       from: form,
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -677,11 +677,11 @@ extension XWidget on Widget {
     return ZoomOut(
       from: form,
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -693,11 +693,11 @@ extension XWidget on Widget {
       bool manualTrigger = false}) {
     return JelloIn(
       animate: animate,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -713,11 +713,11 @@ extension XWidget on Widget {
       animate: animate,
       from: from,
       infinite: infinite,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -731,11 +731,11 @@ extension XWidget on Widget {
     return Flash(
       animate: animate,
       infinite: infinite,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -749,11 +749,11 @@ extension XWidget on Widget {
     return Pulse(
       animate: animate,
       infinite: infinite,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -767,11 +767,11 @@ extension XWidget on Widget {
     return Swing(
       animate: animate,
       infinite: infinite,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -787,11 +787,11 @@ extension XWidget on Widget {
       animate: animate,
       spins: spins,
       infinite: infinite,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -807,11 +807,11 @@ extension XWidget on Widget {
       animate: animate,
       spins: spins,
       infinite: infinite,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -825,11 +825,11 @@ extension XWidget on Widget {
     return Dance(
       animate: animate,
       infinite: infinite,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 
@@ -845,11 +845,11 @@ extension XWidget on Widget {
       spins: spins,
       animate: animate,
       infinite: infinite,
-      child: this,
       controller: controller,
       delay: delay,
       duration: duration,
       manualTrigger: manualTrigger,
+      child: this,
     );
   }
 }

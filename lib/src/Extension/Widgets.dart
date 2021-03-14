@@ -27,10 +27,10 @@ extension Widgets on Widget {
       final String semanticLabel,
       final Key key}) {
     return Drawer(
-      child: this,
       elevation: elevation,
       key: key,
       semanticLabel: semanticLabel,
+      child: this,
     );
   }
 
@@ -69,13 +69,13 @@ extension Widgets on Widget {
   }) {
     return SafeArea(
       bottom: bottom,
-      child: this,
       key: key,
       left: left,
       maintainBottomViewPadding: maintainBottomViewPadding,
       minimum: minimum,
       right: right,
       top: top,
+      child: this,
     );
   }
 
@@ -90,19 +90,19 @@ extension Widgets on Widget {
           flightShuttleBuilder}) {
     return Hero(
       tag: tag,
-      child: this,
       createRectTween: createRectTween,
       flightShuttleBuilder: flightShuttleBuilder,
       key: key,
       transitionOnUserGestures: transitionOnUserGestures,
       placeholderBuilder: placeholderBuilder,
+      child: this,
     );
   }
 
   Widget xAnimationLimiter({Key key}) {
     return AnimationLimiter(
-      child: this,
       key: key,
+      child: this,
     );
   }
 
@@ -650,9 +650,9 @@ extension AnimationXs on Widget {
     final Duration delay,
   }) {
     return FadeInAnimation(
-      child: this,
       delay: delay,
       duration: duration,
+      child: this,
     );
   }
 
@@ -668,10 +668,10 @@ extension AnimationXs on Widget {
       final Duration delay,
       double scale = 0.0}) {
     return ScaleAnimation(
-      child: this,
       delay: delay,
       scale: scale,
       duration: duration,
+      child: this,
     );
   }
 
@@ -687,10 +687,10 @@ extension AnimationXs on Widget {
       final Duration delay,
       double scale = 0.0}) {
     return FlipAnimation(
-      child: this,
       delay: delay,
       flipAxis: flipAxis,
       duration: duration,
+      child: this,
     );
   }
 }
@@ -710,10 +710,10 @@ extension XButton on Widget {
         rounded: rounded,
         spreadRadius: spreadRadius,
         color: color,
-        child: this,
         onTap: onTap,
         width: width,
-        height: height);
+        height: height,
+        child: this);
   }
 }
 
@@ -755,9 +755,9 @@ extension Win on String {
 extension Wins on Widget {
   Widget xExpanded({int flex = 1, Key key}) {
     return Expanded(
-      child: this,
       flex: flex,
       key: key,
+      child: this,
     );
   }
 
@@ -767,11 +767,11 @@ extension Wins on Widget {
       Key key,
       double widthFactor}) {
     return Align(
-      child: this,
       alignment: alignment,
       heightFactor: heightFactor,
       key: key,
       widthFactor: widthFactor,
+      child: this,
     );
   }
 
@@ -793,7 +793,6 @@ extension Wins on Widget {
       animationDuration: animationDuration,
       borderOnForeground: borderOnForeground,
       borderRadius: borderRadius,
-      child: this,
       clipBehavior: clipBehavior,
       color: color,
       elevation: elevation,
@@ -801,6 +800,7 @@ extension Wins on Widget {
       shadowColor: shadowColor,
       shape: shape,
       textStyle: textStyle,
+      child: this,
     );
   }
 

@@ -33,23 +33,25 @@ class TwoButton extends StatelessWidget {
       //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         MaterialXButton(
+           
           width: width,
           height: 100,
-          child: child1,
+         
           rounded: rounded,
           elavation: elavation,
           onTap: ontap1,
           color: color1,
+          child: child1,
         ),
         10.0.sizedHeightWidth(),
         MaterialXButton(
           width: width,
           height: 100,
-          child: child2,
           rounded: rounded,
           elavation: elavation,
           onTap: ontap2,
           color: color2,
+          child: child2,
         )
       ],
     );

@@ -29,10 +29,10 @@ extension Drawers on Widget {
     return ClipRRect(
       borderRadius: borderRadius,
       child: Drawer(
-        child: this,
         elevation: elevation,
         key: key,
         semanticLabel: semanticLabel,
+        child: this,
       ),
     );
   }

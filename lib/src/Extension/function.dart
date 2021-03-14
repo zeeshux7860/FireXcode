@@ -30,7 +30,6 @@ extension XFunction on Function {
       Color onSurface}) {
     return TextButton(
       onPressed: this,
-      child: child,
       autofocus: autofocus,
       clipBehavior: clipBehavior,
       style: TextButton.styleFrom(
@@ -55,6 +54,7 @@ extension XFunction on Function {
       key: key,
       focusNode: focusNode,
       onLongPress: onLongPress,
+      child: child,
     );
   }
 
@@ -86,7 +86,6 @@ extension XFunction on Function {
   }) {
     return OutlinedButton(
       onPressed: this,
-      child: child,
       autofocus: autofocus,
       clipBehavior: clipBehavior,
       style: OutlinedButton.styleFrom(
@@ -111,6 +110,7 @@ extension XFunction on Function {
       focusNode: focusNode,
       key: key,
       onLongPress: onLongPress,
+      child: child,
     );
   }
 }

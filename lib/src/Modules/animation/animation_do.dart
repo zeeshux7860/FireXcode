@@ -179,13 +179,13 @@ class FadeInDownBig extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FadeInDown(
-      child: child,
       duration: duration,
       delay: delay,
       controller: controller,
       manualTrigger: manualTrigger,
       animate: animate,
-      from: from);
+      from: from,
+      child: child);
 }
 
 // ============= FadeInUp
@@ -294,13 +294,13 @@ class FadeInUpBig extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FadeInUp(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from,
+        child: child,
       );
 }
 
@@ -410,13 +410,13 @@ class FadeInLeftBig extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FadeInLeft(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from,
+        child: child,
       );
 }
 
@@ -526,13 +526,13 @@ class FadeInRightBig extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FadeInRight(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from,
+        child: child,
       );
 }
 // ====================================
@@ -646,13 +646,13 @@ class BounceInUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => BounceInDown(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from * -1,
+        child: child,
       );
 }
 
@@ -762,13 +762,13 @@ class BounceInRight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => BounceInLeft(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from * -1,
+        child: child,
       );
 }
 // ====================================
@@ -976,7 +976,6 @@ class ElasticInUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => ElasticInDown(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
@@ -984,6 +983,7 @@ class ElasticInUp extends StatelessWidget {
         animate: animate,
         from: from * -1,
         to: 100,
+        child: child,
       );
 }
 
@@ -1108,14 +1108,14 @@ class ElasticInRight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => ElasticInLeft(
-      child: child,
       duration: duration,
       delay: delay,
       controller: controller,
       manualTrigger: manualTrigger,
       animate: animate,
       from: from * -1,
-      to: -100);
+      to: -100,
+      child: child);
 }
 // ====================================
 //          End Elastics
@@ -1386,13 +1386,13 @@ class SlideInDown extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SlideInUp(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from * -1,
+        child: child,
       );
 }
 
@@ -1496,13 +1496,13 @@ class SlideInRight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SlideInLeft(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from * -1,
+        child: child,
       );
 }
 // ====================================
@@ -2491,13 +2491,13 @@ class FadeOutDownBig extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FadeOutDown(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from,
+        child: child,
       );
 }
 
@@ -2607,13 +2607,13 @@ class FadeOutUpBig extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FadeOutUp(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from,
+        child: child,
       );
 }
 
@@ -2723,13 +2723,13 @@ class FadeOutLeftBig extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FadeOutLeft(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from,
+        child: child,
       );
 }
 
@@ -2762,13 +2762,13 @@ class FadeOutRight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FadeOutLeft(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from * -1,
+        child: child,
       );
 }
 
@@ -2801,13 +2801,13 @@ class FadeOutRightBig extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FadeOutLeft(
-        child: child,
         duration: duration,
         delay: delay,
         controller: controller,
         manualTrigger: manualTrigger,
         animate: animate,
         from: from * -1,
+        child: child,
       );
 }
 

@@ -831,13 +831,13 @@ class XRowCS {
   });
   Widget list(List<Widget> list) {
     return Row(
-        children: list,
         crossAxisAlignment: CrossAxisAlignment.center,
         key: key,
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
         textDirection: textDirection,
-        verticalDirection: verticalDirection ?? VerticalDirection.down);
+        verticalDirection: verticalDirection ?? VerticalDirection.down,
+        children: list);
   }
 }

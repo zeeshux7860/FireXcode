@@ -960,7 +960,6 @@ extension DecorationX on DecorationImage {
       image: this,
       blurRadius: blurRadius,
       borderRadius: borderRadius,
-      child: child,
       color: color,
       height: height,
       key: key,
@@ -972,6 +971,7 @@ extension DecorationX on DecorationImage {
       shadowColor: shadowColor,
       spreadRadius: spreadRadius,
       width: width,
+      child: child,
     );
   }
 }

@@ -31,11 +31,11 @@ class XTabBarView {
 
   Widget list(List<Widget> list) {
     return TabBarView(
-      children: list,
       controller: controller,
       dragStartBehavior: dragStartBehavior ?? DragStartBehavior.start,
       key: key,
       physics: physics,
+      children: list,
     );
   }
 }
