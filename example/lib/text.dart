@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: 'Material X Gradients Card '.textMaterialColorBlack(),
+        title: 'Material X Gradients Card '.xTextColorBlack(),
       ),
       body: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
             XCardTile(
               rounded: 10,
               title: 'Zeeshan'.xCardTileTitle(),
-              subtitle1: 'Software Engineer'.textMaterialColorWhite(),
+              subtitle1: 'Software Engineer'.xTextColorWhite(),
               backgroundColor: Colors.deepPurple,
               boxColor: Colors.deepPurple.shade100,
               boxRounded: 100,
@@ -51,19 +51,19 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               leading: Icons.book.xListTileIcon(color: Colors.purple),
               title: 'Zeeshan'.xCardTileTitle(color: Colors.black),
-              subtitle: 'Developr!!'.textMaterialColorgrey(),
+              subtitle: 'Developr!!'.xTextColorGrey(),
               trailing: <Widget>[
-                '+ 1234500.0'.textMaterialColorBlack(
-                    fontsize: 15, fontWeight: FontWeight.bold),
+                '+ 1234500.0'
+                    .xTextColorBlack(fontsize: 15, fontWeight: FontWeight.bold),
                 5.0.sizedHeight(),
-                'sep 15 2019'.textMaterialColorblueGrey()
+                'sep 15 2019'.xTextColorBlueGrey()
               ].xcolumnCC(),
             ),
 
             HeaderTitle(
-              title: 'Flight'.textMaterialColorBlack(
-                  fontsize: 30, fontWeight: FontWeight.bold),
-              subtitle: 'June 18, Thu 04:50'.textMaterialColorgrey(),
+              title: 'Flight'
+                  .xTextColorBlack(fontsize: 30, fontWeight: FontWeight.bold),
+              subtitle: 'June 18, Thu 04:50'.xTextColorGrey(),
             ),
             XContainer(
                 padding: EdgeInsets.all(20.0),
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: <Widget>[
                   <Widget>[
                     Icons.arrow_back_ios.xIconTile(),
-                    'Monday 27 july 2000'.textMaterialColorWhite(),
+                    'Monday 27 july 2000'.xTextColorWhite(),
                     Icons.arrow_forward_ios.xIconTile(),
                   ].xRowCSB(),
                   25.0.sizedHeight(),
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   onTap: () {},
                   color: Colors.black,
                   title: Icons.android.xIconTile(color: Colors.white, size: 30),
-                  subtitle: 'Zeeshan'.textMaterialColorWhite(),
+                  subtitle: 'Zeeshan'.xTextColorWhite(),
                 )
               ],
             ),
@@ -120,14 +120,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Color(0xFF3d6dfe),
                     shadowColor: Colors.blue,
                     blurRadius: 5.0,
-                    title: 'Bonus'.h2TextBold(),
+                    title: 'Bonus'.xH2Text(),
                     subTitle:
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                            .textMaterial(),
-                    button: 'know more'
-                        .textMaterialColorWhite()
-                        .cardBannerButton(
-                            onTap: () {}, buttonColor: Colors.lime))
+                            .xText(),
+                    button: 'know more'.xTextColorWhite().cardBannerButton(
+                        onTap: () {}, buttonColor: Colors.lime))
                 .animation(
                     autoPlay: true,
                     configMap: XAnimationType.fadeIn,
@@ -140,12 +138,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 shadowColor: Colors.blue,
                 blurRadius: 5.0,
-                title: 'Bonus'.h2TextBold(),
+                title: 'Bonus'.xH2Text(),
                 subTitle:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                        .textMaterialColorWhite(),
+                        .xTextColorWhite(),
                 button: 'know more'
-                    .textMaterialColorWhite()
+                    .xTextColorWhite()
                     .cardBannerButton(onTap: () {})),
             SizedBox(
               height: 10.0,
@@ -161,12 +159,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     shadowColor: Colors.blue,
                     blurRadius: 5.0,
-                    title: 'Bonus'.h2TextBold(),
+                    title: 'Bonus'.xH2Text(),
                     subTitle:
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                            .textMaterialColorWhite(),
+                            .xTextColorWhite(),
                     button: 'know more'
-                        .textMaterialColorWhite()
+                        .xTextColorWhite()
                         .cardBannerButton(onTap: () {}))
                 .animation(configMap: XAnimationType.fadeIn, autoPlay: true),
             SizedBox(
@@ -197,12 +195,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     shadowColor: Colors.blue,
                     blurRadius: 5.0,
-                    title: 'Bonus'.h2TextBold(),
+                    title: 'Bonus'.xH2Text(),
                     subTitle:
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                            .textMaterialColorWhite(),
+                            .xTextColorWhite(),
                     button: 'know more'
-                        .textMaterialColorWhite()
+                        .xTextColorWhite()
                         .cardBannerButton(onTap: () {}))
                 .animation(configMap: XAnimationType.fadeIn, autoPlay: true),
             //Textmaterial(text: 'null'),
@@ -231,7 +229,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               subtitle:
                   ''' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'''
-                      .textMaterialColorBlack(),
+                      .xTextColorBlack(),
             ),
             30.0.sizedHeight(),
             XContainerGradient(
@@ -254,9 +252,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       .xCircleNetWorkImage(
                           radius: 40, backgroundColor: Colors.white),
                   25.0.sizedHeight(),
-                  '50% Off'.h1TextBold(fontWeight: FontWeight.normal),
+                  '50% Off'.xH1Text(fontWeight: FontWeight.normal),
                   10.0.sizedHeight(),
-                  'On apple watch'.h3TextBold(fontWeight: FontWeight.normal),
+                  'On apple watch'.xH3Text(fontWeight: FontWeight.normal),
                   25.0.sizedHeight(),
                 ].xcolumnCC()),
             25.0.sizedHeight(),
@@ -267,9 +265,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   onTap: () {},
                   child: <Widget>[
                     HeaderTitle(
-                      title: 'Flight'.textMaterialColorBlack(
+                      title: 'Flight'.xTextColorBlack(
                           fontsize: 30, fontWeight: FontWeight.bold),
-                      subtitle: 'June 18, Thu 04:50'.textMaterialColorBlack(),
+                      subtitle: 'June 18, Thu 04:50'.xTextColorBlack(),
                     ),
                   ].xcolumnSC(),
                 ),
@@ -302,7 +300,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ).fadeIn().xResponsiveGridCol(lg: 6, md: 6, sm: 6, xs: 6),
             ].xResponsiveGridRow()
           ].xListView()),
-      floatingActionButton: 'check'.xFloationActiobButton(onTap: () {
+      floatingActionButton: 'check'.xFloationActionButton(onTap: () {
         var isDesktops = context.isDesktop();
         print(isDesktops);
         var isTablets = context.isTablet();

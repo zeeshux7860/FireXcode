@@ -21,7 +21,7 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
             .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
         // title: "Text".text(),
-        value: '105.0'.h2TextBold(color: Colors.white),
+        value: '105.0'.xH2Text(color: Colors.white),
       ).xFlexableRes(350.0 <= value),
       20.0.sizedHeight(),
       XCustomStatic(
@@ -34,7 +34,7 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
             .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
         // title: "Text".text(),
-        value: '105.0'.h2TextBold(color: Colors.white),
+        value: '105.0'.xH2Text(color: Colors.white),
       ).xFlexableRes(350.0 <= value),
       20.0.sizedHeight(),
       XCustomStatic(
@@ -47,7 +47,7 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
             .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
         // title: "Text".text(),
-        value: '105.0'.h2TextBold(color: Colors.white),
+        value: '105.0'.xH2Text(color: Colors.white),
       ).xFlexableRes(350.0 <= value)
     ];
     return <Widget>[
@@ -66,7 +66,7 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
           })
     ].xcolumnCC().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'Column & Row Responsive'.textMaterialColorBlack().xAppBar(
+        appBar: 'Column & Row Responsive'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

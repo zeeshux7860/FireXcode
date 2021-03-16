@@ -23,7 +23,7 @@ class RoundedDrawer extends StatelessWidget {
             color: Colors.pink,
             height: 30,
             width: 200,
-            child: 'Profile Setup'.textMaterialColorWhite(),
+            child: 'Profile Setup'.xTextColorWhite(),
           ),
           SizedBox(
             height: 15,
@@ -36,7 +36,7 @@ class RoundedDrawer extends StatelessWidget {
             spreadRadius: 0.0,
             elavation: 1.0,
             rounded: 12,
-            child: 'Logout'.textMaterialColorWhite(),
+            child: 'Logout'.xTextColorWhite(),
           ),
           SizedBox(
             height: 30,
@@ -108,7 +108,7 @@ class RoundedDrawer extends StatelessWidget {
               width: 80,
               height: 30,
               rounded: 10,
-              child: 'Active'.textMaterialColorWhite(),
+              child: 'Active'.xTextColorWhite(),
             ),
             selected: false,
             text: 'Account Status',

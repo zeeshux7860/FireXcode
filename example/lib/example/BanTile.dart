@@ -13,7 +13,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       BanTile(
         leftTile:
             Icons.arrow_back_ios.xIconTile().xIconButton(onPressed: () {}),
-        centerTitle: 'CenterTitle'.textMaterialColorWhite(),
+        centerTitle: 'CenterTitle'.xTextColorWhite(),
         rightTile:
             Icons.arrow_forward_ios.xIconTile().xIconButton(onPressed: () {}),
         body: <Widget>[
@@ -35,7 +35,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
         leftTile: Icons.arrow_back_ios
             .xIconTile(color: Colors.black)
             .xIconButton(onPressed: () {}),
-        centerTitle: 'CenterTitle'.textMaterialColorBlack(),
+        centerTitle: 'CenterTitle'.xTextColorBlack(),
         rightTile: Icons.arrow_forward_ios
             .xIconTile(color: Colors.black)
             .xIconButton(onPressed: () {}),
@@ -59,7 +59,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
         leftTile: Icons.arrow_back_ios
             .xIconTile(color: Colors.white)
             .xIconButton(onPressed: () {}),
-        centerTitle: 'CenterTitle'.textMaterialColorWhite(),
+        centerTitle: 'CenterTitle'.xTextColorWhite(),
         rightTile: Icons.arrow_forward_ios
             .xIconTile(color: Colors.white)
             .xIconButton(onPressed: () {}),
@@ -88,7 +88,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
         leftTile: Icons.arrow_back_ios
             .xIconTile(color: Colors.white)
             .xIconButton(onPressed: () {}),
-        centerTitle: 'CenterTitle'.textMaterialColorWhite(),
+        centerTitle: 'CenterTitle'.xTextColorWhite(),
         rightTile: Icons.arrow_forward_ios
             .xIconTile(color: Colors.white)
             .xIconButton(onPressed: () {}),
@@ -126,7 +126,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
         leftTile: Icons.arrow_back_ios
             .xIconTile(color: Colors.white)
             .xIconButton(onPressed: () {}),
-        centerTitle: 'CenterTitle'.textMaterialColorWhite(),
+        centerTitle: 'CenterTitle'.xTextColorWhite(),
         rightTile: Icons.arrow_forward_ios
             .xIconTile(color: Colors.white)
             .xIconButton(onPressed: () {}),
@@ -160,7 +160,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       ),
     ].xListView().xap(value: 10).xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'BanTile '.textMaterialColorBlack().xAppBar(
+        appBar: 'BanTile '.xTextColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

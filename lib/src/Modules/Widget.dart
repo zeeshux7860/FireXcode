@@ -10,7 +10,7 @@ extension XWidget on Widget {
   }
 
   /// ------------------------------------------------------------------------ Single ChildScroll view NeverScrollableScrollPhysics
-  Widget toSingleChildScroolViewNeverScrollableScrollPhysics(
+  Widget xSingleChildScroolViewNeverScrollableScrollPhysics(
       {Key key,
       bool reverse = false,
       ScrollController controller,
@@ -32,7 +32,7 @@ extension XWidget on Widget {
   }
 
   /// ------------------------------------------------------------------------ Single ChildScroll view
-  Widget toSingleChildScroolViewClampingScrollPhysics(
+  Widget xSingleChildScroolViewClampingScrollPhysics(
       {Key key,
       bool reverse = false,
       ScrollController controller,
@@ -54,7 +54,7 @@ extension XWidget on Widget {
   }
 
   /// ------------------------------------------------------------------------ Single ChildScroll view
-  Widget toSingleChildScroolView(
+  Widget xSingleChildScroolView(
       {Key key,
       bool reverse = false,
       ScrollController controller,
@@ -78,6 +78,15 @@ extension XWidget on Widget {
 
   /// ------------------------------------------------------------------------ Center
   Widget toCenter({double widthFactor, double heightFactor, Key key}) {
+    return Center(
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
+  Widget xCenter({double widthFactor, double heightFactor, Key key}) {
     return Center(
       heightFactor: heightFactor,
       key: key,

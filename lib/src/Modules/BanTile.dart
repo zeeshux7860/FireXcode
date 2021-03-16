@@ -16,7 +16,7 @@ class BanTile extends StatelessWidget {
       <Widget>[
         leftTile ?? Container(),
 
-        //"Monday 27 july 2000".textMaterialColorWhite(),
+        //"Monday 27 july 2000".xTextColorWhite(),
         centerTitle ?? Container(),
         rightTile ?? Container(),
       ].xRowCSB(),

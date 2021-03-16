@@ -9,8 +9,8 @@ class _ExampleContainerState extends State<ExampleContainer> {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      'image Container'.h1TextBold(color: Colors.black).xltp(l: 20.0, t: 20.0),
-      'text'.textMaterialColorWhite().toCenter().xContainer(
+      'image Container'.xH1Text(color: Colors.black).xltp(l: 20.0, t: 20.0),
+      'text'.xTextColorWhite().toCenter().xContainer(
           onTap: () {},
           margin: EdgeInsets.all(20.0),
           color: Colors.orange,
@@ -22,18 +22,16 @@ class _ExampleContainerState extends State<ExampleContainer> {
                   .decorationINToCover(),
           width: xwidth(context) // auto detect full width
           ),
-      'Normal Container'.h1TextBold(color: Colors.black).xltp(l: 20.0, t: 20.0),
-      'text'.textMaterialColorWhite().toCenter().xContainer(
+      'Normal Container'.xH1Text(color: Colors.black).xltp(l: 20.0, t: 20.0),
+      'text'.xTextColorWhite().toCenter().xContainer(
           onTap: () {},
           margin: EdgeInsets.all(20.0),
           color: Colors.pink,
           height: 200,
           width: xwidth(context) // auto detect full width
           ),
-      'Feature Container'
-          .h1TextBold(color: Colors.black)
-          .xltp(l: 20.0, t: 20.0),
-      'text'.textMaterialColorWhite().toCenter().xContainer(
+      'Feature Container'.xH1Text(color: Colors.black).xltp(l: 20.0, t: 20.0),
+      'text'.xTextColorWhite().toCenter().xContainer(
           onTap: () {},
           rounded: 20.0,
           shadowColor: Colors.black,
@@ -44,9 +42,9 @@ class _ExampleContainerState extends State<ExampleContainer> {
           width: xwidth(context) // auto detect full width
           ),
       'Elliptical Container'
-          .h1TextBold(color: Colors.black)
+          .xH1Text(color: Colors.black)
           .xltp(l: 20.0, t: 20.0),
-      'text'.textMaterialColorWhite().toCenter().xContainer(
+      'text'.xTextColorWhite().toCenter().xContainer(
           onTap: () {},
           margin: EdgeInsets.all(20.0),
           color: Colors.orange,
@@ -64,7 +62,7 @@ class _ExampleContainerState extends State<ExampleContainer> {
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,
-            title: 'Material X Container '.textMaterialColorBlack(),
+            title: 'Material X Container '.xTextColorBlack(),
           ),
         );
   }

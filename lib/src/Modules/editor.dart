@@ -39,7 +39,7 @@ extension TextEditor on String {
                       )
                     : Padding(
                         padding: const EdgeInsets.only(bottom: 1),
-                        child: a.toString().textMaterialColorWhite(),
+                        child: a.toString().xTextColorWhite(),
                       );
               }),
         ),

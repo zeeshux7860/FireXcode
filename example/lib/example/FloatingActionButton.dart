@@ -3,9 +3,9 @@ import 'package:firexcode/firexcode.dart';
 class ExampleFloatingActionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return 'FloatingActionButton'.textMaterialColorWhite().toCenter().xScaffold(
+    return 'FloatingActionButton'.xTextColorWhite().toCenter().xScaffold(
           backgroundColor: Colors.white,
-          appBar: 'Flaoting Action Button'.textMaterialColorBlack().xAppBar(
+          appBar: 'Flaoting Action Button'.xTextColorBlack().xAppBar(
                 brightness: Brightness.light,
                 centerTitle: true,
                 backgroundColor: Colors.white,

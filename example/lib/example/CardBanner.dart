@@ -11,13 +11,13 @@ class ExampleCardBanner extends StatelessWidget {
         color: Colors.black,
         shadowColor: Colors.blue,
         blurRadius: 5.0,
-        title: 'Bonus'.h2TextBold(),
+        title: 'Bonus'.xH2Text(),
         subTitle:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                .textMaterialColorWhite()
+                .xTextColorWhite()
                 .xExpandableText(
-                    expand: 'More details'.textMaterialColorWhite(),
-                    unexpand: 'Less details'.textMaterialColorWhite(),
+                    expand: 'More details'.xTextColorWhite(),
+                    unexpand: 'Less details'.xTextColorWhite(),
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start),
       ).fadeIn().toCenter(),
@@ -31,13 +31,13 @@ class ExampleCardBanner extends StatelessWidget {
         color: Color(0xFF3d6dfe),
         shadowColor: Colors.blue,
         blurRadius: 5.0,
-        title: 'Bonus'.h2TextBold(),
+        title: 'Bonus'.xH2Text(),
         subTitle:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                .textMaterialColorWhite()
+                .xTextColorWhite()
                 .xExpandableText(
-                    expand: 'More details'.textMaterialColorWhite(),
-                    unexpand: 'Less details'.textMaterialColorWhite(),
+                    expand: 'More details'.xTextColorWhite(),
+                    unexpand: 'Less details'.xTextColorWhite(),
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start),
       ).fadeIn().toCenter(),
@@ -53,16 +53,16 @@ class ExampleCardBanner extends StatelessWidget {
         color: Colors.orange,
         shadowColor: Colors.blue,
         blurRadius: 5.0,
-        title: 'Bonus'.h2TextBold(),
+        title: 'Bonus'.xH2Text(),
         subTitle:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                .textMaterialColorWhite(),
-        button: 'Know More'.textMaterialColorBlack().cardBannerButton(
+                .xTextColorWhite(),
+        button: 'Know More'.xTextColorBlack().cardBannerButton(
             buttonColor: Colors.white, onTap: () {}, rounded: 5),
       ).fadeIn().toCenter(),
     ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'XCardBanner'.textMaterialColorBlack().xAppBar(
+        appBar: 'XCardBanner'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

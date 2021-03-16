@@ -12,23 +12,23 @@ class _ExampleExpanableTextState extends State<ExampleExpanableText> {
       // normal
 
       'Normal ExapandableText'
-          .h2TextBold(color: Colors.black)
+          .xH2Text(color: Colors.black)
           .xltp(l: 20.0, t: 20.0),
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-          .textMaterialColorBlack()
+          .xTextColorBlack()
           .xExpandableText()
           .xap(value: 20.0),
 
       // container
       'Container ExapandableText'
-          .h2TextBold(color: Colors.black)
+          .xH2Text(color: Colors.black)
           .xltp(l: 20.0, t: 20.0),
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-          .textMaterialColorWhite()
+          .xTextColorWhite()
           .xExpandableText(
               heightunexpand: 100,
-              expand: 'More Details'.textMaterialColorWhite(),
-              unexpand: 'Less Details'.textMaterialColorWhite(),
+              expand: 'More Details'.xTextColorWhite(),
+              unexpand: 'Less Details'.xTextColorWhite(),
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start)
           .xap(value: 20.0)
@@ -41,7 +41,7 @@ class _ExampleExpanableTextState extends State<ExampleExpanableText> {
 
       // custom
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-          .textMaterialColorBlack()
+          .xTextColorBlack()
           .xExpandableText(
               heightunexpand: 90,
               expand: <Widget>[
@@ -69,7 +69,7 @@ class _ExampleExpanableTextState extends State<ExampleExpanableText> {
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,
-            title: 'Material X ExpandableText '.textMaterialColorBlack(),
+            title: 'Material X ExpandableText '.xTextColorBlack(),
           ),
         );
   }

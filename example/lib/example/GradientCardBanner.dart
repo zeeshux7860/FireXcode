@@ -9,11 +9,11 @@ class ExampleGradientCardBanner extends StatelessWidget {
                   begin: Alignment.topLeft, end: Alignment.bottomLeft),
               shadowColor: Colors.pink,
               blurRadius: 5.0,
-              title: 'Bonus'.h2TextBold(),
+              title: 'Bonus'.xH2Text(),
               subTitle:
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                      .textMaterialColorWhite(),
-              button: 'know more'.textMaterialColorWhite().cardBannerButton(
+                      .xTextColorWhite(),
+              button: 'know more'.xTextColorWhite().cardBannerButton(
                   onTap: () {}, rounded: 5.0, buttonColor: Colors.black))
           .xap(value: 20.0),
       20.0.sizedHeight(),
@@ -24,13 +24,13 @@ class ExampleGradientCardBanner extends StatelessWidget {
         ),
         shadowColor: Colors.blue,
         blurRadius: 5.0,
-        title: 'Bonus'.h2TextBold(),
+        title: 'Bonus'.xH2Text(),
         subTitle:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                .textMaterialColorWhite()
+                .xTextColorWhite()
                 .xExpandableText(
-                    expand: 'More details'.textMaterialColorWhite(),
-                    unexpand: 'Less details'.textMaterialColorWhite(),
+                    expand: 'More details'.xTextColorWhite(),
+                    unexpand: 'Less details'.xTextColorWhite(),
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start),
       )
@@ -62,18 +62,17 @@ class ExampleGradientCardBanner extends StatelessWidget {
               ),
               shadowColor: Colors.blue,
               blurRadius: 5.0,
-              title: 'Bonus'.h2TextBold(),
+              title: 'Bonus'.xH2Text(),
               subTitle:
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
-                      .textMaterialColorWhite(),
-              button: 'know more'
-                  .textMaterialColorWhite()
-                  .cardBannerButton(onTap: () {}))
+                      .xTextColorWhite(),
+              button:
+                  'know more'.xTextColorWhite().cardBannerButton(onTap: () {}))
           .animation(configMap: XAnimationType.fadeIn, autoPlay: true)
           .xap(value: 20.0),
     ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'XGradientCardBanner'.textMaterialColorBlack().xAppBar(
+        appBar: 'XGradientCardBanner'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

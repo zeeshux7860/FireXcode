@@ -7,7 +7,7 @@ class ExampleContainerGradient extends StatelessWidget {
       XContainerGradient(
         height: 200.0,
         width: xwidth(context),
-        child: 'test'.textMaterialColorWhite(fontsize: 25.0).toCenter(),
+        child: 'test'.xTextColorWhite(fontsize: 25.0).toCenter(),
         gradient: [Colors.orange, Colors.red].xLGClamp(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
@@ -22,7 +22,7 @@ class ExampleContainerGradient extends StatelessWidget {
         rounded: 10.0,
         height: 200.0,
         width: xwidth(context),
-        child: 'test'.textMaterialColorWhite(fontsize: 25.0).toCenter(),
+        child: 'test'.xTextColorWhite(fontsize: 25.0).toCenter(),
         gradient: [Colors.pink, Colors.indigo].xLGClamp(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
@@ -35,7 +35,7 @@ class ExampleContainerGradient extends StatelessWidget {
             bottomRight: Radius.elliptical(100, 100)),
         height: 200.0,
         width: xwidth(context),
-        child: 'test'.textMaterialColorWhite(fontsize: 25.0).toCenter(),
+        child: 'test'.xTextColorWhite(fontsize: 25.0).toCenter(),
         gradient: [Color(0xFF65FDF0), Color(0xFF1D6FA3)].xLGClamp(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
@@ -44,7 +44,7 @@ class ExampleContainerGradient extends StatelessWidget {
       ).xap(value: 20.0),
     ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'ContainerGradient'.textMaterialColorBlack().xAppBar(
+        appBar: 'ContainerGradient'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

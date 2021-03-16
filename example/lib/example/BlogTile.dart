@@ -18,11 +18,11 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         backrounded: 10,
         shape: BorderRadius.circular(10).xShapeBorder(),
         leading: 'Z'
-            .textMaterialColorWhite()
+            .xTextColorWhite()
             .xCircleAvatar(backgroundColor: Colors.black, radius: 25),
-        title: 'Image Editor Pro'.textMaterialColorBlack(),
-        subTitle: 'Goto PubDev Check'.textMaterial(),
-        trailing: '10 min ago'.textMaterial(),
+        title: 'Image Editor Pro'.xTextColorBlack(),
+        subTitle: 'Goto PubDev Check'.xText(),
+        trailing: '10 min ago'.xText(),
         image:
             'https://user-images.githubusercontent.com/55942632/77652902-fedd9980-6f94-11ea-96d5-d31657590893.png'
                 .decorationINToCover(),
@@ -38,11 +38,11 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         backrounded: 10,
         shape: BorderRadius.circular(10).xShapeBorder(),
         leading: 'Z'
-            .textMaterialColorWhite()
+            .xTextColorWhite()
             .xCircleAvatar(backgroundColor: Colors.white, radius: 25),
-        title: 'Image Editor Pro'.textMaterialColorWhite(),
-        subTitle: 'Goto PubDev Check'.textMaterial(color: Colors.grey[50]),
-        trailing: '10 min ago'.textMaterial(
+        title: 'Image Editor Pro'.xTextColorWhite(),
+        subTitle: 'Goto PubDev Check'.xText(color: Colors.grey[50]),
+        trailing: '10 min ago'.xText(
           color: Colors.white,
         ),
         image:
@@ -59,11 +59,11 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         backrounded: 10,
         shape: BorderRadius.circular(10).xShapeBorder(),
         leading: 'Z'
-            .textMaterial(fontWeight: FontWeight.bold, color: Colors.black)
+            .xText(fontWeight: FontWeight.bold, color: Colors.black)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 25),
-        title: 'Image Editor Pro'.textMaterialColorWhite(),
-        subTitle: 'Goto PubDev Check'.textMaterial(color: Colors.grey[50]),
-        trailing: '10 min ago'.textMaterial(
+        title: 'Image Editor Pro'.xTextColorWhite(),
+        subTitle: 'Goto PubDev Check'.xText(color: Colors.grey[50]),
+        trailing: '10 min ago'.xText(
           color: Colors.white,
         ),
         image:
@@ -76,7 +76,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,
-            title: 'BlogTile '.textMaterialColorBlack(),
+            title: 'BlogTile '.xTextColorBlack(),
           ),
         );
   }

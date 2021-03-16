@@ -13,7 +13,7 @@ class _ExampleIconState extends State<ExampleIcon> {
         centerTitle: true,
         brightness: Brightness.light,
         backgroundColor: Colors.white,
-        title: 'Icon'.textMaterialColorBlack(),
+        title: 'Icon'.xTextColorBlack(),
       ),
       body: <Widget>[
         40.0.sizedHeight(),
@@ -25,7 +25,7 @@ class _ExampleIconState extends State<ExampleIcon> {
             .xIconTile(color: Colors.white, size: 30)
             .lableIcon(
                 color: Colors.red,
-                lable: 'white'.textMaterialColorWhite(),
+                lable: 'white'.xTextColorWhite(),
                 onTap: () {},
                 rounded: 15)
             .xap(value: 10)

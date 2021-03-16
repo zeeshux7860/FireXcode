@@ -13,7 +13,7 @@ class _ExamplePaddingState extends State<ExamplePadding> {
   Widget build(BuildContext context) {
     return <Widget>[
       <Widget>[
-        'single value pass'.h1TextBold(color: Colors.black),
+        'single value pass'.xH1Text(color: Colors.black),
         20.0.sizedHeight(),
         ' .xap(value: 20.0) all pading'.text().xap(value: 20.0),
         ' .xlp(value: 20.0) left pading'.text().xlp(value: 20.0),
@@ -21,7 +21,7 @@ class _ExamplePaddingState extends State<ExamplePadding> {
         ' .xbp(value: 20.0) bottom pading'.text().xbp(value: 20.0),
         ' .xbp(value: 20.0) bottom pading'.text().xbp(value: 20.0),
         20.0.sizedHeight(),
-        '2 side value pass'.h1TextBold(color: Colors.black),
+        '2 side value pass'.xH1Text(color: Colors.black),
         20.0.sizedHeight(),
         ' .xlrp(l: 20,r: 20) left rigth pading'.text().xlrp(l: 20, r: 20),
         ' .xltp(l: 20.0, t: 20.0) left top pading'
@@ -40,7 +40,7 @@ class _ExamplePaddingState extends State<ExamplePadding> {
             .text()
             .xrbp(b: 20.0, r: 20.0),
         20.0.sizedHeight(),
-        '3 side value pass'.h1TextBold(color: Colors.black),
+        '3 side value pass'.xH1Text(color: Colors.black),
         20.0.sizedHeight(),
         ' .xlbtp(b: 20.0, l: 20.0, t: 20.0) left bottom top  padding'
             .text()
@@ -54,7 +54,7 @@ class _ExamplePaddingState extends State<ExamplePadding> {
       ].xcolumnSS().xap(value: 20.0)
     ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'Padding'.textMaterialColorBlack().xAppBar(
+        appBar: 'Padding'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

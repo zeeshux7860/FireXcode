@@ -22,3 +22,7 @@
 ## 0.9.4
 
 * TODO: stable 2.0.2 fix-1
+
+## 0.9.5
+
+* TODO: stable 2.0.2 fix-2

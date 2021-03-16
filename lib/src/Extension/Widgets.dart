@@ -516,6 +516,41 @@ extension ListViewBuilders on Function(BuildContext context, int index) {
     );
   }
 
+  Widget xListVBCSP({
+    Key key,
+    Axis scrollDirection = Axis.vertical,
+    bool reverse = false,
+    ScrollController controller,
+    bool primary,
+    EdgeInsetsGeometry padding,
+    @required int itemCount,
+    bool addAutomaticKeepAlives = true,
+    bool addRepaintBoundaries = true,
+    bool addSemanticIndexes = true,
+    double cacheExtent,
+    int semanticChildCount,
+    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+  }) {
+    return ListView.builder(
+      itemBuilder: this,
+      itemCount: itemCount,
+      addAutomaticKeepAlives: addAutomaticKeepAlives,
+      addRepaintBoundaries: addRepaintBoundaries,
+      addSemanticIndexes: addSemanticIndexes,
+      key: key,
+      scrollDirection: scrollDirection,
+      reverse: reverse,
+      controller: controller,
+      primary: primary,
+      physics: ClampingScrollPhysics(),
+      shrinkWrap: true,
+      padding: padding,
+      cacheExtent: cacheExtent,
+      semanticChildCount: semanticChildCount ?? itemCount,
+      dragStartBehavior: dragStartBehavior,
+    );
+  }
+
   Widget xListVBH({
     Key key,
     Axis scrollDirection = Axis.horizontal,
@@ -553,6 +588,41 @@ extension ListViewBuilders on Function(BuildContext context, int index) {
     );
   }
 
+  Widget xListVBHCSP({
+    Key key,
+    Axis scrollDirection = Axis.horizontal,
+    bool reverse = false,
+    ScrollController controller,
+    bool primary,
+    EdgeInsetsGeometry padding,
+    @required int itemCount,
+    bool addAutomaticKeepAlives = true,
+    bool addRepaintBoundaries = true,
+    bool addSemanticIndexes = true,
+    double cacheExtent,
+    int semanticChildCount,
+    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+  }) {
+    return ListView.builder(
+      itemBuilder: this,
+      itemCount: itemCount,
+      addAutomaticKeepAlives: addAutomaticKeepAlives,
+      addRepaintBoundaries: addRepaintBoundaries,
+      addSemanticIndexes: addSemanticIndexes,
+      key: key,
+      scrollDirection: scrollDirection,
+      reverse: reverse,
+      controller: controller,
+      primary: primary,
+      physics: ClampingScrollPhysics(),
+      shrinkWrap: true,
+      padding: padding,
+      cacheExtent: cacheExtent,
+      semanticChildCount: semanticChildCount ?? itemCount,
+      dragStartBehavior: dragStartBehavior,
+    );
+  }
+
   Widget xGridVB(
       {Key key,
       Axis scrollDirection = Axis.vertical,
@@ -583,6 +653,40 @@ extension ListViewBuilders on Function(BuildContext context, int index) {
       primary: primary,
       physics: physics,
       shrinkWrap: shrinkWrap,
+      padding: padding,
+      cacheExtent: cacheExtent,
+      semanticChildCount: semanticChildCount ?? itemCount,
+    );
+  }
+
+  Widget xGridVBCSP(
+      {Key key,
+      Axis scrollDirection = Axis.vertical,
+      bool reverse = false,
+      ScrollController controller,
+      bool primary,
+      EdgeInsetsGeometry padding,
+      @required int itemCount,
+      bool addAutomaticKeepAlives = true,
+      bool addRepaintBoundaries = true,
+      bool addSemanticIndexes = true,
+      double cacheExtent,
+      int semanticChildCount,
+      @required SliverGridDelegate gridDelegate}) {
+    return GridView.builder(
+      gridDelegate: gridDelegate,
+      itemBuilder: this,
+      itemCount: itemCount,
+      addAutomaticKeepAlives: addAutomaticKeepAlives,
+      addRepaintBoundaries: addRepaintBoundaries,
+      addSemanticIndexes: addSemanticIndexes,
+      key: key,
+      scrollDirection: scrollDirection,
+      reverse: reverse,
+      controller: controller,
+      primary: primary,
+      physics: ClampingScrollPhysics(),
+      shrinkWrap: true,
       padding: padding,
       cacheExtent: cacheExtent,
       semanticChildCount: semanticChildCount ?? itemCount,
@@ -775,7 +879,130 @@ extension Wins on Widget {
     );
   }
 
+  Widget xAlign(
+      {AlignmentGeometry alignment,
+      double heightFactor,
+      Key key,
+      double widthFactor}) {
+    return Align(
+      alignment: alignment,
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
+  Widget xBottomCenter({double heightFactor, Key key, double widthFactor}) {
+    return Align(
+      alignment: Alignment.bottomCenter,
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
+  Widget xBottomRight({double heightFactor, Key key, double widthFactor}) {
+    return Align(
+      alignment: Alignment.bottomRight,
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
+  Widget xBottomLeft({double heightFactor, Key key, double widthFactor}) {
+    return Align(
+      alignment: Alignment.bottomLeft,
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
+  Widget xTopCenter({double heightFactor, Key key, double widthFactor}) {
+    return Align(
+      alignment: Alignment.topCenter,
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
+  Widget xTopLeft({double heightFactor, Key key, double widthFactor}) {
+    return Align(
+      alignment: Alignment.topLeft,
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
+  Widget xTopRight({double heightFactor, Key key, double widthFactor}) {
+    return Align(
+      alignment: Alignment.topRight,
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
+  Widget xCenterLeft({double heightFactor, Key key, double widthFactor}) {
+    return Align(
+      alignment: Alignment.centerLeft,
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
+  Widget xCenterRight({double heightFactor, Key key, double widthFactor}) {
+    return Align(
+      alignment: Alignment.centerRight,
+      heightFactor: heightFactor,
+      key: key,
+      widthFactor: widthFactor,
+      child: this,
+    );
+  }
+
   Widget toMaterial({
+    Key key,
+    MaterialType type = MaterialType.canvas,
+    double elevation = 0.0,
+    Color color,
+    Color shadowColor = const Color(0xFF000000),
+    TextStyle textStyle,
+    BorderRadiusGeometry borderRadius,
+    ShapeBorder shape,
+    bool borderOnForeground = true,
+    Clip clipBehavior = Clip.none,
+    Duration animationDuration = kThemeChangeDuration,
+  }) {
+    return Material(
+      type: type,
+      animationDuration: animationDuration,
+      borderOnForeground: borderOnForeground,
+      borderRadius: borderRadius,
+      clipBehavior: clipBehavior,
+      color: color,
+      elevation: elevation,
+      key: key,
+      shadowColor: shadowColor,
+      shape: shape,
+      textStyle: textStyle,
+      child: this,
+    );
+  }
+
+  Widget xMaterial({
     Key key,
     MaterialType type = MaterialType.canvas,
     double elevation = 0.0,

@@ -14,7 +14,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
         brightness: Brightness.light,
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: 'TransactiontTile '.textMaterialColorBlack(),
+        title: 'TransactiontTile '.xTextColorBlack(),
       ),
       body: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -23,11 +23,11 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                     onTap: () {},
                     leading: Icons.book.xListTileIcon(color: Colors.purple),
                     title: 'Zeeshan'.xCardTileTitle(color: Colors.black),
-                    subtitle: 'Developr!!'.textMaterialColorgrey(),
-                    trailing1: '+ 1234500.0'.textMaterialColorBlack(
+                    subtitle: 'Developr!!'.xTextColorGrey(),
+                    trailing1: '+ 1234500.0'.xTextColorBlack(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
-                    trailing2: 'sep 15 2019'.textMaterialColorblueGrey())
+                    trailing2: 'sep 15 2019'.xTextColorBlueGrey())
                 .fadeInDown(),
             10.0.sizedHeight(),
             XTransactiontTile(
@@ -37,11 +37,11 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                     ),
                     title: 'Apple Mac Laptop'
                         .xCardTileTitle(color: Colors.black, fontsize: 15),
-                    subtitle: 'Buy'.textMaterialColorgrey(),
-                    trailing1: '+ 1234500.0'.textMaterialColorBlack(
+                    subtitle: 'Buy'.xTextColorGrey(),
+                    trailing1: '+ 1234500.0'.xTextColorBlack(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
-                    trailing2: 'sep 15 2019'.textMaterialColorblueGrey())
+                    trailing2: 'sep 15 2019'.xTextColorBlueGrey())
                 .xContainer(color: Colors.white)
                 .fadeInLeft(),
             10.0.sizedHeight(),
@@ -52,11 +52,11 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                             .xCircleNetWorkImage(),
                     title: 'Apple Mac Laptop'
                         .xCardTileTitle(color: Colors.black, fontsize: 15),
-                    subtitle: 'Buy'.textMaterialColorgrey(),
-                    trailing1: '+ 1234500.0'.textMaterialColorBlack(
+                    subtitle: 'Buy'.xTextColorGrey(),
+                    trailing1: '+ 1234500.0'.xTextColorBlack(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
-                    trailing2: 'sep 15 2019'.textMaterialColorblueGrey())
+                    trailing2: 'sep 15 2019'.xTextColorBlueGrey())
                 .xContainer(color: Colors.white)
                 .fadeInRight(),
             10.0.sizedHeight(),
@@ -67,11 +67,11 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                             .xCircleNetWorkImage(),
                     title: 'Apple Mac Laptop'
                         .xCardTileTitle(color: Colors.white, fontsize: 15),
-                    subtitle: 'Buy'.textMaterialColorWhite(),
-                    trailing1: '+ 1234500.0'.textMaterialColorWhite(
+                    subtitle: 'Buy'.xTextColorWhite(),
+                    trailing1: '+ 1234500.0'.xTextColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
-                    trailing2: 'sep 15 2019'.textMaterialColorWhite())
+                    trailing2: 'sep 15 2019'.xTextColorWhite())
                 .xContainer(color: Color(0xFF3d6dfe))
                 .fadeInUp(),
             10.0.sizedHeight(),
@@ -81,11 +81,11 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                             .xCircleNetWorkImage(),
                     title: 'Apple Mac Laptop'
                         .xCardTileTitle(color: Colors.white, fontsize: 15),
-                    subtitle: 'Buy'.textMaterialColorWhite(),
-                    trailing1: '+ 1234500.0'.textMaterialColorWhite(
+                    subtitle: 'Buy'.xTextColorWhite(),
+                    trailing1: '+ 1234500.0'.xTextColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
-                    trailing2: 'sep 15 2019'.textMaterialColorWhite())
+                    trailing2: 'sep 15 2019'.xTextColorWhite())
                 .xContainer(color: Colors.orange, rounded: 10, onTap: () {})
                 .fadeInUp(),
             10.0.sizedHeight(),
@@ -95,12 +95,12 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                             .xCircleNetWorkImage(),
                     title: 'Apple Mac Laptop'
                         .xCardTileTitle(color: Colors.white, fontsize: 15),
-                    subtitle: 'Buy'.textMaterialColorWhite(),
-                    trailing1: '+ 1234500.0'.textMaterialColorWhite(
+                    subtitle: 'Buy'.xTextColorWhite(),
+                    trailing1: '+ 1234500.0'.xTextColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
                     onTap: () {},
-                    trailing2: 'sep 15 2019'.textMaterialColorWhite())
+                    trailing2: 'sep 15 2019'.xTextColorWhite())
                 .xContainer(
                   color: Colors.red,
                   blurRadius: 12,
@@ -118,11 +118,11 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                             .xCircleNetWorkImage(),
                     title: 'Apple Mac Laptop'
                         .xCardTileTitle(color: Colors.white, fontsize: 15),
-                    subtitle: 'Buy'.textMaterialColorWhite(),
-                    trailing1: '+ 1234500.0'.textMaterialColorWhite(
+                    subtitle: 'Buy'.xTextColorWhite(),
+                    trailing1: '+ 1234500.0'.xTextColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
-                    trailing2: 'sep 15 2019'.textMaterialColorWhite())
+                    trailing2: 'sep 15 2019'.xTextColorWhite())
                 .xContainer(
                     color: Colors.pink,
                     blurRadius: 12,
@@ -139,11 +139,11 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                             .xCircleNetWorkImage(),
                     title: 'Apple Mac Laptop'
                         .xCardTileTitle(color: Colors.white, fontsize: 15),
-                    subtitle: 'Buy'.textMaterialColorWhite(),
-                    trailing1: '+ 1234500.0'.textMaterialColorWhite(
+                    subtitle: 'Buy'.xTextColorWhite(),
+                    trailing1: '+ 1234500.0'.xTextColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
-                    trailing2: 'sep 15 2019'.textMaterialColorWhite())
+                    trailing2: 'sep 15 2019'.xTextColorWhite())
                 .xContainer(
                     color: Colors.pink,
                     blurRadius: 12,

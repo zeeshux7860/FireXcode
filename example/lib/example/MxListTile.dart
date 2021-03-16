@@ -91,7 +91,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               shadowColor: Colors.black,
               blurRadius: 12),
       XListTile(
-              subtitle: 'Text'.textMaterialColorWhite(),
+              subtitle: 'Text'.xTextColorWhite(),
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -117,7 +117,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               shadowColor: Colors.grey,
               blurRadius: 12),
       XListTile(
-              subtitle: 'Text'.textMaterialColorWhite(),
+              subtitle: 'Text'.xTextColorWhite(),
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -135,7 +135,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               trailing: MaterialXButton(
                   color: Colors.white,
                   rounded: 5,
-                  child: 'Add'.textMaterialColorBlack(),
+                  child: 'Add'.xTextColorBlack(),
                   onTap: () {
                     setState(() {
                       if (isActive) {
@@ -160,7 +160,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
     ].xcolumnCC().xap(value: 10).xScaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: 'XListTile'.textMaterialColorBlack(),
+            title: 'XListTile'.xTextColorBlack(),
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,

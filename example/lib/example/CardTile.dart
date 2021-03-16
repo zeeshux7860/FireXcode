@@ -14,7 +14,7 @@ class _ExampleCardTileState extends State<ExampleCardTile> {
         centerTitle: true,
         brightness: Brightness.light,
         backgroundColor: Colors.white,
-        title: 'CardTile'.textMaterialColorBlack(),
+        title: 'CardTile'.xTextColorBlack(),
       ),
       body: <Widget>[
         30.0.sizedHeight(),
@@ -25,10 +25,10 @@ class _ExampleCardTileState extends State<ExampleCardTile> {
           lineColor: Colors.teal,
           bottomLeft: Radius.circular(20),
           bottomRight: Radius.circular(20),
-          title: 'Zeeshan'.h2TextBold(color: Colors.black),
+          title: 'Zeeshan'.xH2Text(color: Colors.black),
           subtitle:
               ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                  .textMaterialColorBlack(),
+                  .xTextColorBlack(),
         ).fadeInUp(),
         CardTile(
           margin: EdgeInsets.all(10),
@@ -36,10 +36,10 @@ class _ExampleCardTileState extends State<ExampleCardTile> {
           shadowColor: Colors.pink,
           lineColor: Colors.pink,
           bottomRight: Radius.circular(25),
-          title: 'Zeeshan'.h2TextBold(color: Colors.black),
+          title: 'Zeeshan'.xH2Text(color: Colors.black),
           subtitle:
               ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
-                  .textMaterialColorBlack(),
+                  .xTextColorBlack(),
         ).slideInLeft(),
         CardTile(
           margin: EdgeInsets.all(10),
@@ -48,10 +48,10 @@ class _ExampleCardTileState extends State<ExampleCardTile> {
           lineColor: Color(0xFF3d6dfe),
           rounded: 15,
           bottomLeft: Radius.circular(25),
-          title: 'Zeeshan'.h2TextBold(color: Colors.black),
+          title: 'Zeeshan'.xH2Text(color: Colors.black),
           subtitle:
               ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
-                  .textMaterialColorBlack(),
+                  .xTextColorBlack(),
         ).slideInRight(),
       ].xListView(),
     );

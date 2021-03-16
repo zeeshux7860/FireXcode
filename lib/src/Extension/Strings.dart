@@ -5,61 +5,61 @@ import 'package:firexcode/src/Text/h_tag.dart';
 import 'package:firexcode/src/Text/text_material.dart';
 
 extension Components on String {
-  Widget h1TextBold(
+  Widget xH1Text(
       {Color color = Colors.white, FontWeight fontWeight = FontWeight.bold}) {
     return H1(
       text: this,
-      fontWeight: FontWeight.bold,
+      fontWeight: fontWeight,
       color: color,
     );
   }
 
-  Widget h2TextBold(
+  Widget xH2Text(
       {Color color = Colors.white, FontWeight fontWeight = FontWeight.bold}) {
     return H2(
       text: this,
-      fontWeight: FontWeight.bold,
+      fontWeight: fontWeight,
       color: color,
     );
   }
 
-  Widget h3TextBold(
+  Widget xH3Text(
       {Color color = Colors.white, FontWeight fontWeight = FontWeight.bold}) {
     return H3(
       text: this,
-      fontWeight: FontWeight.bold,
+      fontWeight: fontWeight,
       color: color,
     );
   }
 
-  Widget h4TextBold(
+  Widget xH4Text(
       {Color color = Colors.white, FontWeight fontWeight = FontWeight.bold}) {
     return H4(
       text: this,
-      fontWeight: FontWeight.bold,
+      fontWeight: fontWeight,
       color: color,
     );
   }
 
-  Widget h5TextBold(
+  Widget xH5Text(
       {Color color = Colors.white, FontWeight fontWeight = FontWeight.bold}) {
     return H5(
       text: this,
-      fontWeight: FontWeight.bold,
+      fontWeight: fontWeight,
       color: color,
     );
   }
 
-  Widget h6TextBold(
+  Widget xH6Text(
       {Color color = Colors.white, FontWeight fontWeight = FontWeight.bold}) {
     return H6(
       text: this,
-      fontWeight: FontWeight.bold,
+      fontWeight: fontWeight,
       color: color,
     );
   }
 
-  Widget xFloationActiobButton(
+  Widget xFloationActionButton(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,
@@ -198,7 +198,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterial(
+  Widget xText(
       {Color color = Colors.black, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -208,7 +208,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorBlack(
+  Widget xTextColorBlack(
       {Color color = Colors.black, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -218,7 +218,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorWhite(
+  Widget xTextColorWhite(
       {Color color = Colors.white, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -228,7 +228,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorpurple(
+  Widget xTextColorPurple(
       {Color color = Colors.purple, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -238,7 +238,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorRed(
+  Widget xTextColorRed(
       {Color color = Colors.red, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -248,7 +248,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorRedAccent(
+  Widget xTextColorRedAccent(
       {Color color = Colors.redAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -260,7 +260,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorgrey(
+  Widget xTextColorGrey(
       {Color color = Colors.grey, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -270,7 +270,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColoramber(
+  Widget xTextColorAmber(
       {Color color = Colors.amber, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -280,7 +280,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorgreen(
+  Widget xTextColorGreen(
       {Color color = Colors.green, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -290,7 +290,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorgreenAccent(
+  Widget xTextColorGreenAccent(
       {Color color = Colors.greenAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -302,7 +302,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorlightBlue(
+  Widget xTextColorlightBlue(
       {Color color = Colors.lightBlue,
       double fontsize,
       FontWeight fontWeight}) {
@@ -314,7 +314,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorlightBlueAccent(
+  Widget xTextColorLightBlueAccent(
       {Color color = Colors.lightBlueAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -326,7 +326,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorlightGreen(
+  Widget xTextColorlightGreen(
       {Color color = Colors.lightGreen,
       double fontsize,
       FontWeight fontWeight}) {
@@ -338,7 +338,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorlightGreenAccent(
+  Widget xTextColorLightGreenAccent(
       {Color color = Colors.lightGreenAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -350,7 +350,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColororange(
+  Widget xTextColorOrange(
       {Color color = Colors.orange, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -360,7 +360,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColororangeAccent(
+  Widget xTextColorOrangeAccent(
       {Color color = Colors.orangeAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -372,7 +372,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColordeepOrangeAccent(
+  Widget xTextColorDeepOrangeAccent(
       {Color color = Colors.deepOrangeAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -384,7 +384,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColordeepOrange(
+  Widget xTextColorDeepOrange(
       {Color color = Colors.deepOrange,
       double fontsize,
       FontWeight fontWeight}) {
@@ -396,7 +396,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColordeepPurple(
+  Widget xTextColorDeepPurple(
       {Color color = Colors.deepPurple,
       double fontsize,
       FontWeight fontWeight}) {
@@ -408,7 +408,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColordeepPurpleAccent(
+  Widget xTextColorDeepPurpleAccent(
       {Color color = Colors.deepPurpleAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -420,7 +420,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorblue(
+  Widget xTextColorBlue(
       {Color color = Colors.blue, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -430,7 +430,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorblueAccent(
+  Widget xTextColorBlueAccent(
       {Color color = Colors.blueAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -442,7 +442,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorblueGrey(
+  Widget xTextColorBlueGrey(
       {Color color = Colors.blueGrey, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -452,7 +452,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColoramberAccent(
+  Widget xTextColorAmberAccent(
       {Color color = Colors.amberAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -464,7 +464,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorbrown(
+  Widget xTextColorBrown(
       {Color color = Colors.brown, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -474,7 +474,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorcyanAccent(
+  Widget xTextColorCyanAccent(
       {Color color = Colors.cyanAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -486,7 +486,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorCyan(
+  Widget xTextColorCyan(
       {Color color = Colors.cyan, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -496,7 +496,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorindigo(
+  Widget xTextColorIndigo(
       {Color color = Colors.indigo, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -506,7 +506,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorindigoAccent(
+  Widget xTextColorIndigoAccent(
       {Color color = Colors.indigoAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -518,7 +518,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorlime(
+  Widget xTextColorLime(
       {Color color = Colors.lime, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -528,7 +528,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorlimeAccent(
+  Widget xTextColorLimeAccent(
       {Color color = Colors.limeAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -540,7 +540,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorpink(
+  Widget xTextColorPink(
       {Color color = Colors.pink, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -550,7 +550,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorpinkAccent(
+  Widget xTextColorPinkAccent(
       {Color color = Colors.pinkAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -562,7 +562,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorpurpleAccent(
+  Widget xTextColorPurpleAccent(
       {Color color = Colors.purpleAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -574,7 +574,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColorteal(
+  Widget xTextColorTeal(
       {Color color = Colors.teal, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -584,7 +584,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColortealAccent(
+  Widget xTextColorTealAccent(
       {Color color = Colors.tealAccent,
       double fontsize,
       FontWeight fontWeight}) {
@@ -596,7 +596,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColoryellow(
+  Widget xTextColorYellow(
       {Color color = Colors.yellow, double fontsize, FontWeight fontWeight}) {
     return Textmaterial(
       text: this,
@@ -606,7 +606,7 @@ extension Components on String {
     );
   }
 
-  Widget textMaterialColoryellowAccent(
+  Widget xTextColorYellowAccent(
       {Color color = Colors.yellowAccent,
       double fontsize,
       FontWeight fontWeight}) {

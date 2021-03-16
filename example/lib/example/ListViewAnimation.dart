@@ -14,7 +14,7 @@ class _ExampleListViewAnimationState extends State<ExampleListViewAnimation> {
         position: index,
         duration: const Duration(milliseconds: 1000),
         child: ListTile(
-          title: index.toString().textMaterial(),
+          title: index.toString().xText(),
         )
             .xContainer(
                 color: Colors.white, shadowColor: Colors.blue, blurRadius: 12.0)

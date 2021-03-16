@@ -15,7 +15,7 @@ class _ExampleGridViewAnimationState extends State<ExampleGridViewAnimation> {
         duration: const Duration(milliseconds: 1000),
         child: index
             .toString()
-            .textMaterial(fontsize: 30)
+            .xText(fontsize: 30)
             .toCenter()
             .xContainer(
                 color: Colors.white, shadowColor: Colors.blue, blurRadius: 12.0)
