@@ -26,3 +26,15 @@
 ## 0.9.5
 
 * TODO: stable 2.0.2 fix-2
+
+
+## 0.9.6
+
+* TODO: stable 2.0.3 
+
+## 0.9.7
+
+* xhp horizontal padding
+* xvp vertical padding
+* xhvp horizontal vertical padding
+* xRoutePage animation PushReplacement

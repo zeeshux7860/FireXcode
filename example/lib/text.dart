@@ -213,9 +213,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         XRoutePage(context, Drawer()).fadePush();
                       },
-                      child: Textmaterial(text: 'text'),
                       height: 100,
-                      color: Colors.pink)
+                      color: Colors.pink,
+                      child: Textmaterial(text: 'text'))
                   .roulette()
             ].xcolumnCC(),
             30.0.sizedHeight(),
@@ -272,15 +272,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   ].xcolumnSC(),
                 ),
                 XContainer(
-                    child: XimageBlur(
-                      sigmaX: 2,
-                      sigmaY: 2,
-                    ),
-                    height: 400,
-                    padding: EdgeInsets.all(0.0),
-                    image:
-                        'https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/gallery/3.png'
-                            .decorationINToCover())
+                  height: 400,
+                  padding: EdgeInsets.all(0.0),
+                  image:
+                      'https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/gallery/3.png'
+                          .decorationINToCover(),
+                  child: XimageBlur(
+                    sigmaX: 2,
+                    sigmaY: 2,
+                  ),
+                )
               ].xListViewVerticalClampingScrollPhysics(
                   padding: EdgeInsets.all(0.0)),
             ).fadeInLeft(),

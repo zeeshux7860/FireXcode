@@ -56,4 +56,51 @@ class XRoutePage {
     Navigator.push(
         context, XEnterExitRoute(enterPage: child, exitPage: exitPageChild));
   }
+
+  void sizeTransitionPushReplacement() {
+    Navigator.pushReplacement(context, XSizeRoute(page: child));
+  }
+
+  void cupertinoPagePushReplacement() {
+    Navigator.pushReplacement(
+        context, CupertinoPageRoute(builder: (context) => child));
+  }
+
+  void materialPagePushReplacement() {
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => child));
+  }
+
+  void slideRightPushReplacement() {
+    Navigator.pushReplacement(context, XRightRoute(page: child));
+  }
+
+  void slideLeftPushReplacement() {
+    Navigator.pushReplacement(context, XLeftRoute(page: child));
+  }
+
+  void slideTopPushReplacement() {
+    Navigator.pushReplacement(context, XTopRoute(page: child));
+  }
+
+  void slideLBottomPushReplacement() {
+    Navigator.pushReplacement(context, XBottomRoute(page: child));
+  }
+
+  void scalePushReplacement() {
+    Navigator.pushReplacement(context, XScaleRoute(page: child));
+  }
+
+  void rotationPushReplacement() {
+    Navigator.pushReplacement(context, XRotationRoute(page: child));
+  }
+
+  void fadePushReplacement() {
+    Navigator.pushReplacement(context, XFadeRoute(page: child));
+  }
+
+  void exitPushReplacement(exitPageChild) {
+    Navigator.push(
+        context, XEnterExitRoute(enterPage: child, exitPage: exitPageChild));
+  }
 }

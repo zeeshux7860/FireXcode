@@ -127,4 +127,32 @@ extension Paddings on Widget {
       child: this,
     );
   }
+
+  Widget xlrbtp({double l, double r, double b, double t}) {
+    return Padding(
+      padding: EdgeInsets.only(left: l, right: r, bottom: b, top: t),
+      child: this,
+    );
+  }
+
+  Widget xhp({double value}) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: value),
+      child: this,
+    );
+  }
+
+  Widget xvp({double value}) {
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: value),
+      child: this,
+    );
+  }
+
+  Widget xhvp({double h, double v}) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: h, vertical: v),
+      child: this,
+    );
+  }
 }

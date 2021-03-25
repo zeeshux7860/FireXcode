@@ -17,11 +17,11 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
         padding: EdgeInsets.all(20.0),
         bgColor: Colors.black,
         spaceHeight: 10.0,
+        // title: "Text".text(),
+        value: '105.0'.xH2Text(color: Colors.white),
         child: Icons.ac_unit
             .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
-        // title: "Text".text(),
-        value: '105.0'.xH2Text(color: Colors.white),
       ).xFlexableRes(350.0 <= value),
       20.0.sizedHeight(),
       XCustomStatic(
@@ -30,11 +30,11 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
         padding: EdgeInsets.all(20.0),
         bgColor: Colors.black,
         spaceHeight: 10.0,
+        // title: "Text".text(),
+        value: '105.0'.xH2Text(color: Colors.white),
         child: Icons.ac_unit
             .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
-        // title: "Text".text(),
-        value: '105.0'.xH2Text(color: Colors.white),
       ).xFlexableRes(350.0 <= value),
       20.0.sizedHeight(),
       XCustomStatic(
@@ -43,11 +43,11 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
         padding: EdgeInsets.all(20.0),
         bgColor: Colors.black,
         spaceHeight: 10.0,
+        // title: "Text".text(),
+        value: '105.0'.xH2Text(color: Colors.white),
         child: Icons.ac_unit
             .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
-        // title: "Text".text(),
-        value: '105.0'.xH2Text(color: Colors.white),
       ).xFlexableRes(350.0 <= value)
     ];
     return <Widget>[

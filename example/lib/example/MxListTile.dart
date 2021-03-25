@@ -135,7 +135,6 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               trailing: MaterialXButton(
                   color: Colors.white,
                   rounded: 5,
-                  child: 'Add'.xTextColorBlack(),
                   onTap: () {
                     setState(() {
                       if (isActive) {
@@ -146,7 +145,8 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
                     });
                   },
                   width: 100,
-                  height: 30),
+                  height: 30,
+                  child: 'Add'.xTextColorBlack()),
               text: 'Home')
           .xContainerGradient(
               margin: EdgeInsets.all(10),

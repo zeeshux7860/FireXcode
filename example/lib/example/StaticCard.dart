@@ -22,11 +22,11 @@ class ExampleStaticCard extends StatelessWidget {
         padding: EdgeInsets.all(20.0),
         bgColor: Color(0xFF3d6dfe),
         spaceHeight: 10.0,
+        title: 'Text'.text(style: TextStyle(color: Colors.white)),
+        value: '105.0'.xH1Text(color: Colors.white),
         child: Icons.ac_unit
             .xIcon(color: Colors.blue)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 25.0),
-        title: 'Text'.text(style: TextStyle(color: Colors.white)),
-        value: '105.0'.xH1Text(color: Colors.white),
       ).toCenter(),
       10.0.sizedHeight(),
       XCustomStatic(
@@ -35,11 +35,11 @@ class ExampleStaticCard extends StatelessWidget {
         padding: EdgeInsets.all(20.0),
         bgColor: Colors.black,
         spaceHeight: 10.0,
+        // title: 'Text'.text(),
+        value: '105.0'.xH2Text(color: Colors.white),
         child: Icons.ac_unit
             .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
-        // title: 'Text'.text(),
-        value: '105.0'.xH2Text(color: Colors.white),
       ).toCenter(),
     ].xcolumnCC().xScaffold(
         backgroundColor: Colors.white,
