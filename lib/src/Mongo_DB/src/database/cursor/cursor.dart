@@ -3,7 +3,7 @@ part of mongo_dart;
 typedef MonadicBlock = void Function(Map<String, dynamic> value);
 
 class Cursor {
-  //final _log = Logger('Cursor');
+  final _log = Logger('Cursor');
   State state = State.INIT;
   int cursorId = 0;
   Db db;
@@ -51,7 +51,7 @@ class Cursor {
   /// on the assumption that the client will fully read all data queried.
   /// Faster when you are pulling a lot of data and know you want to pull it all down.
   /// Note: the client is not allowed to not read all the data unless it closes the connection.
-
+  /// TODO Adapt cursor behaviour when enabling exhaust flag
   set exhaust(bool value) => value
       ? flags |= MongoQueryMessage.OPTS_EXHAUST
       : flags &= ~(MongoQueryMessage.OPTS_EXHAUST);

@@ -13,6 +13,8 @@ class GridFS {
     files = database.collection('$collection.files');
     chunks = database.collection('$collection.chunks');
     bucketName = collection;
+
+    // TODO(tsander): Ensure index.
   }
 
   Stream<Map<String, dynamic>> getFileList(SelectorBuilder selectorBuilder) {

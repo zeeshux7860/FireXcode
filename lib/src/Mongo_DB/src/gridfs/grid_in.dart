@@ -11,7 +11,7 @@ class GridIn extends GridFSFile {
   @override
   String filename;
 
-
+  ///TODO Review that code. Currently it sums all file's content in one (potentially big) List, to get MD5 hash
   /// Probably we should use some Stream api here
   List<int> contentToDigest = <int>[];
   GridIn(this.fs,
@@ -61,7 +61,7 @@ class GridIn extends GridFSFile {
     }, onDone: _onDone);
     return completer.future;
   }
-  
+  // TODO(tsander): OutputStream??
 
   Future<Map<String, dynamic>> dumpBuffer(List<int> writeBuffer) {
     contentToDigest.addAll(writeBuffer);

@@ -158,7 +158,7 @@ class ScramSha1Mechanism extends SaslMechanism {
 
     final gs2Header = 'n,,';
     var username = 'n=${prepUsername(credential.username)}';
-    var r = randomStringGenerator.generate(20); 
+    var r = randomStringGenerator.generate(20); // TODO Change this
 
     var nonce = 'r=$r';
 

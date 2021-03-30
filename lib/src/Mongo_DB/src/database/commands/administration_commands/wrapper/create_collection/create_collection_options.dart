@@ -19,7 +19,7 @@ class CreateCollectionOptions extends CreateOptions {
   }) : super(
             capped: capped,
             size: size,
-           // autoIndexId: autoIndexId,
+            autoIndexId: autoIndexId,
             max: max,
             storageEngine: storageEngine,
             validator: validator,

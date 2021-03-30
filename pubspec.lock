@@ -135,7 +135,7 @@ packages:
     source: hosted
     version: "6.1.0"
   fixnum:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: fixnum
       url: "https://pub.dartlang.org"
@@ -234,7 +234,7 @@ packages:
     source: hosted
     version: "0.4.2"
   more:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: more
       url: "https://pub.dartlang.org"

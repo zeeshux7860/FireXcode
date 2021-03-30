@@ -1,4 +1,3 @@
-import 'package:bson/bson.dart';
 import 'package:firexcode/src/Mongo_DB/mongo_dart.dart' show BsonBinary, MongoDartError;
 import 'package:firexcode/src/Mongo_DB/src/database/message/mongo_modern_message.dart'
     show MongoModernMessage;

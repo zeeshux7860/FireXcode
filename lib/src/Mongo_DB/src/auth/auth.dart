@@ -22,8 +22,7 @@ Authenticator createAuthenticator(AuthenticationScheme authenticationScheme,
 
 class UsernamePasswordCredential {
   String username;
-  String password; 
-  
+  String password; // TODO: Encrypt this to secureString
 }
 
 abstract class RandomStringGenerator {

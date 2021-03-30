@@ -163,7 +163,7 @@ class FindOptions {
         if (returnKey != null) keyReturnKey: returnKey,
         if (showRecordId != null) keyShowRecordId: showRecordId,
         if (tailable != null) keyTailable: tailable,
-      //   if (oplogReplay != null) keyOplogReplay: oplogReplay,
+        if (oplogReplay != null) keyOplogReplay: oplogReplay,
         if (noCursorTimeout != null) keyNoCursorTimeout: noCursorTimeout,
         if (awaitData != null) keyAwaitData: awaitData,
         if (allowPartialResult != null)

@@ -1,6 +1,5 @@
 import 'package:bson/bson.dart' show BsonBinary, BsonCString, BsonMap;
 
-
 abstract class Payload {
   void packValue(BsonBinary buffer);
 

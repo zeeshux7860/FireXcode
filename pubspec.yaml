@@ -19,8 +19,6 @@ dependencies:
   _fe_analyzer_shared: ^18.0.0
   logging: ^1.0.1
   rational: ^0.3.0
-  more:
-  fixnum:
   mongo_dart_query:
   pool:
   basic_utils: ^3.0.0-nullsafety.3
