@@ -17,12 +17,7 @@ dependencies:
   console_cmd: ^1.0.5
   meta: ^1.3.0
   _fe_analyzer_shared: ^18.0.0
-  logging: ^1.0.1
-  rational: ^0.3.0
-  mongo_dart_query:
-  pool:
-  basic_utils: ^3.0.0-nullsafety.3
-  bson:
+
   flutter_web_plugins:
     sdk: flutter
 
