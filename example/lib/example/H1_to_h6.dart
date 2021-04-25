@@ -52,7 +52,7 @@ class _ExampleHState extends State<ExampleH> {
           color: Colors.black,
         ).xContainer().toCenter(),
         'H6'.xH6Text(color: Colors.black),
-      ].xcolumnCC(),
+      ].xColumnCC(),
     );
   }
 }

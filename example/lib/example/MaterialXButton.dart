@@ -23,7 +23,7 @@ class ExampleMaterialXButton extends StatelessWidget {
             rounded: 20,
             spreadRadius: 0,
           ),
-    ].xcolumnCC().xap(value: 20.0).xScaffold(
+    ].xColumnCC().xap(value: 20.0).xScaffold(
         backgroundColor: Colors.white,
         appBar: 'MaterialXButton'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,

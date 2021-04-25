@@ -31,7 +31,7 @@ class XTransactiontTile extends StatelessWidget {
         trailing1 ?? Container(),
         middleSpace.sizedHeight(),
         trailing2 ?? Container()
-      ].xcolumnCC(),
+      ].xColumnCC(),
     );
   }
 }

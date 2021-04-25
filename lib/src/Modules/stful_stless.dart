@@ -425,7 +425,7 @@ extension Lableicon on Widget {
       shadowColor: shadowColor,
       spreadRadius: spreadRadius,
       width: width,
-      child: <Widget>[xap(value: 5), 10.0.sizedHeight(), lable].xcolumn(),
+      child: <Widget>[xap(value: 5), 10.0.sizedHeight(), lable].xColumn(),
     );
   }
 }

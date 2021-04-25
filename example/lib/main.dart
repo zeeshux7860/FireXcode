@@ -20,12 +20,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return xListView.list([
-      ['one', 'two', 'three'].xDropdownLabel(
-          name: 'dropdown',
-          onChanged: (v) {
-            setState(() {});
-          },
-          dropdownValue: 'two'),
+      true.xRadio(groupValue: true),
+      10.0.sizedHeight(),
+      // ['one', 'two', 'three'].xDropdownLabel(
+      //     name: 'dropdown'.text(),
+      //     onChanged: (v) {
+      //       setState(() {});
+      //     },
+      //     dropdownValue: 'two'),
     ]).xScaffold(appBar: 'example Dropdown'.text().xAppBar());
   }
 }

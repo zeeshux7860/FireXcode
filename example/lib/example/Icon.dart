@@ -30,7 +30,7 @@ class _ExampleIconState extends State<ExampleIcon> {
                 rounded: 15)
             .xap(value: 10)
             .fadeIn()
-      ].xcolumnCC(),
+      ].xColumnCC(),
     );
   }
 }

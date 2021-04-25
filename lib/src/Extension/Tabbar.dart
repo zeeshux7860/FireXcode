@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:firexcode/firexcode.dart';
+import 'package:flutter/rendering.dart';
 
 extension XTabbars on Widget {
   Widget xDTController({int length, int initialIndex = 0}) {
@@ -129,8 +130,59 @@ extension XTabBarss on List<Widget> {
       /// callbacks should not make changes to the TabController since that would
       /// interfere with the default tap handler.
       ValueChanged<int> onTap,
+
+      /// Whether this tab bar should automatically adjust the [indicatorColor].
+      ///
+      /// If [automaticIndicatorColorAdjustment] is true,
+      /// then the [indicatorColor] will be automatically adjusted to [Colors.white]
+      /// when the [indicatorColor] is same as [Material.color] of the [Material] parent widget.
+      final bool automaticIndicatorColorAdjustment,
+
+      /// Whether detected gestures should provide acoustic and/or haptic feedback.
+      ///
+      /// For example, on Android a tap will produce a clicking sound and a long-press
+      /// will produce a short vibration, when feedback is enabled.
+      ///
+      /// Defaults to true.
+      final bool enableFeedback,
+
+      /// The cursor for a mouse pointer when it enters or is hovering over the
+      /// individual tab widgets.
+      ///
+      /// If this property is null, [SystemMouseCursors.click] will be used.
+      final MouseCursor mouseCursor,
+
+      /// Defines the ink response focus, hover, and splash colors.
+      ///
+      /// If non-null, it is resolved against one of [MaterialState.focused],
+      /// [MaterialState.hovered], and [MaterialState.pressed].
+      ///
+      /// [MaterialState.pressed] triggers a ripple (an ink splash), per
+      /// the current Material Design spec. The [overlayColor] doesn't map
+      /// a state to [InkResponse.highlightColor] because a separate highlight
+      /// is not used by the current design guidelines. See
+      /// https://material.io/design/interaction/states.html#pressed
+      ///
+      /// If the overlay color is null or resolves to null, then the default values
+      /// for [InkResponse.focusColor], [InkResponse.hoverColor], [InkResponse.splashColor]
+      /// will be used instead.
+      final MaterialStateProperty<Color> overlayColor,
+
+      /// How the [TabBar]'s scroll view should respond to user input.
+      ///
+      /// For example, determines how the scroll view continues to animate after the
+      /// user stops dragging the scroll view.
+      ///
+      /// Defaults to matching platform conventions.
+      final ScrollPhysics physics,
       Key key}) {
     return TabBar(
+      automaticIndicatorColorAdjustment:
+          automaticIndicatorColorAdjustment ?? true,
+      enableFeedback: enableFeedback,
+      mouseCursor: mouseCursor,
+      overlayColor: overlayColor,
+      physics: physics,
       tabs: this,
       controller: controller,
       dragStartBehavior: dragStartBehavior,

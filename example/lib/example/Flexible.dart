@@ -53,7 +53,7 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
     return <Widget>[
       350.0 <= value
           ? menu.xRowSSB().xap(value: 20.0).fadeIn()
-          : menu.xcolumn().fadeInLeft().xContainer(
+          : menu.xColumn().fadeInLeft().xContainer(
                 width: value,
               ),
       Slider(
@@ -64,7 +64,7 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
               value = v;
             });
           })
-    ].xcolumnCC().xScaffold(
+    ].xColumnCC().xScaffold(
         backgroundColor: Colors.white,
         appBar: 'Column & Row Responsive'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,

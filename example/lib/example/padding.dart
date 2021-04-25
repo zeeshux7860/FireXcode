@@ -51,7 +51,7 @@ class _ExamplePaddingState extends State<ExamplePadding> {
         ' .xlrtp(t: 20.0, l: 20.0, r: 20.0) left right top  padding'
             .text()
             .xlrtp(t: 20.0, l: 20.0, r: 20.0),
-      ].xcolumnSS().xap(value: 20.0)
+      ].xColumnSS().xap(value: 20.0)
     ].xListView().xScaffold(
         backgroundColor: Colors.white,
         appBar: 'Padding'.xTextColorBlack().xAppBar(

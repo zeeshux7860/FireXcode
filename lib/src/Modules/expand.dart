@@ -39,7 +39,7 @@ class _ExpandableTextState extends State<ExpandableText>
           : widget.expand.xFlatButton(onPressed: () {
               setState(() => isExpanded = true);
             })
-    ].xcolumn(
+    ].xColumn(
         crossAxisAlignment: widget.crossAxisAlignment,
         mainAxisAlignment: widget.mainAxisAlignment);
   }

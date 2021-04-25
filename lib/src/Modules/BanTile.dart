@@ -23,6 +23,6 @@ class BanTile extends StatelessWidget {
       //  25.0.sizedHeight(),
       body ?? Container(),
       //20.0.sizedHeight(),
-    ].xcolumn();
+    ].xColumn();
   }
 }

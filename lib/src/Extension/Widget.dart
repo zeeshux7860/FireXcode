@@ -470,20 +470,22 @@ extension XNew on Widget {
     );
   }
 
-  Widget xPullRefresh({
-    @required Future<void> Function() onRefresh,
-    Color color,
-    Color backgroundColor,
-    bool Function(ScrollNotification) notificationPredicate =
-        defaultScrollNotificationPredicate,
-    double strokeWidth = 2.0,
-    double displacement = 40.0,
-    bool showChildOpacityTransition = true,
-    String semanticsLabel,
-    String semanticsValue,
-    Key key,
-  }) {
+  Widget xPullRefresh(
+      {@required Future<void> Function() onRefresh,
+      Color color,
+      Color backgroundColor,
+      bool Function(ScrollNotification) notificationPredicate =
+          defaultScrollNotificationPredicate,
+      double strokeWidth = 2.0,
+      double displacement = 40.0,
+      bool showChildOpacityTransition = true,
+      String semanticsLabel,
+      String semanticsValue,
+      Key key,
+      RefreshIndicatorTriggerMode triggerMode =
+          RefreshIndicatorTriggerMode.onEdge}) {
     return RefreshIndicator(
+      triggerMode: triggerMode,
       onRefresh: onRefresh,
       color: color,
       backgroundColor: backgroundColor,
@@ -599,30 +601,33 @@ extension XNew on Widget {
     );
   }
 
-  Widget xChip({
-    final Widget avatar,
-    final Widget label,
-    final TextStyle labelStyle,
-    final EdgeInsetsGeometry labelPadding,
-    final ShapeBorder shape,
-    final Clip clipBehavior,
-    final FocusNode focusNode,
-    final bool autofocus,
-    final Color backgroundColor,
-    final EdgeInsetsGeometry padding,
-    final VisualDensity visualDensity,
-    final Widget deleteIcon,
-    final VoidCallback onDeleted,
-    final Color deleteIconColor,
-    final String deleteButtonTooltipMessage,
-    final MaterialTapTargetSize materialTapTargetSize,
-    final double elevation,
-    final Color shadowColor,
-    final Key key,
-  }) {
+  Widget xChip(
+      {final Widget avatar,
+      final Widget label,
+      final TextStyle labelStyle,
+      final EdgeInsetsGeometry labelPadding,
+      final ShapeBorder shape,
+      final Clip clipBehavior,
+      final FocusNode focusNode,
+      final bool autofocus,
+      final Color backgroundColor,
+      final EdgeInsetsGeometry padding,
+      final VisualDensity visualDensity,
+      final Widget deleteIcon,
+      final VoidCallback onDeleted,
+      final Color deleteIconColor,
+      final String deleteButtonTooltipMessage,
+      final MaterialTapTargetSize materialTapTargetSize,
+      final double elevation,
+      final Color shadowColor,
+      final Key key,
+      final BorderSide side,
+      final bool useDeleteButtonTooltip = true}) {
     return Chip(
       key: key,
       label: this,
+      side: side,
+      useDeleteButtonTooltip: useDeleteButtonTooltip,
       avatar: avatar,
       labelStyle: labelStyle,
       labelPadding: labelPadding,

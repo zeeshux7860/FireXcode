@@ -338,8 +338,140 @@ extension Gesture on Widget {
     ///
     ///  * [DragGestureRecognizer.dragStartBehavior], which gives an example for the different behaviors.
     DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+
+    /// The pointer that previously triggered [onDoubleTapDown] will not end up
+    /// causing a double tap.
+    ///
+    /// See also:
+    ///
+    ///  * [kPrimaryButton], the button this callback responds to.
+    final GestureTapCancelCallback onDoubleTapCancel,
+
+    /// A pointer that might cause a double tap has contacted the screen at a
+    /// particular location.
+    ///
+    /// Triggered immediately after the down event of the second tap.
+    ///
+    /// If the user completes the double tap and the gesture wins, [onDoubleTap]
+    /// will be called after this callback. Otherwise, [onDoubleTapCancel] will
+    /// be called after this callback.
+    ///
+    /// See also:
+    ///
+    ///  * [kPrimaryButton], the button this callback responds to.
+    final GestureTapDownCallback onDoubleTapDown,
+
+    /// Called when a long press gesture with a secondary button has been
+    /// recognized.
+    ///
+    /// Triggered when a pointer has remained in contact with the screen at the
+    /// same location for a long period of time.
+    ///
+    /// See also:
+    ///
+    ///  * [kSecondaryButton], the button this callback responds to.
+    ///  * [onSecondaryLongPressStart], which has the same timing but has gesture
+    ///    details.
+    final GestureLongPressCallback onSecondaryLongPress,
+
+    /// A pointer that has triggered a long-press with a secondary button has
+    /// stopped contacting the screen.
+    ///
+    /// See also:
+    ///
+    ///  * [kSecondaryButton], the button this callback responds to.
+    ///  * [onSecondaryLongPressUp], which has the same timing but without the
+    ///    gesture details.
+    final GestureLongPressEndCallback onSecondaryLongPressEnd,
+
+    /// A pointer has been drag-moved after a long press with a secondary button.
+    ///
+    /// See also:
+    ///
+    ///  * [kSecondaryButton], the button this callback responds to.
+    final GestureLongPressMoveUpdateCallback onSecondaryLongPressMoveUpdate,
+
+    /// Called when a long press gesture with a secondary button has been
+    /// recognized.
+    ///
+    /// Triggered when a pointer has remained in contact with the screen at the
+    /// same location for a long period of time.
+    ///
+    /// See also:
+    ///
+    ///  * [kSecondaryButton], the button this callback responds to.
+    ///  * [onSecondaryLongPress], which has the same timing but without the
+    ///    gesture details.
+    final GestureLongPressStartCallback onSecondaryLongPressStart,
+
+    /// A pointer that has triggered a long-press with a secondary button has
+    /// stopped contacting the screen.
+    ///
+    /// See also:
+    ///
+    ///  * [kSecondaryButton], the button this callback responds to.
+    ///  * [onSecondaryLongPressEnd], which has the same timing but has gesture
+    ///    details.
+    final GestureLongPressUpCallback onSecondaryLongPressUp,
+
+    /// A tap with a secondary button has occurred.
+    ///
+    /// This triggers when the tap gesture wins. If the tap gesture did not win,
+    /// [onSecondaryTapCancel] is called instead.
+    ///
+    /// See also:
+    ///
+    ///  * [kSecondaryButton], the button this callback responds to.
+    ///  * [onSecondaryTapUp], which is called at the same time but includes details
+    ///    regarding the pointer position.
+    final GestureTapCallback onSecondaryTap,
+
+    /// A pointer that might cause a tap with a tertiary button has contacted the
+    /// screen at a particular location.
+    ///
+    /// This is called after a short timeout, even if the winning gesture has not
+    /// yet been selected. If the tap gesture wins, [onTertiaryTapUp] will be
+    /// called, otherwise [onTertiaryTapCancel] will be called.
+    ///
+    /// See also:
+    ///
+    ///  * [kTertiaryButton], the button this callback responds to.
+    final GestureTapDownCallback onTertiaryTapDown,
+
+    /// A pointer that will trigger a tap with a tertiary button has stopped
+    /// contacting the screen at a particular location.
+    ///
+    /// This triggers in the case of the tap gesture winning. If the tap gesture
+    /// did not win, [onTertiaryTapCancel] is called instead.
+    ///
+    /// See also:
+    ///
+    ///  * [kTertiaryButton], the button this callback responds to.
+    final GestureTapUpCallback onTertiaryTapUp,
+
+    /// The pointer that previously triggered [onTertiaryTapDown] will not end up
+    /// causing a tap.
+    ///
+    /// This is called after [onTertiaryTapDown], and instead of
+    /// [onTertiaryTapUp], if the tap gesture did not win.
+    ///
+    /// See also:
+    ///
+    ///  * [kTertiaryButton], the button this callback responds to.
+    final GestureTapCancelCallback onTertiaryTapCancel,
   }) {
     return GestureDetector(
+      onTertiaryTapDown: onTertiaryTapDown,
+      onTertiaryTapUp: onTertiaryTapUp,
+      onTertiaryTapCancel: onTertiaryTapCancel,
+      onSecondaryLongPressStart: onSecondaryLongPressStart,
+      onSecondaryLongPressUp: onSecondaryLongPressUp,
+      onSecondaryTap: onSecondaryTap,
+      onSecondaryLongPressEnd: onSecondaryLongPressEnd,
+      onSecondaryLongPressMoveUpdate: onSecondaryLongPressMoveUpdate,
+      onDoubleTapCancel: onDoubleTapCancel,
+      onDoubleTapDown: onDoubleTapDown,
+      onSecondaryLongPress: onSecondaryLongPress,
       behavior: behavior,
       dragStartBehavior: dragStartBehavior,
       excludeFromSemantics: excludeFromSemantics,

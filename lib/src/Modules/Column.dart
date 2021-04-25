@@ -50,7 +50,7 @@ class XColumn {
       this.crossAxisAlignment,
       this.mainAxisAlignment});
   Widget list(List<Widget> list) {
-    return list.xcolumn(
+    return list.xColumn(
         crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -76,7 +76,7 @@ class XColumnCC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnCC(
+    return list.xColumnCC(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -100,7 +100,7 @@ class XColumnSS {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSS(
+    return list.xColumnSS(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -124,7 +124,7 @@ class XColumnSSB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSSB(
+    return list.xColumnSSB(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -148,7 +148,7 @@ class XColumnBS {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnBS(
+    return list.xColumnBS(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -172,7 +172,7 @@ class XColumnES {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnES(
+    return list.xColumnES(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -196,7 +196,7 @@ class XColumnSTS {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSTS(
+    return list.xColumnSTS(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -220,7 +220,7 @@ class XColumnSTC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSTC(
+    return list.xColumnSTC(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -244,7 +244,7 @@ class XColumnSC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSC(
+    return list.xColumnSC(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -268,7 +268,7 @@ class XColumnEC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnEC(
+    return list.xColumnEC(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -292,7 +292,7 @@ class XColumnBC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnBC(
+    return list.xColumnBC(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -316,7 +316,7 @@ class XColumnSTE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSTE(
+    return list.xColumnSTE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -340,7 +340,7 @@ class XColumnSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSE(
+    return list.xColumnSE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -364,7 +364,7 @@ class XColumnEE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnEE(
+    return list.xColumnEE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -388,7 +388,7 @@ class XColumnCE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnCE(
+    return list.xColumnCE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -412,7 +412,7 @@ class XColumnBE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnBE(
+    return list.xColumnBE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -436,7 +436,7 @@ class XColumnSTSA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSTSA(
+    return list.xColumnSTSA(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -460,7 +460,7 @@ class XColumnSSA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSSA(
+    return list.xColumnSSA(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -484,7 +484,7 @@ class XColumnESA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnESA(
+    return list.xColumnESA(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -508,7 +508,7 @@ class XColumnCSA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnCSA(
+    return list.xColumnCSA(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -532,7 +532,7 @@ class XColumnBSA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnBSA(
+    return list.xColumnBSA(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -556,7 +556,7 @@ class XColumnSTSB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSTSB(
+    return list.xColumnSTSB(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -580,7 +580,7 @@ class XColumnESB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnESB(
+    return list.xColumnESB(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -604,7 +604,7 @@ class XColumnCSB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnCSB(
+    return list.xColumnCSB(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -628,7 +628,7 @@ class XColumnBSB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnBSB(
+    return list.xColumnBSB(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -652,7 +652,7 @@ class XColumnSTSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSTSE(
+    return list.xColumnSTSE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -676,7 +676,7 @@ class XColumnSSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnSSE(
+    return list.xColumnSSE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -700,7 +700,7 @@ class XColumnESE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnESE(
+    return list.xColumnESE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -724,7 +724,7 @@ class XColumnCSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnCSE(
+    return list.xColumnCSE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,
@@ -748,7 +748,7 @@ class XColumnBSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.xcolumnBSE(
+    return list.xColumnBSE(
         key: key,
         mainAxisSize: mainAxisSize ?? MainAxisSize.max,
         textBaseline: textBaseline,

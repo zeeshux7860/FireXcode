@@ -70,7 +70,7 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
                   .decorationINToCover(),
           onTap: () {},
         ),
-      ].xcolumnCC().xap(value: 10.0),
+      ].xColumnCC().xap(value: 10.0),
     );
   }
 }

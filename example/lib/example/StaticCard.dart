@@ -41,7 +41,7 @@ class ExampleStaticCard extends StatelessWidget {
             .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
       ).toCenter(),
-    ].xcolumnCC().xScaffold(
+    ].xColumnCC().xScaffold(
         backgroundColor: Colors.white,
         appBar: 'StaticCard'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,

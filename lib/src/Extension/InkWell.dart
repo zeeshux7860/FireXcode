@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 extension InkWelltap on Widget {
   Widget xInkWell(
@@ -21,10 +22,14 @@ extension InkWelltap on Widget {
       void Function() onTap,
       void Function() onTapCancel,
       void Function(TapDownDetails) onTapDown,
+      MouseCursor mouseCursor,
+      MaterialStateProperty<Color> overlayColor,
       Color splashColor,
       double radius,
       InteractiveInkFeatureFactory splashFactory}) {
     return InkWell(
+      overlayColor: overlayColor,
+      mouseCursor: mouseCursor,
       borderRadius: borderRadius,
       autofocus: autofocus,
       canRequestFocus: canRequestFocus,
