@@ -581,16 +581,19 @@ extension StringsX on String {
   }
 
   /// tf mean TextFormFiled
-  Widget xTF({
-    final double fontSize,
-    final TextEditingController controller,
-    final Color color,
-    final double lableSize,
-    final Color textColor,
-    final bool obscureText,
-    final Key key,
-  }) {
+  Widget xTF(
+      {final double fontSize,
+      final TextEditingController controller,
+      final Color color,
+      final double lableSize,
+      final Color textColor,
+      final bool obscureText,
+      final Key key,
+      final bool showLabel = true,
+      final TextInputType keyboardType}) {
     return TextFiledMaterial(
+      showLabel: showLabel,
+      keyboardType: keyboardType,
       name: this,
       color: color,
       fontSize: fontSize,
@@ -601,7 +604,11 @@ extension StringsX on String {
       key: key,
     );
   }
+
+
+
 }
+
 
 extension ListViewBuilders on Function(BuildContext context, int index) {
   Widget xListVB({

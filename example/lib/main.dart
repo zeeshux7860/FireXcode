@@ -16,18 +16,51 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
+String genderValue = '';
+
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return xListView.list([
-      true.xRadio(groupValue: true),
+      'name'
+          .xTF(keyboardType: TextInputType.emailAddress, showLabel: false)
+          .xForm(),
+      xRow.list([
+        RadioListTile(
+          value: 'Male',
+          title: 'male'.text(),
+          groupValue: genderValue,
+          onChanged: (value) {
+            setState(() {
+              genderValue = value;
+            });
+          },
+        ).xExpanded(),
+        xRowCS
+            .list([
+              genderValue.xRadio(
+                value: 'Female',
+                onChanged: (value) {
+                  print(value);
+                  setState(() {
+                    genderValue = value;
+                  });
+                },
+              ),
+              'Female'.text()
+            ])
+            .xContainer()
+            .xCard(elevation: 1.0)
+            .xExpanded(),
+      ]),
       10.0.sizedHeight(),
-      // ['one', 'two', 'three'].xDropdownLabel(
-      //     name: 'dropdown'.text(),
-      //     onChanged: (v) {
-      //       setState(() {});
-      //     },
-      //     dropdownValue: 'two'),
+      ['one', 'two', 'three'].xDropdownLabel(
+          width: xwidth(context),
+          name: 'dropdown'.text(),
+          onChanged: (v) {
+            setState(() {});
+          },
+          dropdownValue: 'two'),
     ]).xScaffold(appBar: 'example Dropdown'.text().xAppBar());
   }
 }

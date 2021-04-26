@@ -759,7 +759,7 @@ extension Components on String {
 
   
   Widget xRadio(
-      {final Object  groupValue,
+      {final Object  value,
 
       /// Called when the user selects this radio button.
       ///
@@ -962,8 +962,8 @@ extension Components on String {
       /// is also null, then [kRadialReactionRadius] is used.
       final double splashRadius}) {
     return Radio(
-        value: this,
-        groupValue: groupValue,
+        value: value,
+        groupValue: this,
         fillColor: fillColor,
         mouseCursor: mouseCursor,
         overlayColor: overlayColor,

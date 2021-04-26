@@ -678,4 +678,40 @@ extension XNew on Widget {
       child: this,
     );
   }
+
+  Widget xForm(
+      {
+
+      /// Enables the form to veto attempts by the user to dismiss the [ModalRoute]
+      /// that contains the form.
+      ///
+      /// If the callback returns a Future that resolves to false, the form's route
+      /// will not be popped.
+      ///
+      /// See also:
+      ///
+      ///  * [WillPopScope], another widget that provides a way to intercept the
+      ///    back button.
+      final WillPopCallback onWillPop,
+
+      /// Called when one of the form fields changes.
+      ///
+      /// In addition to this callback being invoked, all the form fields themselves
+      /// will rebuild.
+      final VoidCallback onChanged,
+
+      /// Used to enable/disable form fields auto validation and update their error
+      /// text.
+      ///
+      /// {@macro flutter.widgets.FormField.autovalidateMode}
+      final AutovalidateMode autovalidateMode,
+      Key key}) {
+    return Form(
+      onChanged: onChanged,
+      onWillPop: onWillPop,
+      key: key,
+      autovalidateMode: autovalidateMode,
+      child: this,
+    );
+  }
 }
