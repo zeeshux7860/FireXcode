@@ -83,3 +83,93 @@ class H6 extends StatelessWidget {
     );
   }
 }
+
+class SelectableTextH1 extends StatelessWidget {
+  final FontWeight fontWeight;
+  final Color color;
+  final String text;
+  const SelectableTextH1({Key key, this.fontWeight, this.color, this.text})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return SelectableText(
+      text,
+      style: TextStyle(color: color, fontWeight: fontWeight, fontSize: 32),
+    );
+  }
+}
+
+class SelectableTextH2 extends StatelessWidget {
+  final FontWeight fontWeight;
+  final Color color;
+  final String text;
+  const SelectableTextH2({Key key, this.fontWeight, this.color, this.text})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return SelectableText(
+      text,
+      style: TextStyle(color: color, fontWeight: fontWeight, fontSize: 24),
+    );
+  }
+}
+
+class SelectableTextH3 extends StatelessWidget {
+  final FontWeight fontWeight;
+  final Color color;
+  final String text;
+  const SelectableTextH3({Key key, this.fontWeight, this.color, this.text})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return SelectableText(
+      text,
+      style: TextStyle(color: color, fontWeight: fontWeight, fontSize: 19),
+    );
+  }
+}
+
+class SelectableTextH4 extends StatelessWidget {
+  final FontWeight fontWeight;
+  final Color color;
+  final String text;
+  const SelectableTextH4({Key key, this.fontWeight, this.color, this.text})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return SelectableText(
+      text,
+      style: TextStyle(color: color, fontWeight: fontWeight, fontSize: 16),
+    );
+  }
+}
+
+class SelectableTextH5 extends StatelessWidget {
+  final FontWeight fontWeight;
+  final Color color;
+  final String text;
+  const SelectableTextH5({Key key, this.fontWeight, this.color, this.text})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return SelectableText(
+      text,
+      style: TextStyle(color: color, fontWeight: fontWeight, fontSize: 14),
+    );
+  }
+}
+
+class SelectableTextH6 extends StatelessWidget {
+  final FontWeight fontWeight;
+  final Color color;
+  final String text;
+  const SelectableTextH6({Key key, this.fontWeight, this.color, this.text})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return SelectableText(
+      text,
+      style: TextStyle(color: color, fontWeight: fontWeight, fontSize: 13),
+    );
+  }
+}

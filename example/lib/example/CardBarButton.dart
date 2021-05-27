@@ -19,7 +19,7 @@ class ExampleCardBarButton extends StatelessWidget {
         title: Icons.android.xIconTile(color: Colors.white, size: 30),
         subtitle: 'Zeeshan'.xTextColorWhite(),
       ).toCenter(),
-    ].xcolumnCC().xScaffold(
+    ].xColumnCC().xScaffold(
         backgroundColor: Colors.white,
         appBar: 'CardBarButton'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,

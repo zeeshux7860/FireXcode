@@ -470,20 +470,22 @@ extension XNew on Widget {
     );
   }
 
-  Widget xPullRefresh({
-    @required Future<void> Function() onRefresh,
-    Color color,
-    Color backgroundColor,
-    bool Function(ScrollNotification) notificationPredicate =
-        defaultScrollNotificationPredicate,
-    double strokeWidth = 2.0,
-    double displacement = 40.0,
-    bool showChildOpacityTransition = true,
-    String semanticsLabel,
-    String semanticsValue,
-    Key key,
-  }) {
+  Widget xPullRefresh(
+      {@required Future<void> Function() onRefresh,
+      Color color,
+      Color backgroundColor,
+      bool Function(ScrollNotification) notificationPredicate =
+          defaultScrollNotificationPredicate,
+      double strokeWidth = 2.0,
+      double displacement = 40.0,
+      bool showChildOpacityTransition = true,
+      String semanticsLabel,
+      String semanticsValue,
+      Key key,
+      RefreshIndicatorTriggerMode triggerMode =
+          RefreshIndicatorTriggerMode.onEdge}) {
     return RefreshIndicator(
+      triggerMode: triggerMode,
       onRefresh: onRefresh,
       color: color,
       backgroundColor: backgroundColor,
@@ -599,30 +601,33 @@ extension XNew on Widget {
     );
   }
 
-  Widget xChip({
-    final Widget avatar,
-    final Widget label,
-    final TextStyle labelStyle,
-    final EdgeInsetsGeometry labelPadding,
-    final ShapeBorder shape,
-    final Clip clipBehavior,
-    final FocusNode focusNode,
-    final bool autofocus,
-    final Color backgroundColor,
-    final EdgeInsetsGeometry padding,
-    final VisualDensity visualDensity,
-    final Widget deleteIcon,
-    final VoidCallback onDeleted,
-    final Color deleteIconColor,
-    final String deleteButtonTooltipMessage,
-    final MaterialTapTargetSize materialTapTargetSize,
-    final double elevation,
-    final Color shadowColor,
-    final Key key,
-  }) {
+  Widget xChip(
+      {final Widget avatar,
+      final Widget label,
+      final TextStyle labelStyle,
+      final EdgeInsetsGeometry labelPadding,
+      final ShapeBorder shape,
+      final Clip clipBehavior,
+      final FocusNode focusNode,
+      final bool autofocus,
+      final Color backgroundColor,
+      final EdgeInsetsGeometry padding,
+      final VisualDensity visualDensity,
+      final Widget deleteIcon,
+      final VoidCallback onDeleted,
+      final Color deleteIconColor,
+      final String deleteButtonTooltipMessage,
+      final MaterialTapTargetSize materialTapTargetSize,
+      final double elevation,
+      final Color shadowColor,
+      final Key key,
+      final BorderSide side,
+      final bool useDeleteButtonTooltip = true}) {
     return Chip(
       key: key,
       label: this,
+      side: side,
+      useDeleteButtonTooltip: useDeleteButtonTooltip,
       avatar: avatar,
       labelStyle: labelStyle,
       labelPadding: labelPadding,
@@ -670,6 +675,42 @@ extension XNew on Widget {
       key: key,
       text: text,
       iconMargin: iconMargin,
+      child: this,
+    );
+  }
+
+  Widget xForm(
+      {
+
+      /// Enables the form to veto attempts by the user to dismiss the [ModalRoute]
+      /// that contains the form.
+      ///
+      /// If the callback returns a Future that resolves to false, the form's route
+      /// will not be popped.
+      ///
+      /// See also:
+      ///
+      ///  * [WillPopScope], another widget that provides a way to intercept the
+      ///    back button.
+      final WillPopCallback onWillPop,
+
+      /// Called when one of the form fields changes.
+      ///
+      /// In addition to this callback being invoked, all the form fields themselves
+      /// will rebuild.
+      final VoidCallback onChanged,
+
+      /// Used to enable/disable form fields auto validation and update their error
+      /// text.
+      ///
+      /// {@macro flutter.widgets.FormField.autovalidateMode}
+      final AutovalidateMode autovalidateMode,
+      Key key}) {
+    return Form(
+      onChanged: onChanged,
+      onWillPop: onWillPop,
+      key: key,
+      autovalidateMode: autovalidateMode,
       child: this,
     );
   }

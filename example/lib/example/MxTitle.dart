@@ -33,7 +33,7 @@ class _ExampleXTitleState extends State<ExampleXTitle> {
           ].xRow(),
           subtitle: 'HeaderTitle suvtitle'.xTextColorBlueGrey(),
         ),
-      ].xcolumnCC(),
+      ].xColumnCC(),
     );
   }
 }

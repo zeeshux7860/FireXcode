@@ -54,7 +54,7 @@ extension TextEditor on String {
       ].xRow().xContainer(
           padding: EdgeInsets.all(12), shadowColor: Colors.grey, blurRadius: 12)
     ]
-        .xcolumn()
+        .xColumn()
         .xContainer(margin: EdgeInsets.all(15), rounded: 5, color: Colors.black)
         .xContainer(
             // padding: EdgeInsets.all(30.0),

@@ -157,7 +157,7 @@ class _ExampleXListTileState extends State<ExampleXListTile> {
               rounded: 10,
               shadowColor: Colors.red,
               blurRadius: 12),
-    ].xcolumnCC().xap(value: 10).xScaffold(
+    ].xColumnCC().xap(value: 10).xScaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
             title: 'XListTile'.xTextColorBlack(),

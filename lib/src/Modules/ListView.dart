@@ -25,7 +25,13 @@ class XListView {
   int semanticChildCount;
   Axis scrollDirection;
   bool shrinkWrap;
+  Clip clipBehavior;
+  ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
+  String restorationId;
   XListView({
+    this.clipBehavior = Clip.hardEdge,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+    this.restorationId,
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -45,6 +51,9 @@ class XListView {
   Widget list(List<Widget> list) {
     return list.xListView(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
       cacheExtent: cacheExtent,
@@ -78,7 +87,13 @@ class XListViewHorizontal {
   bool reverse;
   int semanticChildCount;
   bool shrinkWrap;
+  Clip clipBehavior;
+  ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
+  String restorationId;
   XListViewHorizontal({
+    this.clipBehavior = Clip.hardEdge,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+    this.restorationId,
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -97,6 +112,9 @@ class XListViewHorizontal {
   Widget list(List<Widget> list) {
     return list.xListViewHorizontal(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
       cacheExtent: cacheExtent,
@@ -127,8 +145,13 @@ class XListViewHCSP {
   bool primary;
   bool reverse;
   int semanticChildCount;
-
+  Clip clipBehavior;
+  ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
+  String restorationId;
   XListViewHCSP({
+    this.clipBehavior = Clip.hardEdge,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+    this.restorationId,
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -145,6 +168,9 @@ class XListViewHCSP {
   Widget list(List<Widget> list) {
     return list.xListViewHorizontalClampingScrollPhysics(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
       cacheExtent: cacheExtent,
@@ -173,8 +199,13 @@ class XListViewHNSP {
   bool primary;
   bool reverse;
   int semanticChildCount;
-
+  Clip clipBehavior;
+  ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
+  String restorationId;
   XListViewHNSP({
+    this.clipBehavior = Clip.hardEdge,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+    this.restorationId,
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -191,6 +222,9 @@ class XListViewHNSP {
   Widget list(List<Widget> list) {
     return list.xListViewHorizontalNeverScrollableScrollPhysics(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
       cacheExtent: cacheExtent,
@@ -221,7 +255,13 @@ class XListViewVertical {
   bool reverse;
   int semanticChildCount;
   bool shrinkWrap;
+  Clip clipBehavior;
+  ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
+  String restorationId;
   XListViewVertical({
+    this.clipBehavior = Clip.hardEdge,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+    this.restorationId,
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -240,6 +280,9 @@ class XListViewVertical {
   Widget list(List<Widget> list) {
     return list.xListViewVertical(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
       cacheExtent: cacheExtent,
@@ -270,8 +313,13 @@ class XListViewVCSP {
   bool primary;
   bool reverse;
   int semanticChildCount;
-
+  Clip clipBehavior;
+  ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
+  String restorationId;
   XListViewVCSP({
+    this.clipBehavior = Clip.hardEdge,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+    this.restorationId,
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -288,6 +336,9 @@ class XListViewVCSP {
   Widget list(List<Widget> list) {
     return list.xListViewVerticalClampingScrollPhysics(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
       cacheExtent: cacheExtent,
@@ -316,8 +367,13 @@ class XListViewVNSP {
   bool primary;
   bool reverse;
   int semanticChildCount;
-
+  Clip clipBehavior;
+  ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
+  String restorationId;
   XListViewVNSP({
+    this.clipBehavior = Clip.hardEdge,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+    this.restorationId,
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -334,6 +390,9 @@ class XListViewVNSP {
   Widget list(List<Widget> list) {
     return list.xListViewHorizontalNeverScrollableScrollPhysics(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
       cacheExtent: cacheExtent,

@@ -33,6 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
               boxColor: Colors.deepOrangeAccent.shade100,
               subtitle1: Icons.arrow_forward_ios.xIconTile(),
             ).animation(configMap: XAnimationType.fadeIn, autoPlay: true),
+
             XCardTile(
               rounded: 10,
               title: 'Zeeshan'.xCardTileTitle(),
@@ -57,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     .xTextColorBlack(fontsize: 15, fontWeight: FontWeight.bold),
                 5.0.sizedHeight(),
                 'sep 15 2019'.xTextColorBlueGrey()
-              ].xcolumnCC(),
+              ].xColumnCC(),
             ),
 
             HeaderTitle(
@@ -83,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Colors.white,
                   ),
                   20.0.sizedHeight(),
-                ].xcolumn()),
+                ].xColumn()),
             Column(
               children: <Widget>[
                 CardBarButton(
@@ -217,7 +218,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.pink,
                       child: Textmaterial(text: 'text'))
                   .roulette()
-            ].xcolumnCC(),
+            ].xColumnCC(),
             30.0.sizedHeight(),
             CardTile(
               margin: EdgeInsets.all(10),
@@ -256,7 +257,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   10.0.sizedHeight(),
                   'On apple watch'.xH3Text(fontWeight: FontWeight.normal),
                   25.0.sizedHeight(),
-                ].xcolumnCC()),
+                ].xColumnCC()),
             25.0.sizedHeight(),
             XContainer(
               padding: EdgeInsets.all(0.0),
@@ -269,7 +270,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontsize: 30, fontWeight: FontWeight.bold),
                       subtitle: 'June 18, Thu 04:50'.xTextColorBlack(),
                     ),
-                  ].xcolumnSC(),
+                  ].xColumnSC(),
                 ),
                 XContainer(
                   height: 400,

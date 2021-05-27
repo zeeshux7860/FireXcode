@@ -14,7 +14,7 @@ class ExampleDecorationImage extends StatelessWidget {
         10.0.sizedHeight(),
         '.decorationIFToCover  // mean IF  image file its mean you can change last cover contain fitheight etc'
             .text(),
-      ].xcolumn().xap(value: 20.0),
+      ].xColumn().xap(value: 20.0),
       'https://img.freepik.com/free-psd/tropical-foliage-background_53876-91352.jpg?size=626&ext=jpg'
           .decorationINToCover()
           .xContainer(

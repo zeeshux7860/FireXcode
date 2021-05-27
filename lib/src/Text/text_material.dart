@@ -27,6 +27,33 @@ class Textmaterial extends StatelessWidget {
   }
 }
 
+class SelectableTextMaterial extends StatelessWidget {
+  final double fontsize;
+  final FontWeight fontWeight;
+  final Color color;
+  final String text;
+  final String fontFamily;
+  const SelectableTextMaterial(
+      {Key key,
+      this.fontWeight,
+      this.color,
+      @required this.text,
+      this.fontsize,
+      this.fontFamily})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return SelectableText(
+      text,
+      style: TextStyle(
+          color: color,
+          fontWeight: fontWeight,
+          fontSize: fontsize,
+          fontFamily: fontFamily),
+    );
+  }
+}
+
 class TextFiledMaterialD extends StatelessWidget {
   final String name;
   final double fontSize;

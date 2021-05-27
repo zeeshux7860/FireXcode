@@ -136,8 +136,14 @@ extension XListViews on List<Widget> {
       /// [WrapCrossAlignment.end], or there's more than one child, then the
       /// [verticalDirection] must not be null.
       final VerticalDirection verticalDirection,
+
+      /// {@macro flutter.material.Material.clipBehavior}
+      ///
+      /// Defaults to [Clip.none].
+      final Clip clipBehavior = Clip.none,
       final Key key}) {
     return Wrap(
+      clipBehavior: clipBehavior ?? clipBehavior,
       alignment: alignment ?? WrapAlignment.start,
       crossAxisAlignment: crossAxisAlignment ?? WrapCrossAlignment.start,
       direction: direction ?? Axis.horizontal,
@@ -151,24 +157,30 @@ extension XListViews on List<Widget> {
     );
   }
 
-  Widget xListView({
-    bool addAutomaticKeepAlives = true,
-    bool addRepaintBoundaries = true,
-    bool addSemanticIndexes = true,
-    double cacheExtent,
-    ScrollController controller,
-    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    double itemExtent,
-    Key key,
-    EdgeInsetsGeometry padding,
-    ScrollPhysics physics,
-    bool primary,
-    bool reverse = false,
-    int semanticChildCount,
-    Axis scrollDirection = Axis.vertical,
-    bool shrinkWrap = false,
-  }) {
+  Widget xListView(
+      {bool addAutomaticKeepAlives = true,
+      bool addRepaintBoundaries = true,
+      bool addSemanticIndexes = true,
+      double cacheExtent,
+      ScrollController controller,
+      DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+      double itemExtent,
+      Key key,
+      EdgeInsetsGeometry padding,
+      ScrollPhysics physics,
+      bool primary,
+      bool reverse = false,
+      int semanticChildCount,
+      Axis scrollDirection = Axis.vertical,
+      bool shrinkWrap = false,
+      Clip clipBehavior = Clip.hardEdge,
+      ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
+          ScrollViewKeyboardDismissBehavior.manual,
+      String restorationId}) {
     return ListView(
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -188,23 +200,29 @@ extension XListViews on List<Widget> {
     );
   }
 
-  Widget xListViewVertical({
-    bool addAutomaticKeepAlives = true,
-    bool addRepaintBoundaries = true,
-    bool addSemanticIndexes = true,
-    double cacheExtent,
-    ScrollController controller,
-    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    double itemExtent,
-    Key key,
-    EdgeInsetsGeometry padding,
-    ScrollPhysics physics,
-    bool primary,
-    bool reverse = false,
-    int semanticChildCount,
-    bool shrinkWrap = false,
-  }) {
+  Widget xListViewVertical(
+      {bool addAutomaticKeepAlives = true,
+      bool addRepaintBoundaries = true,
+      bool addSemanticIndexes = true,
+      double cacheExtent,
+      ScrollController controller,
+      DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+      double itemExtent,
+      Key key,
+      EdgeInsetsGeometry padding,
+      ScrollPhysics physics,
+      bool primary,
+      bool reverse = false,
+      int semanticChildCount,
+      bool shrinkWrap = false,
+      Clip clipBehavior = Clip.hardEdge,
+      ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
+          ScrollViewKeyboardDismissBehavior.manual,
+      String restorationId}) {
     return ListView(
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -224,23 +242,29 @@ extension XListViews on List<Widget> {
     );
   }
 
-  Widget xListViewHorizontal({
-    bool addAutomaticKeepAlives = true,
-    bool addRepaintBoundaries = true,
-    bool addSemanticIndexes = true,
-    double cacheExtent,
-    ScrollController controller,
-    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    double itemExtent,
-    Key key,
-    EdgeInsetsGeometry padding,
-    ScrollPhysics physics,
-    bool primary,
-    bool reverse = false,
-    int semanticChildCount,
-    bool shrinkWrap = false,
-  }) {
+  Widget xListViewHorizontal(
+      {bool addAutomaticKeepAlives = true,
+      bool addRepaintBoundaries = true,
+      bool addSemanticIndexes = true,
+      double cacheExtent,
+      ScrollController controller,
+      DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+      double itemExtent,
+      Key key,
+      EdgeInsetsGeometry padding,
+      ScrollPhysics physics,
+      bool primary,
+      bool reverse = false,
+      int semanticChildCount,
+      bool shrinkWrap = false,
+      Clip clipBehavior = Clip.hardEdge,
+      ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
+          ScrollViewKeyboardDismissBehavior.manual,
+      String restorationId}) {
     return ListView(
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -260,21 +284,27 @@ extension XListViews on List<Widget> {
     );
   }
 
-  Widget xListViewHorizontalClampingScrollPhysics({
-    bool addAutomaticKeepAlives = true,
-    bool addRepaintBoundaries = true,
-    bool addSemanticIndexes = true,
-    double cacheExtent,
-    ScrollController controller,
-    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    double itemExtent,
-    Key key,
-    EdgeInsetsGeometry padding,
-    bool primary,
-    bool reverse = false,
-    int semanticChildCount,
-  }) {
+  Widget xListViewHorizontalClampingScrollPhysics(
+      {bool addAutomaticKeepAlives = true,
+      bool addRepaintBoundaries = true,
+      bool addSemanticIndexes = true,
+      double cacheExtent,
+      ScrollController controller,
+      DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+      double itemExtent,
+      Key key,
+      EdgeInsetsGeometry padding,
+      bool primary,
+      bool reverse = false,
+      int semanticChildCount,
+      Clip clipBehavior = Clip.hardEdge,
+      ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
+          ScrollViewKeyboardDismissBehavior.manual,
+      String restorationId}) {
     return ListView(
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -294,21 +324,27 @@ extension XListViews on List<Widget> {
     );
   }
 
-  Widget xListViewVerticalClampingScrollPhysics({
-    bool addAutomaticKeepAlives = true,
-    bool addRepaintBoundaries = true,
-    bool addSemanticIndexes = true,
-    double cacheExtent,
-    ScrollController controller,
-    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    double itemExtent,
-    Key key,
-    EdgeInsetsGeometry padding,
-    bool primary,
-    bool reverse = false,
-    int semanticChildCount,
-  }) {
+  Widget xListViewVerticalClampingScrollPhysics(
+      {bool addAutomaticKeepAlives = true,
+      bool addRepaintBoundaries = true,
+      bool addSemanticIndexes = true,
+      double cacheExtent,
+      ScrollController controller,
+      DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+      double itemExtent,
+      Key key,
+      EdgeInsetsGeometry padding,
+      bool primary,
+      bool reverse = false,
+      int semanticChildCount,
+      Clip clipBehavior = Clip.hardEdge,
+      ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
+          ScrollViewKeyboardDismissBehavior.manual,
+      String restorationId}) {
     return ListView(
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -341,8 +377,15 @@ extension XListViews on List<Widget> {
       bool primary,
       bool reverse = false,
       int semanticChildCount,
-      ScrollPhysics parent}) {
+      ScrollPhysics parent,
+      Clip clipBehavior = Clip.hardEdge,
+      ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
+          ScrollViewKeyboardDismissBehavior.manual,
+      String restorationId}) {
     return ListView(
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -375,8 +418,15 @@ extension XListViews on List<Widget> {
       bool primary,
       bool reverse = false,
       int semanticChildCount,
-      ScrollPhysics parent}) {
+      ScrollPhysics parent,
+      Clip clipBehavior = Clip.hardEdge,
+      ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
+          ScrollViewKeyboardDismissBehavior.manual,
+      String restorationId}) {
     return ListView(
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -396,21 +446,27 @@ extension XListViews on List<Widget> {
     );
   }
 
-  Widget xCustomScrollView({
-    Key key,
-    Axis scrollDirection = Axis.vertical,
-    bool reverse = false,
-    ScrollController controller,
-    bool primary,
-    ScrollPhysics physics,
-    bool shrinkWrap = false,
-    Key center,
-    double anchor = 0.0,
-    double cacheExtent,
-    int semanticChildCount,
-    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-  }) {
+  Widget xCustomScrollView(
+      {Key key,
+      Axis scrollDirection = Axis.vertical,
+      bool reverse = false,
+      ScrollController controller,
+      bool primary,
+      ScrollPhysics physics,
+      bool shrinkWrap = false,
+      Key center,
+      double anchor = 0.0,
+      double cacheExtent,
+      int semanticChildCount,
+      DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+      Clip clipBehavior = Clip.hardEdge,
+      ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
+          ScrollViewKeyboardDismissBehavior.manual,
+      String restorationId}) {
     return CustomScrollView(
+      clipBehavior: clipBehavior,
+      keyboardDismissBehavior: keyboardDismissBehavior,
+      restorationId: restorationId,
       anchor: anchor ?? 0.0,
       cacheExtent: cacheExtent,
       center: center,

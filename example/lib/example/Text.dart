@@ -32,7 +32,7 @@ class ExampleText extends StatelessWidget {
       '.xTextColorpink()'.xTextColorPink(fontsize: 20),
       5.0.sizedHeight(),
       '.xTextColorteal()'.xTextColorTeal(fontsize: 20).toAlign(),
-    ].xcolumnSS().xap(value: 20.0).xScaffold(
+    ].xColumnSS().xap(value: 20.0).xScaffold(
         backgroundColor: Colors.white,
         appBar: 'Demo Text'.xTextColorBlack().xAppBar(
               brightness: Brightness.light,

@@ -41,7 +41,7 @@ class _ExampleXCardTileState extends State<ExampleXCardTile> {
         boxChild: Icons.android.xIconTile(),
         subtitle2: Icons.arrow_forward_ios.xIconTile().flipInY(),
       ).fadeIn(),
-    ].xcolumnCC().xScaffold(
+    ].xColumnCC().xScaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
             centerTitle: true,

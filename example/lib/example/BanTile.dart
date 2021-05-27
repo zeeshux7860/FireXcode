@@ -23,7 +23,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
             color: Colors.white,
           ),
           15.0.sizedHeight()
-        ].xcolumn(),
+        ].xColumn(),
       ).xContainer(
         padding: EdgeInsets.all(20.0),
         margin: EdgeInsets.all(20.0),
@@ -44,7 +44,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
           'https://image.freepik.com/free-vector/colorful-abstract-background_23-2148468383.jpg'
               .xImageNetwork(repeat: ImageRepeat.noRepeat),
           15.0.sizedHeight()
-        ].xcolumn(),
+        ].xColumn(),
       ).xContainer(
         onTap: () {},
         // padding: EdgeInsets.all(20.0),
@@ -70,7 +70,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
             text: 'Text',
           ),
           15.0.sizedHeight()
-        ].xcolumn(),
+        ].xColumn(),
       ).xContainer(
         onTap: () {},
         image:
@@ -99,7 +99,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
             text: 'Text',
           ),
           15.0.sizedHeight()
-        ].xcolumn(),
+        ].xColumn(),
       ).xContainerGradient(
         onTap: () {},
         image:
@@ -137,7 +137,7 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
             text: 'Text',
           ),
           15.0.sizedHeight()
-        ].xcolumn(),
+        ].xColumn(),
       ).xContainerGradient(
         image:
             'https://image.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg'
