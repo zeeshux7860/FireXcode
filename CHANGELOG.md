@@ -65,3 +65,7 @@
 ## 1.0.6
 
 *  Feature update
+
+## 1.0.7
+
+*  Feature update

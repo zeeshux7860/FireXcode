@@ -727,7 +727,7 @@ extension StringsX on String {
       cursorColor: cursorColor,
       minLines: minLines,
       cursorHeight: cursorHeight,
-      cursorWidth: cursorWidth,
+      cursorWidth: cursorWidth ?? 0.0,
       cursorRadius: cursorRadiu,
       showCursor: showCursor,
       enableInteractiveSelection: enableInteractiveSelection,
