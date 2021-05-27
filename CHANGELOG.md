@@ -39,8 +39,18 @@
 * xhvp horizontal vertical padding
 * xRoutePage animation PushReplacement
 
-## 1.0.0 
-* fix error
+## 1.0.0
+
+* error fix
 
 ## 1.0.1
-* row fix
+
+* 2.0.5 fix
+
+## 1.0.2
+
+*  2.0.5 fix row 
+
+## 1.0.3
+
+*  2.0.5 fix row 

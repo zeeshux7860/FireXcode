@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return xListView.list([
       ['one', 'two', 'three'].xDropdownLabel(
-          name: 'dropdown',
+          name: 'dropdown'.text(),
           onChanged: (v) {
             setState(() {});
           },

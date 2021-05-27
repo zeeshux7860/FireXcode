@@ -1,12 +1,15 @@
+import 'package:firexcode/firexcode.dart';
 import 'package:flutter/material.dart';
 
 class XDropdownLab extends StatefulWidget {
-  final String name;
+  final Widget name;
+  final String labelName;
+  final double width;
   final double fontSize;
   final Color color;
   final double lableSize;
   final Color textColor;
-  final List<String> list;
+  final List list;
   final void Function(String) onChanged;
   final String dropdownValue;
   final TextStyle style;
@@ -21,6 +24,8 @@ class XDropdownLab extends StatefulWidget {
     this.onChanged,
     this.dropdownValue,
     this.style,
+    this.width,
+    this.labelName,
   }) : super(key: key);
 
   @override
@@ -37,18 +42,19 @@ class _XDropdownLabState extends State<XDropdownLab> {
         Padding(
           padding: EdgeInsets.only(left: 10.0, top: 10.0, bottom: 5.0),
           child: Text(
-            'Select ' + widget.name,
+            'Select ' + widget.labelName,
             style: TextStyle(
               fontSize: widget.lableSize ?? 15.0,
             ),
           ),
         ),
         Container(
-            width: 100,
+            width: widget.width,
             padding: EdgeInsets.only(left: 10),
             margin: EdgeInsets.all(10.0),
             color: widget.color ?? Colors.grey[100],
-            child: DropdownButton(
+            child: DropdownButton<dynamic>(
+              hint: widget.name,
               value: widget.dropdownValue,
               icon: Container(),
               iconSize: 24,
@@ -59,8 +65,8 @@ class _XDropdownLabState extends State<XDropdownLab> {
                 // color: Colors.deepPurpleAccent,
               ),
               onChanged: widget.onChanged,
-              items: widget.list.map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
+              items: widget.list.map<DropdownMenuItem>((value) {
+                return DropdownMenuItem(
                   value: value,
                   child: Text(value),
                 );
@@ -73,17 +79,19 @@ class _XDropdownLabState extends State<XDropdownLab> {
 
 extension Dropdowns on List<String> {
   Widget xDropdownLabel({
-    @required final String name,
+    @required final Widget name,
     final double fontSize,
     final Color color,
     final double lableSize,
     final Color textColor,
     final Key key,
     final TextStyle style,
+    final String lableName,
     @required final void Function(String) onChanged,
     @required final String dropdownValue,
   }) {
     return XDropdownLab(
+      labelName: lableName,
       color: color,
       fontSize: fontSize,
       key: key,
