@@ -54,9 +54,14 @@
 ## 1.0.3
 
 *  2.0.5 fix row 
-<<<<<<< HEAD
-=======
 ## 1.0.4
 
 *  2.0.5 fix row 
->>>>>>> c6243d0686c07f49b5bac53888c09949be477603
+
+## 1.0.5
+
+*  Feature update
+
+## 1.0.5
+
+*  Feature update
