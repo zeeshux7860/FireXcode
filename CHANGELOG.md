@@ -69,3 +69,8 @@
 ## 1.0.7
 
 *  Feature update
+
+
+## 1.0.8
+
+* import fix

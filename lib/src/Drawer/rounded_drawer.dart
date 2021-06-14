@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:firexcode/src/Modules/DrawerMXuserProfile.dart';
 import 'package:firexcode/src/Modules/ExpansionTile.dart';
-import 'package:firexcode/src/Modules/MXAnimationType.dart';
+import 'package:firexcode/src/Modules/MxAnimationType.dart';
 import 'package:firexcode/src/Modules/ProgressLoading.dart';
 import '../Modules/Widget.dart';
 

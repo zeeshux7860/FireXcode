@@ -1,7 +1,7 @@
 import 'package:animated_interpolation/animated_interpolation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:firexcode/src/Modules/MXAnimationType.dart';
+import 'package:firexcode/src/Modules/MxAnimationType.dart';
 import 'package:firexcode/src/Modules/animation/animation_do.dart';
 
 extension XWidget on Widget {

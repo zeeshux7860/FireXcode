@@ -22,7 +22,7 @@ export 'src/Modules/CrownTile.dart';
 export 'src/Modules/DrawerMXuserProfile.dart';
 export 'src/Modules/ExpansionTile.dart';
 export 'src/Modules/List.dart';
-export 'src/Modules/MXAnimationType.dart';
+export 'src/Modules/MxAnimationType.dart';
 export 'src/Modules/ProgressLoading.dart';
 export 'src/Modules/Route.dart';
 export 'src/Modules/SizeTransition.dart';
