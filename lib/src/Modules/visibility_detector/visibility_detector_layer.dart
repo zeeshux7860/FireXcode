@@ -269,11 +269,13 @@ class VisibilityDetectorLayer extends ContainerLayer {
   }
 
   /// See [Layer.addToScene].
+  // Left the offset argument for backward compatibility
   @override
   void addToScene(ui.SceneBuilder builder, [Offset layerOffset = Offset.zero]) {
     _layerOffset = layerOffset;
     _scheduleUpdate();
-    super.addToScene(builder, layerOffset);
+    // Flutter removed offset argument as of version 2.8.1
+    super.addToScene(builder);
   }
 
   /// See [AbstractNode.attach].
